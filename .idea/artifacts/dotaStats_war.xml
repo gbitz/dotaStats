@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="dotaStats:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="dotaStats.war">
+      <element id="artifact" artifact-name="dotaStats:war exploded" />
+    </root>
+  </artifact>
+</component>
