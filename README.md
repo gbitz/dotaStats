@@ -8,3 +8,8 @@ to read version of those those statistics to track their progress.
 dotaStats is will offer Dota players an easy way to access their personal statistics and compare them to the averages
 of the world. dotaStats will offer an edge over opponents by allowing users to access opposing players stats and play 
 history.    
+
+### Design
+
+* [User Stories](designDocuments/userStories.md)
+* [Screen Design](designDocuments/screens.md)
