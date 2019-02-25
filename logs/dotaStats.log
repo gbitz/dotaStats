@@ -48,3 +48,6 @@
 [DEBUG] 2019-02-24 18:37:25.596 [main] UserDao - user...edu.matc.entity.User@6b580b88
 [DEBUG] 2019-02-24 18:37:25.641 [main] UserDao - Searching for user with firstName = Grant
 [DEBUG] 2019-02-24 18:37:25.769 [main] UserDao - Searching for user with steamID = 76561197965031622
+[DEBUG] 2019-02-24 18:39:06.320 [main] UserDao - user...edu.matc.entity.User@5226e402
+[DEBUG] 2019-02-24 18:39:06.368 [main] UserDao - Searching for user with firstName = Grant
+[DEBUG] 2019-02-24 18:39:06.560 [main] UserDao - Searching for user with steamID = 76561197965031622
