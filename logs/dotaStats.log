@@ -1,0 +1,50 @@
+[ERROR] 2019-02-24 17:55:40.599 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'TestDotaStats'
+[DEBUG] 2019-02-24 17:55:41.795 [main] UserDao - Searching for user with firstName = Grant
+[ERROR] 2019-02-24 17:55:41.989 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'TestDotaStats'
+[DEBUG] 2019-02-24 17:55:41.990 [main] UserDao - Searching for user with steamid = 76561197965031622
+[DEBUG] 2019-02-24 17:55:41.990 [main] UserDao - the query...org.hibernate.query.criteria.internal.CriteriaQueryImpl@675ffd1d
+[DEBUG] 2019-02-24 17:56:35.683 [main] UserDao - Searching for user with firstName = Grant
+[DEBUG] 2019-02-24 17:56:36.022 [main] UserDao - Searching for user with steamid = 76561197965031622
+[DEBUG] 2019-02-24 17:56:36.022 [main] UserDao  - sql...com.mysql.jdbc.StatementImpl@1e178745
+[DEBUG] 2019-02-24 18:00:36.522 [main] Database - sql...com.mysql.jdbc.StatementImpl@1e178745
+[DEBUG] 2019-02-24 18:00:38.098 [main] UserDao - Searching for user with firstName = Grant
+[DEBUG] 2019-02-24 18:00:38.457 [main] Database - sql...com.mysql.jdbc.StatementImpl@51827393
+[DEBUG] 2019-02-24 18:00:38.458 [main] Database - sql...com.mysql.jdbc.StatementImpl@51827393
+[DEBUG] 2019-02-24 18:00:38.460 [main] UserDao - Searching for user with steamid = 76561197965031622
+[DEBUG] 2019-02-24 18:01:31.159 [main] UserDao - Searching for user wi- the query...org.hibernate.query.criteria.internal.CriteriaQueryImpl@2788d0fe
+                                                                      [DEBUG] 2019-02-24 18:00:36.517 [main] Databaseth steamid = 76561197965031622
+[DEBUG] 2019-02-24 18:03:49.249 [main] UserDao - Searching for user with steamid = 76561197965031622
+[DEBUG] 2019-02-24 18:04:51.587 [main] UserDao - Searching for user with steamid = 76561197965031622
+[DEBUG] 2019-02-24 18:06:26.699 [main] UserDao - Searching for user with steamID = 76561197965031622
+[DEBUG] 2019-02-24 18:09:25.384 [main] UserDao - Searching for user with steamID = 76561197965031622
+[DEBUG] 2019-02-24 18:12:11.054 [main] UserDao - Searching for user with steamID = 76561197965031622
+[DEBUG] 2019-02-24 18:19:52.164 [main] UserDao - Searching for user with firstName = Grant
+[DEBUG] 2019-02-24 18:19:52.316 [main] UserDao - Searching for user with steamID = 76561197965031622
+[DEBUG] 2019-02-24 18:21:41.016 [main] UserDao - user...edu.matc.entity.User@6d91790b
+[DEBUG] 2019-02-24 18:21:49.585 [main] UserDao - user...null
+[DEBUG] 2019-02-24 18:21:49.613 [main] UserDao - Searching for user with firstName = Grant
+[DEBUG] 2019-02-24 18:21:49.841 [main] UserDao - Searching for user with steamID = 76561197965031622
+[DEBUG] 2019-02-24 18:23:05.388 [main] UserDao - user...null
+[DEBUG] 2019-02-24 18:23:05.421 [main] UserDao - Searching for user with firstName = Grant
+[DEBUG] 2019-02-24 18:23:05.586 [main] UserDao - Searching for user with steamID = 76561197965031622
+[DEBUG] 2019-02-24 18:24:26.622 [main] UserDao - Searching for user with firstName = Grant
+[DEBUG] 2019-02-24 18:24:35.800 [main] UserDao - user...null
+[DEBUG] 2019-02-24 18:24:35.826 [main] UserDao - Searching for user with firstName = Grant
+[DEBUG] 2019-02-24 18:24:35.957 [main] UserDao - Searching for user with steamID = 76561197965031622
+[DEBUG] 2019-02-24 18:31:44.207 [main] UserDao - user...edu.matc.entity.User@6b580b88
+[DEBUG] 2019-02-24 18:31:44.275 [main] UserDao - Searching for user with firstName = Grant
+[DEBUG] 2019-02-24 18:31:44.508 [main] UserDao - Searching for user with steamID = 76561197965031622
+[DEBUG] 2019-02-24 18:36:05.600 [main] UserDao - Searching for user with firstName = Grant
+[DEBUG] 2019-02-24 18:36:19.637 [main] UserDao - Searching for user with steamID = 76561197965031622
+[DEBUG] 2019-02-24 18:36:43.109 [main] UserDao - user...edu.matc.entity.User@5226e402
+[DEBUG] 2019-02-24 18:36:43.234 [main] UserDao - Searching for user with firstName = Grant
+[DEBUG] 2019-02-24 18:36:43.797 [main] UserDao - Searching for user with steamID = 76561197965031622
+[DEBUG] 2019-02-24 18:37:01.185 [main] UserDao - user...null
+[DEBUG] 2019-02-24 18:37:01.210 [main] UserDao - Searching for user with firstName = Grant
+[DEBUG] 2019-02-24 18:37:01.342 [main] UserDao - Searching for user with steamID = 76561197965031622
+[DEBUG] 2019-02-24 18:37:20.185 [main] UserDao - user...edu.matc.entity.User@6b580b88
+[DEBUG] 2019-02-24 18:37:20.230 [main] UserDao - Searching for user with firstName = Grant
+[DEBUG] 2019-02-24 18:37:20.380 [main] UserDao - Searching for user with steamID = 76561197965031622
+[DEBUG] 2019-02-24 18:37:25.596 [main] UserDao - user...edu.matc.entity.User@6b580b88
+[DEBUG] 2019-02-24 18:37:25.641 [main] UserDao - Searching for user with firstName = Grant
+[DEBUG] 2019-02-24 18:37:25.769 [main] UserDao - Searching for user with steamID = 76561197965031622

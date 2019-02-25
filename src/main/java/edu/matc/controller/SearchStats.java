@@ -1,5 +1,7 @@
 //package edu.matc.controller;
 //
+//import edu.matc.persistence.UserDao;
+//
 //import javax.servlet.RequestDispatcher;
 //import javax.servlet.ServletException;
 //import javax.servlet.http.HttpServlet;
@@ -20,7 +22,7 @@
 //public class SearchStats extends HttpServlet {
 //    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 //    UserDao userDao = new UserDao();
-//
+//    String
 //
 //
 //    }
