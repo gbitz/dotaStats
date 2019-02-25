@@ -1,13 +1,11 @@
 package edu.matc.persistence;
 
 import edu.matc.entity.User;
-import org.hibernate.Session;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Root;
+
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -70,6 +68,31 @@ class UserDaoTest {
         assertNull(dao.getById(1));
 
     }
+
+    @Test
+    void insertUserTest() {
+
+        User user = new User("Jimbo", "James", "jjames", "password", Long.parseLong("76561197965031622"));
+        int id = dao.insertUser(user);
+        assertNotEquals(0, id);
+        User insertedUser = dao.getById(id);
+        assertEquals("Jimbo", insertedUser.getFirstName());
+    }
+
+    @Test
+    void updateUserTest() {
+        String changedUserName = "bitz";
+        User userToChange = dao.getById(1);
+        userToChange.setUserName(changedUserName);
+        dao.updateUser(userToChange);
+        User retrievedUser = dao.getById(1);
+        assertEquals(userToChange, retrievedUser);
+    }
+
+
+
+
+
 
 
 }

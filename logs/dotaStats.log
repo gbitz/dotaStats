@@ -51,3 +51,18 @@
 [DEBUG] 2019-02-24 18:39:06.320 [main] UserDao - user...edu.matc.entity.User@5226e402
 [DEBUG] 2019-02-24 18:39:06.368 [main] UserDao - Searching for user with firstName = Grant
 [DEBUG] 2019-02-24 18:39:06.560 [main] UserDao - Searching for user with steamID = 76561197965031622
+[DEBUG] 2019-02-24 19:07:28.857 [main] UserDao - user...edu.matc.entity.User@27b22f74
+[DEBUG] 2019-02-24 19:07:28.939 [main] UserDao - Searching for user with firstName = Grant
+[DEBUG] 2019-02-24 19:07:29.175 [main] UserDao - Searching for user with steamID = 76561197965031622
+[DEBUG] 2019-02-24 19:28:01.250 [main] UserDao - user...edu.matc.entity.User@27b22f74
+[DEBUG] 2019-02-24 19:28:01.349 [main] UserDao - Searching for user with firstName = Grant
+[DEBUG] 2019-02-24 19:28:01.589 [main] UserDao - Searching for user with steamID = 76561197965031622
+[DEBUG] 2019-02-24 19:28:29.484 [main] UserDao - user...edu.matc.entity.User@5226e402
+[DEBUG] 2019-02-24 19:28:29.543 [main] UserDao - Searching for user with firstName = Grant
+[DEBUG] 2019-02-24 19:28:29.804 [main] UserDao - Searching for user with steamID = 76561197965031622
+[DEBUG] 2019-02-24 19:41:34.394 [main] UserDao - user...User{id=1, firstName='Grant', lastName='Bitzer', userName='gbitzer', password='password', steamID=76561197965031622}
+[DEBUG] 2019-02-24 19:41:34.462 [main] UserDao - Searching for user with firstName = Grant
+[DEBUG] 2019-02-24 19:41:34.661 [main] UserDao - Searching for user with steamID = 76561197965031622
+[DEBUG] 2019-02-24 19:43:21.961 [main] UserDao - user...User{id=1, firstName='Grant', lastName='Bitzer', userName='gbitzer', password='password', steamID=76561197965031622}
+[DEBUG] 2019-02-24 19:43:22.062 [main] UserDao - Searching for user with firstName = Grant
+[DEBUG] 2019-02-24 19:43:22.362 [main] UserDao - Searching for user with steamID = 76561197965031622

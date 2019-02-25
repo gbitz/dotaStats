@@ -79,6 +79,25 @@ public class UserDao {
         return users;
     }
 
+    public int insertUser(User user) {
+        int id = 0;
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        id = (int)session.save(user);
+        transaction.commit();
+        session.close();
+        return id;
+    }
+
+    public void updateUser(User user) {
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        session.saveOrUpdate(user);
+        transaction.commit();
+        session.close();
+
+    }
+
     /**
      * Delete a user
      *
