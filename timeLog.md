@@ -5,3 +5,5 @@
 2/23- week 4 exercises (1.5 hours)
 
 2/24 - finished week four exercise, added hibernate  to indi project and added userDao (6hours)
+
+3/3 - added roleDao, roleDao tests, Crudfor RoleDao, added role table. (8 hours)

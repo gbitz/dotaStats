@@ -12,4 +12,12 @@ now I have a better plan on what I need to accomplish each week to complete this
 
 I did a little more research on the api I plan to use for this project and it seems like I will
 be able to find all necessary information to complete my project. 
+### Week 2-18-19 -> 2-24-19
+I added the userDao and tests for user CRUD interaction with the database.  Took longer than expected. 
+Looking to have more time to research my project
+### Week 2-25-19 -> 3-3-19
+Added RoleDao table with many to one relationship.  Added RoleDoa, Role.java, and RoleDao tests.
+
+
+
 
