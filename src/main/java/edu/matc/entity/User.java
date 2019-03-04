@@ -33,7 +33,7 @@ public class User {
     private String password;
 
     @Column(name = "steamid")
-    private Long steamID;
+    private String steamID;
 
     /**
      * Instantiates a new User.
@@ -50,7 +50,7 @@ public class User {
      * @param password  the password
      * @param steamID   the steam id
      */
-    public User(String firstName, String lastName, String userName, String password, Long steamID) {
+    public User(String firstName, String lastName, String userName, String password, String steamID) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.userName = userName;
@@ -153,7 +153,7 @@ public class User {
      *
      * @return the steam id
      */
-    public Long getSteamID() {
+    public String getSteamID() {
         return steamID;
     }
 
@@ -162,7 +162,7 @@ public class User {
      *
      * @param steamID the steam id
      */
-    public void setSteamID(Long steamID) {
+    public void setSteamID(String steamID) {
         this.steamID = steamID;
     }
 

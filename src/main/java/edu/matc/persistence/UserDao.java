@@ -13,43 +13,52 @@ import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
-/**
- * The userdao used for various CRUD
- */
 public class UserDao {
+
     private final Logger logger = LogManager.getLogger(this.getClass());
-    /**
-     * The Session factory.
-     */
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
     /**
-     * Get a user by any term and value
+     * Gets all users.
      *
-     * @param termName term used to search (column name)
-     * @param value    search criteria
-     * @return list of users meeting the criteria search
+     * @return the all users
      */
-    public List<User> getByTermLike(String termName, String value) {
+    public List<User> getAllUsers() {
+
         Session session = sessionFactory.openSession();
-
-        logger.debug("Searching for user with {} = {}",  termName, value);
-
         CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<User> query = builder.createQuery( User.class );
-        Root<User> root = query.from( User.class );
-        Expression<String> propertyPath = root.get(termName);
-        query.where(builder.like(propertyPath, "%" + value + "%"));
-        List<User> users = session.createQuery( query ).getResultList();
+        CriteriaQuery<User> query = builder.createQuery(User.class);
+        Root<User> root = query.from(User.class);
+        List<User> users = session.createQuery(query).getResultList();
         session.close();
         return users;
     }
 
     /**
-     * Gets by id.
-     *
-     * @param id the id
-     * @return the by id
+     * Gets all users by last name.
+     * @param lastName the last name to search by
+     * @return the all users
+     */
+    public List<User> searchUsers(String lastName) {
+
+        logger.debug("Searching for: {}", lastName);
+
+        Session session = sessionFactory.openSession();
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<User> query = builder.createQuery(User.class);
+        Root<User> root = query.from(User.class);
+        Expression<String> propertyPath = root.get("lastName");
+        query.where(builder.like(propertyPath, "%" + lastName + "%"));
+        List<User> users = session.createQuery(query).getResultList();
+        session.close();
+        return users;
+    }
+
+    /**
+     * Gets a user by id
+     * @param id users id to search by
+     * @return a user
      */
     public User getById(int id) {
         Session session = sessionFactory.openSession();
@@ -59,27 +68,23 @@ public class UserDao {
     }
 
     /**
-     * Gets by term equal.
-     *
-     * @param termName the term name
-     * @param value    the value
-     * @return the by term equal
+     * update user
+     * @param user  User to be inserted or updated
      */
-    public List<User> getByTermEqual(String termName, String value) {
+    public void saveOrUpdate(User user) {
         Session session = sessionFactory.openSession();
-
-        logger.debug("Searching for user with " + termName + " = " + value);
-
-        CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<User> query = builder.createQuery( User.class );
-        Root<User> root = query.from( User.class );
-        query.select(root).where(builder.equal(root.get(termName), value));
-        List<User> users = session.createQuery( query ).getResultList();
+        Transaction transaction = session.beginTransaction();
+        session.saveOrUpdate(user);
+        transaction.commit();
         session.close();
-        return users;
     }
 
-    public int insertUser(User user) {
+    /**
+     * update user
+     * @param user  User to be inserted or updated
+     * @return id of the inserted user
+     */
+    public int insert(User user) {
         int id = 0;
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
@@ -89,27 +94,65 @@ public class UserDao {
         return id;
     }
 
-    public void updateUser(User user) {
-        Session session = sessionFactory.openSession();
-        Transaction transaction = session.beginTransaction();
-        session.saveOrUpdate(user);
-        transaction.commit();
-        session.close();
-
-    }
-
     /**
      * Delete a user
-     *
      * @param user User to be deleted
      */
-    public void deleteUser(User user) {
+    public void delete(User user) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        logger.debug("user..." + user);
         session.delete(user);
         transaction.commit();
         session.close();
+    }
+
+
+    /**
+     * Get user by property (exact match)
+     * sample usage: getByPropertyEqual("lastName", "Curry")
+     *
+     * @param propertyName entity property to search by
+     * @param value value of the property to search for
+     * @return list of users meeting the criteria search
+     */
+    public List<User> getByPropertyEqual(String propertyName, String value) {
+        Session session = sessionFactory.openSession();
+
+        logger.debug("Searching for user with " + propertyName + " = " + value);
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<User> query = builder.createQuery( User.class );
+        Root<User> root = query.from( User.class );
+        query.select(root).where(builder.equal(root.get(propertyName), value));
+        List<User> users = session.createQuery( query ).getResultList();
+
+        session.close();
+        return users;
+    }
+
+    /**
+     * Get user by property (like)
+     * sample usage: getByPropertyLike("lastName", "C")
+     *
+     * @param propertyName entity property to search by
+     * @param value value of the property to search for
+     * @return list of users meeting the criteria search
+     */
+    public List<User> getByPropertyLike(String propertyName, String value) {
+        Session session = sessionFactory.openSession();
+
+        logger.debug("Searching for user with {} = {}",  propertyName, value);
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<User> query = builder.createQuery( User.class );
+        Root<User> root = query.from( User.class );
+        Expression<String> propertyPath = root.get(propertyName);
+
+        query.where(builder.like(propertyPath, "%" + value + "%"));
+
+        List<User> users = session.createQuery( query ).getResultList();
+        session.close();
+        return users;
     }
 
 

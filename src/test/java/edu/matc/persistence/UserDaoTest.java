@@ -2,6 +2,7 @@ package edu.matc.persistence;
 
 import edu.matc.entity.User;
 
+import edu.matc.test.util.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -23,17 +24,17 @@ class UserDaoTest {
     @BeforeEach
     void testStartUp() {
 
-        edu.matc.test.util.Database database = edu.matc.test.util.Database.getInstance();
-        database.runSQL("cleandb.sql");
+        dao = new UserDao();
 
-        dao = new UserDao();    }
+        Database database = Database.getInstance();
+        database.runSQL("cleandb.sql");    }
 
     /**
      * Gets by term like success.
      */
     @Test
     void getByTermLikeSuccess() {
-        List<User> users = dao.getByTermLike("firstName", "Grant");
+        List<User> users = dao.getByPropertyLike("firstName", "Grant");
         assertEquals(1, users.size());
     }
 
@@ -54,7 +55,7 @@ class UserDaoTest {
     @Test
     void getByTermEqualSuccess() {
 
-        List<User> users = dao.getByTermEqual("steamID", "76561197965031622");
+        List<User> users = dao.getByPropertyEqual("steamID", "76561197965031622");
         assertEquals(1, users.size());
     }
 
@@ -64,7 +65,7 @@ class UserDaoTest {
     @Test
     void deleteUserSuccess() {
         User user = dao.getById(1);
-        dao.deleteUser(user);
+        dao.delete(user);
         assertNull(dao.getById(1));
 
     }
@@ -72,8 +73,8 @@ class UserDaoTest {
     @Test
     void insertUserTest() {
 
-        User user = new User("Jimbo", "James", "jjames", "password", Long.parseLong("76561197965031622"));
-        int id = dao.insertUser(user);
+        User newUser = new User("Jimbo", "James", "jjames", "password", "76561197965031622");
+        int id = dao.insert(newUser);
         assertNotEquals(0, id);
         User insertedUser = dao.getById(id);
         assertEquals("Jimbo", insertedUser.getFirstName());
@@ -84,7 +85,7 @@ class UserDaoTest {
         String changedUserName = "bitz";
         User userToChange = dao.getById(1);
         userToChange.setUserName(changedUserName);
-        dao.updateUser(userToChange);
+        dao.saveOrUpdate(userToChange);
         User retrievedUser = dao.getById(1);
         assertEquals(userToChange, retrievedUser);
     }

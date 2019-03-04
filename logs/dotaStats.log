@@ -1,68 +1,99 @@
-[ERROR] 2019-02-24 17:55:40.599 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'TestDotaStats'
-[DEBUG] 2019-02-24 17:55:41.795 [main] UserDao - Searching for user with firstName = Grant
-[ERROR] 2019-02-24 17:55:41.989 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'TestDotaStats'
-[DEBUG] 2019-02-24 17:55:41.990 [main] UserDao - Searching for user with steamid = 76561197965031622
-[DEBUG] 2019-02-24 17:55:41.990 [main] UserDao - the query...org.hibernate.query.criteria.internal.CriteriaQueryImpl@675ffd1d
-[DEBUG] 2019-02-24 17:56:35.683 [main] UserDao - Searching for user with firstName = Grant
-[DEBUG] 2019-02-24 17:56:36.022 [main] UserDao - Searching for user with steamid = 76561197965031622
-[DEBUG] 2019-02-24 17:56:36.022 [main] UserDao  - sql...com.mysql.jdbc.StatementImpl@1e178745
-[DEBUG] 2019-02-24 18:00:36.522 [main] Database - sql...com.mysql.jdbc.StatementImpl@1e178745
-[DEBUG] 2019-02-24 18:00:38.098 [main] UserDao - Searching for user with firstName = Grant
-[DEBUG] 2019-02-24 18:00:38.457 [main] Database - sql...com.mysql.jdbc.StatementImpl@51827393
-[DEBUG] 2019-02-24 18:00:38.458 [main] Database - sql...com.mysql.jdbc.StatementImpl@51827393
-[DEBUG] 2019-02-24 18:00:38.460 [main] UserDao - Searching for user with steamid = 76561197965031622
-[DEBUG] 2019-02-24 18:01:31.159 [main] UserDao - Searching for user wi- the query...org.hibernate.query.criteria.internal.CriteriaQueryImpl@2788d0fe
-                                                                      [DEBUG] 2019-02-24 18:00:36.517 [main] Databaseth steamid = 76561197965031622
-[DEBUG] 2019-02-24 18:03:49.249 [main] UserDao - Searching for user with steamid = 76561197965031622
-[DEBUG] 2019-02-24 18:04:51.587 [main] UserDao - Searching for user with steamid = 76561197965031622
-[DEBUG] 2019-02-24 18:06:26.699 [main] UserDao - Searching for user with steamID = 76561197965031622
-[DEBUG] 2019-02-24 18:09:25.384 [main] UserDao - Searching for user with steamID = 76561197965031622
-[DEBUG] 2019-02-24 18:12:11.054 [main] UserDao - Searching for user with steamID = 76561197965031622
-[DEBUG] 2019-02-24 18:19:52.164 [main] UserDao - Searching for user with firstName = Grant
-[DEBUG] 2019-02-24 18:19:52.316 [main] UserDao - Searching for user with steamID = 76561197965031622
-[DEBUG] 2019-02-24 18:21:41.016 [main] UserDao - user...edu.matc.entity.User@6d91790b
-[DEBUG] 2019-02-24 18:21:49.585 [main] UserDao - user...null
-[DEBUG] 2019-02-24 18:21:49.613 [main] UserDao - Searching for user with firstName = Grant
-[DEBUG] 2019-02-24 18:21:49.841 [main] UserDao - Searching for user with steamID = 76561197965031622
-[DEBUG] 2019-02-24 18:23:05.388 [main] UserDao - user...null
-[DEBUG] 2019-02-24 18:23:05.421 [main] UserDao - Searching for user with firstName = Grant
-[DEBUG] 2019-02-24 18:23:05.586 [main] UserDao - Searching for user with steamID = 76561197965031622
-[DEBUG] 2019-02-24 18:24:26.622 [main] UserDao - Searching for user with firstName = Grant
-[DEBUG] 2019-02-24 18:24:35.800 [main] UserDao - user...null
-[DEBUG] 2019-02-24 18:24:35.826 [main] UserDao - Searching for user with firstName = Grant
-[DEBUG] 2019-02-24 18:24:35.957 [main] UserDao - Searching for user with steamID = 76561197965031622
-[DEBUG] 2019-02-24 18:31:44.207 [main] UserDao - user...edu.matc.entity.User@6b580b88
-[DEBUG] 2019-02-24 18:31:44.275 [main] UserDao - Searching for user with firstName = Grant
-[DEBUG] 2019-02-24 18:31:44.508 [main] UserDao - Searching for user with steamID = 76561197965031622
-[DEBUG] 2019-02-24 18:36:05.600 [main] UserDao - Searching for user with firstName = Grant
-[DEBUG] 2019-02-24 18:36:19.637 [main] UserDao - Searching for user with steamID = 76561197965031622
-[DEBUG] 2019-02-24 18:36:43.109 [main] UserDao - user...edu.matc.entity.User@5226e402
-[DEBUG] 2019-02-24 18:36:43.234 [main] UserDao - Searching for user with firstName = Grant
-[DEBUG] 2019-02-24 18:36:43.797 [main] UserDao - Searching for user with steamID = 76561197965031622
-[DEBUG] 2019-02-24 18:37:01.185 [main] UserDao - user...null
-[DEBUG] 2019-02-24 18:37:01.210 [main] UserDao - Searching for user with firstName = Grant
-[DEBUG] 2019-02-24 18:37:01.342 [main] UserDao - Searching for user with steamID = 76561197965031622
-[DEBUG] 2019-02-24 18:37:20.185 [main] UserDao - user...edu.matc.entity.User@6b580b88
-[DEBUG] 2019-02-24 18:37:20.230 [main] UserDao - Searching for user with firstName = Grant
-[DEBUG] 2019-02-24 18:37:20.380 [main] UserDao - Searching for user with steamID = 76561197965031622
-[DEBUG] 2019-02-24 18:37:25.596 [main] UserDao - user...edu.matc.entity.User@6b580b88
-[DEBUG] 2019-02-24 18:37:25.641 [main] UserDao - Searching for user with firstName = Grant
-[DEBUG] 2019-02-24 18:37:25.769 [main] UserDao - Searching for user with steamID = 76561197965031622
-[DEBUG] 2019-02-24 18:39:06.320 [main] UserDao - user...edu.matc.entity.User@5226e402
-[DEBUG] 2019-02-24 18:39:06.368 [main] UserDao - Searching for user with firstName = Grant
-[DEBUG] 2019-02-24 18:39:06.560 [main] UserDao - Searching for user with steamID = 76561197965031622
-[DEBUG] 2019-02-24 19:07:28.857 [main] UserDao - user...edu.matc.entity.User@27b22f74
-[DEBUG] 2019-02-24 19:07:28.939 [main] UserDao - Searching for user with firstName = Grant
-[DEBUG] 2019-02-24 19:07:29.175 [main] UserDao - Searching for user with steamID = 76561197965031622
-[DEBUG] 2019-02-24 19:28:01.250 [main] UserDao - user...edu.matc.entity.User@27b22f74
-[DEBUG] 2019-02-24 19:28:01.349 [main] UserDao - Searching for user with firstName = Grant
-[DEBUG] 2019-02-24 19:28:01.589 [main] UserDao - Searching for user with steamID = 76561197965031622
-[DEBUG] 2019-02-24 19:28:29.484 [main] UserDao - user...edu.matc.entity.User@5226e402
-[DEBUG] 2019-02-24 19:28:29.543 [main] UserDao - Searching for user with firstName = Grant
-[DEBUG] 2019-02-24 19:28:29.804 [main] UserDao - Searching for user with steamID = 76561197965031622
-[DEBUG] 2019-02-24 19:41:34.394 [main] UserDao - user...User{id=1, firstName='Grant', lastName='Bitzer', userName='gbitzer', password='password', steamID=76561197965031622}
-[DEBUG] 2019-02-24 19:41:34.462 [main] UserDao - Searching for user with firstName = Grant
-[DEBUG] 2019-02-24 19:41:34.661 [main] UserDao - Searching for user with steamID = 76561197965031622
-[DEBUG] 2019-02-24 19:43:21.961 [main] UserDao - user...User{id=1, firstName='Grant', lastName='Bitzer', userName='gbitzer', password='password', steamID=76561197965031622}
-[DEBUG] 2019-02-24 19:43:22.062 [main] UserDao - Searching for user with firstName = Grant
-[DEBUG] 2019-02-24 19:43:22.362 [main] UserDao - Searching for user with steamID = 76561197965031622
+[DEBUG] 2019-03-03 15:17:02.133 [main] UserDao - user...User{id=1, firstName='Grant', lastName='Bitzer', userName='gbitzer', password='password', steamID=76561197965031622}
+[DEBUG] 2019-03-03 15:17:02.273 [main] UserDao - Searching for user with firstName = Grant
+[DEBUG] 2019-03-03 15:17:02.963 [main] UserDao - Searching for user with steamID = 76561197965031622
+[ERROR] 2019-03-03 15:44:51.237 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 15:44:51.369 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 15:44:51.379 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 15:44:51.404 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-03 15:44:51.407 [main] UserDao - Searching for user with firstName = Grant
+[ERROR] 2019-03-03 15:44:52.011 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 15:44:52.025 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-03 15:44:52.027 [main] UserDao - Searching for user with steamID = 76561197965031622
+[ERROR] 2019-03-03 15:45:48.934 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 15:45:58.355 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 15:45:58.657 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 15:45:58.667 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 15:45:58.685 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-03 15:45:58.688 [main] UserDao - Searching for user with firstName = Grant
+[ERROR] 2019-03-03 15:45:59.322 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 15:45:59.341 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-03 15:45:59.343 [main] UserDao - Searching for user with steamID = 76561197965031622
+[ERROR] 2019-03-03 19:27:32.238 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 19:27:47.811 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 19:27:48.067 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 19:27:48.089 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 19:27:48.136 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-03 19:27:48.138 [main] RoleDao - Searching for role with userid = 2
+[ERROR] 2019-03-03 19:27:48.189 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 19:27:48.242 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-03 19:27:48.244 [main] RoleDao - Searching for role with id = 1
+[ERROR] 2019-03-03 19:28:41.100 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-03 19:28:41.168 [main] RoleDao - Searching for role with admin = 2
+[ERROR] 2019-03-03 19:29:44.188 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 19:29:44.295 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 19:29:44.307 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 19:29:44.340 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-03 19:29:44.342 [main] RoleDao - Searching for role with admin = 2
+[ERROR] 2019-03-03 19:29:44.375 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 19:29:44.449 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-03 19:29:44.451 [main] RoleDao - Searching for role with id = 1
+[ERROR] 2019-03-03 19:29:48.405 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-03 19:29:48.467 [main] RoleDao - Searching for role with admin = 2
+[ERROR] 2019-03-03 19:34:01.765 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-03 19:34:01.826 [main] RoleDao - Searching for role with role = 2
+[ERROR] 2019-03-03 19:35:52.153 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-03 19:35:52.242 [main] RoleDao - Searching for role with role = admin
+[ERROR] 2019-03-03 19:36:30.216 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 19:36:30.351 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 19:36:30.368 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 19:36:30.394 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-03 19:36:30.397 [main] RoleDao - Searching for role with role = admin
+[ERROR] 2019-03-03 19:36:30.573 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 19:36:30.603 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-03 19:36:30.604 [main] RoleDao - Searching for role with id = 1
+[ERROR] 2019-03-03 19:36:37.812 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-03 19:36:37.873 [main] RoleDao - Searching for role with role = admin
+[ERROR] 2019-03-03 19:39:42.021 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-03 19:39:42.083 [main] RoleDao - Searching for role with role_title = admin
+[ERROR] 2019-03-03 19:40:08.351 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-03 19:40:08.412 [main] RoleDao - Searching for role with role = admin
+[ERROR] 2019-03-03 19:42:24.277 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-03 19:42:24.351 [main] RoleDao - Searching for role with role = admin
+[ERROR] 2019-03-03 19:43:45.318 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-03 19:43:45.565 [main] RoleDao - Searching for role with role = admin
+[ERROR] 2019-03-03 19:43:59.274 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 19:43:59.445 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 19:43:59.462 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 19:43:59.519 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-03 19:43:59.522 [main] RoleDao - Searching for role with role = admin
+[ERROR] 2019-03-03 19:43:59.767 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 19:43:59.803 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-03 19:43:59.804 [main] RoleDao - Searching for role with id = 1
+[ERROR] 2019-03-03 19:44:48.938 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 19:45:07.741 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 19:46:10.210 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 19:47:28.687 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 19:49:44.082 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 19:50:11.088 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 19:50:54.692 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 19:56:55.652 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 19:57:04.344 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 19:58:50.333 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 19:59:47.442 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 20:02:08.413 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 20:02:22.459 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 20:02:22.622 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 20:02:22.634 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 20:02:22.654 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-03 20:02:22.656 [main] RoleDao - Searching for role with role = admin
+[ERROR] 2019-03-03 20:02:22.820 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 20:02:22.938 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-03 20:02:22.939 [main] RoleDao - Searching for role with id = 1
+[ERROR] 2019-03-03 20:02:30.083 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 20:02:30.277 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 20:02:30.289 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 20:02:30.334 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-03 20:02:30.337 [main] RoleDao - Searching for role with role = admin
+[ERROR] 2019-03-03 20:02:31.213 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-03 20:02:31.239 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-03 20:02:31.240 [main] RoleDao - Searching for role with id = 1
