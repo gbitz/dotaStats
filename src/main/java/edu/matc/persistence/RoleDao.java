@@ -13,12 +13,23 @@ import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
+/**
+ * The type Role dao.
+ */
 public class RoleDao {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
+    /**
+     * The Session factory.
+     */
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
 
+    /**
+     * Gets all roles.
+     *
+     * @return the all roles
+     */
     public List<Role> getAllRoles() {
 
         Session session = sessionFactory.openSession();
@@ -31,6 +42,12 @@ public class RoleDao {
     }
 
 
+    /**
+     * Search roles list.
+     *
+     * @param userId the user id
+     * @return the list
+     */
     public List<Role> searchRoles(Integer userId) {
 
         logger.debug("Searching for: {}", userId);
@@ -48,6 +65,12 @@ public class RoleDao {
     }
 
 
+    /**
+     * Gets by id.
+     *
+     * @param id the id
+     * @return the by id
+     */
     public Role getById(int id) {
         Session session = sessionFactory.openSession();
         Role role = session.get(Role.class, id);
@@ -56,6 +79,11 @@ public class RoleDao {
     }
 
 
+    /**
+     * Save or update.
+     *
+     * @param role the role
+     */
     public void saveOrUpdate(Role role) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
@@ -64,6 +92,12 @@ public class RoleDao {
         session.close();
     }
 
+    /**
+     * Insert int.
+     *
+     * @param role the role
+     * @return the int
+     */
     public int insert(Role role) {
         int id = 0;
         Session session = sessionFactory.openSession();
@@ -74,6 +108,11 @@ public class RoleDao {
         return id;
     }
 
+    /**
+     * Delete.
+     *
+     * @param role the role
+     */
     public void delete(Role role) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
@@ -83,7 +122,13 @@ public class RoleDao {
     }
 
 
-
+    /**
+     * Gets by property equal.
+     *
+     * @param propertyName the property name
+     * @param value        the value
+     * @return the by property equal
+     */
     public List<Role> getByPropertyEqual(String propertyName, String value) {
         Session session = sessionFactory.openSession();
 
@@ -100,6 +145,13 @@ public class RoleDao {
     }
 
 
+    /**
+     * Gets by property like.
+     *
+     * @param propertyName the property name
+     * @param value        the value
+     * @return the by property like
+     */
     public List<Role> getByPropertyLike(String propertyName, String value) {
         Session session = sessionFactory.openSession();
 

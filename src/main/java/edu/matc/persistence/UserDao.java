@@ -13,9 +13,15 @@ import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
+/**
+ * The type User dao.
+ */
 public class UserDao {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
+    /**
+     * The Session factory.
+     */
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
     /**
@@ -36,6 +42,7 @@ public class UserDao {
 
     /**
      * Gets all users by last name.
+     *
      * @param lastName the last name to search by
      * @return the all users
      */
@@ -57,6 +64,7 @@ public class UserDao {
 
     /**
      * Gets a user by id
+     *
      * @param id users id to search by
      * @return a user
      */
@@ -69,7 +77,8 @@ public class UserDao {
 
     /**
      * update user
-     * @param user  User to be inserted or updated
+     *
+     * @param user User to be inserted or updated
      */
     public void saveOrUpdate(User user) {
         Session session = sessionFactory.openSession();
@@ -81,7 +90,8 @@ public class UserDao {
 
     /**
      * update user
-     * @param user  User to be inserted or updated
+     *
+     * @param user User to be inserted or updated
      * @return id of the inserted user
      */
     public int insert(User user) {
@@ -96,6 +106,7 @@ public class UserDao {
 
     /**
      * Delete a user
+     *
      * @param user User to be deleted
      */
     public void delete(User user) {
@@ -112,7 +123,7 @@ public class UserDao {
      * sample usage: getByPropertyEqual("lastName", "Curry")
      *
      * @param propertyName entity property to search by
-     * @param value value of the property to search for
+     * @param value        value of the property to search for
      * @return list of users meeting the criteria search
      */
     public List<User> getByPropertyEqual(String propertyName, String value) {
@@ -135,7 +146,7 @@ public class UserDao {
      * sample usage: getByPropertyLike("lastName", "C")
      *
      * @param propertyName entity property to search by
-     * @param value value of the property to search for
+     * @param value        value of the property to search for
      * @return list of users meeting the criteria search
      */
     public List<User> getByPropertyLike(String propertyName, String value) {

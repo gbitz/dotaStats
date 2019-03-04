@@ -16,6 +16,9 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class UserDaoTest {
 
+    /**
+     * The Dao.
+     */
     UserDao dao;
 
     /**
@@ -70,6 +73,9 @@ class UserDaoTest {
 
     }
 
+    /**
+     * Insert user test.
+     */
     @Test
     void insertUserTest() {
 
@@ -80,6 +86,9 @@ class UserDaoTest {
         assertEquals("Jimbo", insertedUser.getFirstName());
     }
 
+    /**
+     * Update user test.
+     */
     @Test
     void updateUserTest() {
         String changedUserName = "bitz";

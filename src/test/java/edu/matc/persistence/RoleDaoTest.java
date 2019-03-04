@@ -11,12 +11,24 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 
+/**
+ * The type Role dao test.
+ */
 class RoleDaoTest {
 
+    /**
+     * The Dao.
+     */
     RoleDao dao;
+    /**
+     * The User dao.
+     */
     UserDao userDao;
 
 
+    /**
+     * Test start up.
+     */
     @BeforeEach
     void testStartUp() {
 
@@ -28,6 +40,9 @@ class RoleDaoTest {
         database.runSQL("cleandb.sql");    }
 
 
+    /**
+     * Gets by term like success.
+     */
     @Test
     void getByTermLikeSuccess() {
         List<Role> roles = dao.getByPropertyLike("role", "admin");
@@ -36,6 +51,9 @@ class RoleDaoTest {
         assertEquals(1, roles.size());
     }
 
+    /**
+     * Gets by id success.
+     */
     @Test
     void getByIdSuccess() {
         Role role = dao.getById(1);
@@ -43,6 +61,9 @@ class RoleDaoTest {
     }
 
 
+    /**
+     * Gets by term equal success.
+     */
     @Test
     void getByTermEqualSuccess() {
 
@@ -51,6 +72,9 @@ class RoleDaoTest {
     }
 
 
+    /**
+     * Delete role success.
+     */
     @Test
     void deleteRoleSuccess() {
         Role role = dao.getById(1);
@@ -59,6 +83,9 @@ class RoleDaoTest {
 
     }
 
+    /**
+     * Insert role test.
+     */
     @Test
     void insertRoleTest() {
         User newUser = new User("Jimbo", "James", "jjames", "password", "76561197965031622");
@@ -74,6 +101,9 @@ class RoleDaoTest {
 
     }
 
+    /**
+     * Update role test.
+     */
     @Test
     void updateRoleTest() {
         String changedRoleName = "adminTest";
