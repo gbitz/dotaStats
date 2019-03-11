@@ -46,8 +46,6 @@ class RoleDaoTest {
     @Test
     void getByTermLikeSuccess() {
         List<Role> roles = dao.getByPropertyLike("role", "admin");
-        System.out.println("!");
-
         assertEquals(1, roles.size());
     }
 
