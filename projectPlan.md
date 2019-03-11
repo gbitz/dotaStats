@@ -22,21 +22,21 @@
 
 **Week 6**
 -Create and template jsp files
--add jsp to add user and store created user
 -add functionality to display single user statistics
--display on jps
 -Journal
 
 **Week 7**
 -Use AWS to create database
--add jsp for global statistics
 -determine how to extract global statistics
 -prepare checkpoint 2
 -weekly journal
 
 
 **Week 8**
+-add jsp to add user and store created user
+-add jsp for global statistics
 -Add comparison jsp
+-display on jps
 -determine best way to display comparison statistics
 -weekly journal
 -code review

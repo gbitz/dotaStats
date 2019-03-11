@@ -17,7 +17,11 @@ I added the userDao and tests for user CRUD interaction with the database.  Took
 Looking to have more time to research my project
 ### Week 2-25-19 -> 3-3-19
 Added RoleDao table with many to one relationship.  Added RoleDoa, Role.java, and RoleDao tests.
+### Week 3-4-19 -> 3-10-19
+Feeling a little behind. I plan on creating all Jsps this week and attempting to 
+display user data on them.   Still researching the best way to use my api for my MVP
 
+Finished Exercise deploying to AWS
 
 
 

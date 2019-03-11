@@ -7,3 +7,5 @@
 2/24 - finished week four exercise, added hibernate  to indi project and added userDao (6hours)
 
 3/3 - added roleDao, roleDao tests, Crudfor RoleDao, added role table. (8 hours)
+
+3/8 - Finished week for exercise(deploy to AWS), completed code reviews (3.5 hours)
