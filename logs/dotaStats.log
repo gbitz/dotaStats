@@ -332,3 +332,115 @@
 [ERROR] 2019-03-24 14:02:05.353 [main] Database - java.sql.SQLException: Can not issue empty query.
 [ERROR] 2019-03-24 14:02:05.369 [main] Database - java.sql.SQLException: Can not issue empty query.
 [DEBUG] 2019-03-24 14:02:05.370 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-03-24 14:12:19.909 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:12:21.260 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:12:21.273 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:12:21.291 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-24 14:12:21.293 [main] GenericDao - Searching for ** with firstName = Grant
+[ERROR] 2019-03-24 14:12:21.515 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:12:21.535 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-24 14:12:21.536 [main] GenericDao - Searching for ** with steamID = 76561197965031622
+[ERROR] 2019-03-24 14:12:21.561 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:12:21.579 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:12:21.588 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:12:21.600 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-24 14:12:21.601 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-03-24 14:12:21.614 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:12:21.629 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-24 14:12:21.629 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-03-24 14:14:41.201 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:14:42.723 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:14:42.741 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:14:42.758 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-24 14:14:42.760 [main] GenericDao - Searching for ** with firstName = Grant
+[ERROR] 2019-03-24 14:14:42.985 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:14:43.005 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-24 14:14:43.006 [main] GenericDao - Searching for ** with steamID = 76561197965031622
+[ERROR] 2019-03-24 14:14:43.031 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:14:43.048 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:14:43.057 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:14:43.072 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-24 14:14:43.073 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-03-24 14:14:43.088 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:14:43.109 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-24 14:14:43.109 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-03-24 14:17:48.873 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:17:50.025 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:17:50.039 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:17:50.055 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-24 14:17:50.057 [main] GenericDao - Searching for ** with firstName = Grant
+[ERROR] 2019-03-24 14:17:50.230 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:17:50.251 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-24 14:17:50.252 [main] GenericDao - Searching for ** with steamID = 76561197965031622
+[ERROR] 2019-03-24 14:17:50.288 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:17:50.305 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:17:50.313 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:17:50.327 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-24 14:17:50.328 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-03-24 14:17:50.341 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:17:50.357 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-24 14:17:50.357 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-03-24 14:20:16.975 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:20:18.172 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:20:18.184 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:20:18.203 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-24 14:20:18.208 [main] GenericDao - Searching for ** with firstName = Grant
+[ERROR] 2019-03-24 14:20:18.417 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:20:18.435 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-24 14:20:18.436 [main] GenericDao - Searching for ** with steamID = 76561197965031622
+[ERROR] 2019-03-24 14:20:18.459 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:20:18.484 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:20:18.493 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:20:18.518 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-24 14:20:18.518 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-03-24 14:20:18.540 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 14:20:18.567 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-24 14:20:18.569 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-03-24 15:21:33.612 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 15:21:34.888 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 15:21:34.899 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 15:21:34.914 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-24 15:21:34.916 [main] GenericDao - Searching for ** with firstName = Grant
+[ERROR] 2019-03-24 15:21:35.109 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 15:21:35.134 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-24 15:21:35.136 [main] GenericDao - Searching for ** with steamID = 76561197965031622
+[ERROR] 2019-03-24 15:21:35.161 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 15:21:35.194 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 15:21:35.204 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 15:21:35.220 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-24 15:21:35.220 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-03-24 15:21:35.234 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 15:21:35.252 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-24 15:21:35.252 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-03-24 15:26:42.198 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2019-03-24 15:26:43.357 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2019-03-24 15:26:43.368 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2019-03-24 15:26:43.384 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2019-03-24 15:26:43.386 [main] GenericDao - Searching for ** with firstName = Grant
+[ERROR] 2019-03-24 15:26:43.561 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2019-03-24 15:26:43.585 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2019-03-24 15:26:43.586 [main] GenericDao - Searching for ** with steamID = 76561197965031622
+[ERROR] 2019-03-24 15:26:43.608 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2019-03-24 15:26:43.625 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2019-03-24 15:26:43.632 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2019-03-24 15:26:43.641 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2019-03-24 15:26:43.642 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-03-24 15:26:43.653 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2019-03-24 15:26:43.672 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2019-03-24 15:26:43.673 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-03-24 15:29:12.076 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 15:29:13.296 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 15:29:13.318 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 15:29:13.335 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-24 15:29:13.336 [main] GenericDao - Searching for ** with firstName = Grant
+[ERROR] 2019-03-24 15:29:13.560 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 15:29:13.585 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-24 15:29:13.586 [main] GenericDao - Searching for ** with steamID = 76561197965031622
+[ERROR] 2019-03-24 15:29:13.613 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 15:29:13.641 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 15:29:13.649 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 15:29:13.661 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-24 15:29:13.662 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-03-24 15:29:13.674 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-03-24 15:29:13.688 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-03-24 15:29:13.688 [main] GenericDao - Searching for ** with id = 1
