@@ -23,5 +23,14 @@ display user data on them.   Still researching the best way to use my api for my
 
 Finished Exercise deploying to AWS
 
+### Week 3-11-19 -> 3-18-19
+Not much completed this week, I did add authentication to my project.  I was slightly distracted by my internship
+but I hope to complete more next week.
+### Week 3-19-19 -> 4-1-19
+Competed the SOAP exercises and added my project to AWS.  I also worked on my presentation on hibernate validator
+I have not added it to my project yet, but I made a demo for my presentation.
+
+
+
 
 
