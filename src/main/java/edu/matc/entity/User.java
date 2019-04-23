@@ -1,6 +1,7 @@
 package edu.matc.entity;
 
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -12,8 +13,7 @@ import javax.persistence.*;
 @Entity(name = "User")
 @Table(name = "users")
 public class User {
-
-
+//    private final Logger logger = LogManager.getLogger(this.getClass());
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
@@ -39,6 +39,7 @@ public class User {
      * Instantiates a new User.
      */
     public User() {
+
     }
 
     /**

@@ -11,7 +11,7 @@ import javax.ws.rs.core.Response;
 import java.util.List;
 
 
-@Path("/displayAllUsers")
+@Path("/users")
 public class DisplayAllUsers {
     @GET
     @Produces("text/JSON")
@@ -20,14 +20,10 @@ public class DisplayAllUsers {
         GenericDao userDao = new GenericDao(User.class);
         GenericDao roleDao = new GenericDao(Role.class);
         List<User> allUsers;
-
         List<Role> allRoles;
 
         allUsers = userDao.getAll();
         allRoles = roleDao.getAll();
-
-
-//            allUsers = userDao.getByPropertyLike("id", "1");
 
         String output = "{\"User\" : ";
         for (User user : allUsers) {
@@ -43,6 +39,7 @@ public class DisplayAllUsers {
         }
         roleOutput += "}";
         return Response.status(200).entity(output + "\n" +roleOutput).build();
+
     }
 
 }
