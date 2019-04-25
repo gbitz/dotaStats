@@ -25,7 +25,6 @@ public class CreateUser extends HttpServlet {
         GenericDao userDao = new GenericDao(User.class);
         User newUser = new User();
 
-        System.out.println("!!!!!!!" + req.getParameter("createAccount"));
 
         if (req.getParameter("createAccount").equals("confirm")) {
             System.out.println("!");
@@ -37,7 +36,7 @@ public class CreateUser extends HttpServlet {
         }
 
         userDao.saveOrUpdate(newUser);
-//        RequestDispatcher dispatcher = req.getRequestDispatcher("/userResults.jsp");
-//        dispatcher.forward(req, resp);
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/login.jsp");
+        dispatcher.forward(req, resp);
     }
 }

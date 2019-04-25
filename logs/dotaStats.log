@@ -1,1 +1,16 @@
-[DEBUG] 2019-04-23 15:24:19.315 [http-nio-8080-exec-1] CreateUser - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1null
+[DEBUG] 2019-04-25 17:29:42.389 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-04-25 17:29:42.594 [http-nio-8080-exec-1] PlayerInfo - in PlayerInfo
+[DEBUG] 2019-04-25 17:32:16.811 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-04-25 17:32:17.011 [http-nio-8080-exec-4] PlayerInfo - in PlayerInfo
+[DEBUG] 2019-04-25 17:33:56.467 [http-nio-8080-exec-3] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-04-25 17:33:56.657 [http-nio-8080-exec-3] PlayerInfo - in PlayerInfo
+[DEBUG] 2019-04-25 17:34:02.140 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-04-25 17:34:02.155 [http-nio-8080-exec-4] PlayerInfo - in PlayerInfo
+[DEBUG] 2019-04-25 17:34:07.353 [http-nio-8080-exec-5] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-04-25 17:34:07.357 [http-nio-8080-exec-5] PlayerInfo - in PlayerInfo
+[DEBUG] 2019-04-25 17:36:54.570 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-04-25 17:36:54.794 [http-nio-8080-exec-1] PlayerInfo - in PlayerInfo
+[DEBUG] 2019-04-25 17:39:29.378 [http-nio-8080-exec-10] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-04-25 17:39:29.590 [http-nio-8080-exec-10] PlayerInfo - in PlayerInfo
+[DEBUG] 2019-04-25 17:41:03.999 [http-nio-8080-exec-10] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-04-25 17:41:04.222 [http-nio-8080-exec-10] PlayerInfo - in PlayerInfo
