@@ -1,5 +1,6 @@
 package edu.matc.controller;
 
+import com.opendota.heroStats.HeroStats;
 import edu.matc.entity.User;
 import edu.matc.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
@@ -15,6 +16,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
 
 @WebServlet(
         urlPatterns = {"/signInUser"}
@@ -39,16 +41,24 @@ public class SignInUser extends HttpServlet {
         if (req.getParameter("signIn").equals("confirm")) {
             if (currentUser.getPassword() == matchingUser.get(0).getPassword());
             session.setAttribute("activeUser", matchingUser.get(0));
+            currentUser.setSteamID(matchingUser.get(0).getSteamID());
         }
 
 
         PlayerInfo playerInfo = new PlayerInfo();
+        MatchHistory matchHistory = new MatchHistory();
+        GenerateHeroStats lastMatchHero = new GenerateHeroStats();
+
+
+//        https://api.opendota.com/apps/dota2/images/heroes/slardar_full.png
         try {
             session.setAttribute("userProfile", playerInfo.getPlayerInfo(currentUser.getSteamID()).getProfile());
+            session.setAttribute("userRank", playerInfo.getPlayerInfo(currentUser.getSteamID()).getMmrEstimate().getEstimate());
+            session.setAttribute("matchHistory", matchHistory.getMatches(currentUser.getSteamID()));
+            session.setAttribute("lastMatchHero", lastMatchHero.getHeroStats(matchHistory.getMatches(currentUser.getSteamID()).get(0).getHeroId()));
         } catch (Exception e) {
             e.printStackTrace();
         }
-
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/index.jsp");
         dispatcher.forward(req, resp);

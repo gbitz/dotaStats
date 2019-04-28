@@ -2,6 +2,7 @@ package edu.matc.controller;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.opendota.heroStats.HeroStats;
 import com.opendota.matches.Match;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -17,26 +18,35 @@ import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
 
-public class MatchHistory {
+public class GenerateHeroStats {
 
 
-    public List<Match> getMatches(String steamId) throws Exception {
+    public HeroStats getHeroStats(Integer heroId) throws Exception {
         final Logger logger = LogManager.getLogger(this.getClass());
 
-        List<String> matches;
-        List<Match> userMatches = new ArrayList<>();
+        List<String> heroes;
+        HeroStats returnedHeroStats = new HeroStats();
+        List<HeroStats> heroStats = new ArrayList<>();
         Client client = ClientBuilder.newClient();
         WebTarget target =
-                client.target("https://api.opendota.com/api/players/"+ steamId +"/matches");
+                client.target("https://api.opendota.com/api/heroStats/");
         String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
-        matches = split(response);
-        for (String match : matches) {
+        heroes = split(response);
+        for (String currentHero : heroes) {
             ObjectMapper mapper = new ObjectMapper();
-            Match currentMatch = mapper.readValue(match, Match.class);
-            userMatches.add(currentMatch);
+            HeroStats heroToAdd = mapper.readValue(currentHero, HeroStats.class);
+            heroStats.add(heroToAdd);
 
         }
-        return userMatches;
+
+        for (HeroStats currentHero : heroStats) {
+            if (heroId == currentHero.getHeroId()) {
+                returnedHeroStats = currentHero;
+            }
+        }
+
+        return returnedHeroStats;
+
     }
 
 

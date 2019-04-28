@@ -1,16 +1,77 @@
-[DEBUG] 2019-04-25 17:29:42.389 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = gbitzer
-[DEBUG] 2019-04-25 17:29:42.594 [http-nio-8080-exec-1] PlayerInfo - in PlayerInfo
-[DEBUG] 2019-04-25 17:32:16.811 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = gbitzer
-[DEBUG] 2019-04-25 17:32:17.011 [http-nio-8080-exec-4] PlayerInfo - in PlayerInfo
-[DEBUG] 2019-04-25 17:33:56.467 [http-nio-8080-exec-3] GenericDao - Searching for ** with userName = gbitzer
-[DEBUG] 2019-04-25 17:33:56.657 [http-nio-8080-exec-3] PlayerInfo - in PlayerInfo
-[DEBUG] 2019-04-25 17:34:02.140 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = gbitzer
-[DEBUG] 2019-04-25 17:34:02.155 [http-nio-8080-exec-4] PlayerInfo - in PlayerInfo
-[DEBUG] 2019-04-25 17:34:07.353 [http-nio-8080-exec-5] GenericDao - Searching for ** with userName = gbitzer
-[DEBUG] 2019-04-25 17:34:07.357 [http-nio-8080-exec-5] PlayerInfo - in PlayerInfo
-[DEBUG] 2019-04-25 17:36:54.570 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = gbitzer
-[DEBUG] 2019-04-25 17:36:54.794 [http-nio-8080-exec-1] PlayerInfo - in PlayerInfo
-[DEBUG] 2019-04-25 17:39:29.378 [http-nio-8080-exec-10] GenericDao - Searching for ** with userName = gbitzer
-[DEBUG] 2019-04-25 17:39:29.590 [http-nio-8080-exec-10] PlayerInfo - in PlayerInfo
-[DEBUG] 2019-04-25 17:41:03.999 [http-nio-8080-exec-10] GenericDao - Searching for ** with userName = gbitzer
-[DEBUG] 2019-04-25 17:41:04.222 [http-nio-8080-exec-10] PlayerInfo - in PlayerInfo
+[DEBUG] 2019-04-27 13:04:54.823 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-04-27 13:23:17.760 [http-nio-8080-exec-10] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-04-27 13:44:53.421 [http-nio-8080-exec-10] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-04-27 14:02:17.976 [http-nio-8080-exec-10] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-04-27 14:03:40.981 [http-nio-8080-exec-10] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-04-27 14:07:17.941 [http-nio-8080-exec-10] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-04-27 14:08:45.391 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-04-27 14:34:20.312 [http-nio-8080-exec-10] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-04-27 14:35:38.157 [http-nio-8080-exec-10] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-04-27 14:37:53.135 [http-nio-8080-exec-9] GenericDao - Searching for ** with userName = test
+[DEBUG] 2019-04-27 14:40:01.234 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = kenny
+[DEBUG] 2019-04-27 14:40:21.227 [http-nio-8080-exec-5] GenericDao - Searching for ** with userName = kenny
+[DEBUG] 2019-04-27 14:40:23.601 [http-nio-8080-exec-6] GenericDao - Searching for ** with userName = kenny
+[DEBUG] 2019-04-27 14:40:25.759 [http-nio-8080-exec-7] GenericDao - Searching for ** with userName = kenny
+[DEBUG] 2019-04-27 14:47:35.656 [http-nio-8080-exec-2] GenericDao - Searching for ** with userName = kenny
+[DEBUG] 2019-04-27 14:52:40.716 [http-nio-8080-exec-2] GenericDao - Searching for ** with userName = kenny
+[DEBUG] 2019-04-27 15:03:38.947 [http-nio-8080-exec-3] GenericDao - Searching for ** with userName = kenny
+[DEBUG] 2019-04-27 15:18:26.375 [http-nio-8080-exec-10] GenericDao - Searching for ** with userName = kenny
+[DEBUG] 2019-04-27 15:24:53.138 [http-nio-8080-exec-2] GenericDao - Searching for ** with userName = kenny
+[DEBUG] 2019-04-27 15:26:22.538 [http-nio-8080-exec-2] GenericDao - Searching for ** with userName = kenny
+[DEBUG] 2019-04-27 15:32:27.715 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = kenny
+[DEBUG] 2019-04-27 15:32:27.935 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 36111269
+[DEBUG] 2019-04-27 15:32:28.656 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 36111269
+[DEBUG] 2019-04-27 15:34:42.433 [http-nio-8080-exec-2] GenericDao - Searching for ** with userName = kenny
+[DEBUG] 2019-04-27 15:34:42.641 [http-nio-8080-exec-2] PlayerInfo - current user steamId : 36111269
+[DEBUG] 2019-04-27 15:34:43.538 [http-nio-8080-exec-2] PlayerInfo - current user steamId : 36111269
+[DEBUG] 2019-04-28 13:02:37.366 [http-nio-8080-exec-3] GenericDao - Searching for ** with userName = kenny
+[DEBUG] 2019-04-28 13:02:37.683 [http-nio-8080-exec-3] PlayerInfo - current user steamId : 36111269
+[DEBUG] 2019-04-28 13:02:38.775 [http-nio-8080-exec-3] PlayerInfo - current user steamId : 36111269
+[DEBUG] 2019-04-28 13:05:19.966 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = kenny
+[DEBUG] 2019-04-28 13:05:20.160 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 36111269
+[DEBUG] 2019-04-28 13:05:20.940 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 36111269
+[DEBUG] 2019-04-28 13:06:54.735 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = kenny
+[DEBUG] 2019-04-28 13:06:55.059 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 36111269
+[DEBUG] 2019-04-28 13:06:55.968 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 36111269
+[DEBUG] 2019-04-28 13:11:55.526 [http-nio-8080-exec-10] GenericDao - Searching for ** with userName = kenny
+[DEBUG] 2019-04-28 13:11:55.756 [http-nio-8080-exec-10] PlayerInfo - current user steamId : 36111269
+[DEBUG] 2019-04-28 13:11:56.662 [http-nio-8080-exec-10] PlayerInfo - current user steamId : 36111269
+[DEBUG] 2019-04-28 13:13:02.874 [http-nio-8080-exec-10] GenericDao - Searching for ** with userName = kenny
+[DEBUG] 2019-04-28 13:13:03.061 [http-nio-8080-exec-10] PlayerInfo - current user steamId : 36111269
+[DEBUG] 2019-04-28 13:13:03.831 [http-nio-8080-exec-10] PlayerInfo - current user steamId : 36111269
+[DEBUG] 2019-04-28 13:14:50.316 [http-nio-8080-exec-10] GenericDao - Searching for ** with userName = kenny
+[DEBUG] 2019-04-28 13:14:50.556 [http-nio-8080-exec-10] PlayerInfo - current user steamId : 36111269
+[DEBUG] 2019-04-28 13:14:51.372 [http-nio-8080-exec-10] PlayerInfo - current user steamId : 36111269
+[DEBUG] 2019-04-28 13:16:06.280 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = kenny
+[DEBUG] 2019-04-28 13:16:06.285 [http-nio-8080-exec-4] PlayerInfo - current user steamId : 36111269
+[DEBUG] 2019-04-28 13:16:06.573 [http-nio-8080-exec-4] PlayerInfo - current user steamId : 36111269
+[DEBUG] 2019-04-28 13:16:41.616 [http-nio-8080-exec-10] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-04-28 13:16:41.813 [http-nio-8080-exec-10] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-04-28 13:16:42.672 [http-nio-8080-exec-10] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-04-28 13:18:58.129 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-04-28 13:18:58.332 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-04-28 13:18:59.167 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-04-28 13:19:23.191 [http-nio-8080-exec-7] GenericDao - Searching for ** with userName = kenny
+[DEBUG] 2019-04-28 13:19:23.195 [http-nio-8080-exec-7] PlayerInfo - current user steamId : 36111269
+[DEBUG] 2019-04-28 13:19:23.499 [http-nio-8080-exec-7] PlayerInfo - current user steamId : 36111269
+[DEBUG] 2019-04-28 13:21:28.142 [http-nio-8080-exec-10] GenericDao - Searching for ** with userName = kenny
+[DEBUG] 2019-04-28 13:21:28.375 [http-nio-8080-exec-10] PlayerInfo - current user steamId : 36111269
+[DEBUG] 2019-04-28 13:21:29.213 [http-nio-8080-exec-10] PlayerInfo - current user steamId : 36111269
+[DEBUG] 2019-04-28 13:26:58.876 [http-nio-8080-exec-5] GenericDao - Searching for ** with userName = kenny
+[DEBUG] 2019-04-28 13:26:58.900 [http-nio-8080-exec-5] PlayerInfo - current user steamId : 36111269
+[DEBUG] 2019-04-28 13:26:59.248 [http-nio-8080-exec-5] PlayerInfo - current user steamId : 36111269
+[DEBUG] 2019-04-28 13:27:33.122 [http-nio-8080-exec-8] GenericDao - Searching for ** with userName = kenny
+[DEBUG] 2019-04-28 13:27:33.127 [http-nio-8080-exec-8] PlayerInfo - current user steamId : 36111269
+[DEBUG] 2019-04-28 13:27:33.485 [http-nio-8080-exec-8] PlayerInfo - current user steamId : 36111269
+[DEBUG] 2019-04-28 13:28:03.472 [http-nio-8080-exec-10] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-04-28 13:28:03.476 [http-nio-8080-exec-10] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-04-28 13:28:03.764 [http-nio-8080-exec-10] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-04-28 13:30:40.746 [http-nio-8080-exec-5] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-04-28 13:30:40.750 [http-nio-8080-exec-5] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-04-28 13:30:41.033 [http-nio-8080-exec-5] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-04-28 13:30:51.305 [http-nio-8080-exec-8] GenericDao - Searching for ** with userName = kenny
+[DEBUG] 2019-04-28 13:30:51.308 [http-nio-8080-exec-8] PlayerInfo - current user steamId : 36111269
+[DEBUG] 2019-04-28 13:30:51.557 [http-nio-8080-exec-8] PlayerInfo - current user steamId : 36111269
+[DEBUG] 2019-04-28 13:31:31.549 [http-nio-8080-exec-2] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-04-28 13:31:31.556 [http-nio-8080-exec-2] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-04-28 13:31:31.802 [http-nio-8080-exec-2] PlayerInfo - current user steamId : 4765894
