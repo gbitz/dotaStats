@@ -7,16 +7,26 @@
   <login-config>
     <auth-method>FORM</auth-method>
     <form-login-config>
-      <form-login-page>/displayUserLogin.jsp</form-login-page>
+      <form-login-page>/login.jsp</form-login-page>
       <form-error-page>/loginFailure.jsp</form-error-page>
     </form-login-config>
   </login-config>
 
-  <!-- Protect everything within the "investing" directory. -->
+  <!-- Protect everything -->
   <security-constraint>
     <web-resource-collection>
-      <web-resource-name>userDisplay</web-resource-name>
-      <url-pattern>/search.jsp</url-pattern>
+      <web-resource-name>landing</web-resource-name>
+      <url-pattern>/signedIn.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>user</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>adminPage</web-resource-name>
+      <url-pattern>/admin.jsp</url-pattern>
     </web-resource-collection>
     <auth-constraint>
       <role-name>admin</role-name>
@@ -24,6 +34,9 @@
   </security-constraint>
 
 
+  <security-role>
+    <role-name>user</role-name>
+  </security-role>
 
   <security-role>
     <role-name>admin</role-name>

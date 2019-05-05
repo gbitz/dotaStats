@@ -1,5 +1,6 @@
 package edu.matc.controller;
 
+import edu.matc.entity.Role;
 import edu.matc.entity.User;
 import edu.matc.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
@@ -23,19 +24,26 @@ public class CreateUser extends HttpServlet {
         final Logger logger = LogManager.getLogger(this.getClass());
 
         GenericDao userDao = new GenericDao(User.class);
+        GenericDao roleDao = new GenericDao(Role.class);
+
         User newUser = new User();
 
-
         if (req.getParameter("createAccount").equals("confirm")) {
-            System.out.println("!");
             newUser.setUserName(req.getParameter("userName"));
             newUser.setFirstName(req.getParameter("firstName"));
             newUser.setLastName(req.getParameter("lastName"));
             newUser.setPassword(req.getParameter("password"));
             newUser.setSteamID(req.getParameter("steamID"));
+            userDao.saveOrUpdate(newUser);
+
+
+            Role newRole = new Role("user", newUser);
+            newRole.setUsername(req.getParameter("userName"));
+            roleDao.saveOrUpdate(newRole);
+
+//
         }
 
-        userDao.saveOrUpdate(newUser);
         RequestDispatcher dispatcher = req.getRequestDispatcher("/login.jsp");
         dispatcher.forward(req, resp);
     }

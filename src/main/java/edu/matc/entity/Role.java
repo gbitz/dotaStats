@@ -20,7 +20,14 @@ public class Role {
     @Column(name = "role_title")
     private String role;
 
+
+    @Column(name = "user_name")
+    private String username;
+
     @ManyToOne
+    @JoinColumn(name = "user_id",
+            foreignKey = @ForeignKey(name = "roles_users_id_fk")
+    )
     private User user;
 
     /**
@@ -52,6 +59,14 @@ public class Role {
         this.id = id;
     }
 
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
     /**
      * Gets role.
      *

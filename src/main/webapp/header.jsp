@@ -13,14 +13,14 @@
                 <a class="nav-link" href="#">page2</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">page3</a>
+                <a class="nav-link" href="admin.jsp">admin</a>
             </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <c:choose>
                 <c:when test="${activeUser.id == null}">
                     <li><a href="signup.jsp"><span class="fa fa-user-plus"></span> Sign Up </a></li>
-                    <li><a href="login.jsp"><span class="fa fa-sign-in"></span> Login</a></li>
+                    <li><a href="signedIn.jsp"><span class="fa fa-sign-in"></span> Login</a></li>
                 </c:when>
                 <c:otherwise>
                     <li><a href="logoutUser"><span class="fa fa-sign-out"></span> Logout</a></li>

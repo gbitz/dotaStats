@@ -1,5 +1,6 @@
 package edu.matc.controller;
 
+import edu.matc.entity.Role;
 import edu.matc.entity.User;
 import edu.matc.persistence.GenericDao;
 
@@ -10,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.annotation.*;
 import java.io.IOException;
+import java.util.List;
 
 
 /**
@@ -26,11 +28,31 @@ public class UserSearch extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         GenericDao userDao = new GenericDao(User.class);
+        GenericDao roleDao = new GenericDao(Role.class);
+        List<Role> admins;
         if (req.getParameter("submit").equals("displayUsers")) {
             req.setAttribute("users", userDao.getAll());
         }
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/userResults.jsp");
+        if (req.getParameter("submit").equals("searchUsers")) {
+            req.setAttribute("users", userDao.getByPropertyEqual("userName", req.getParameter("userName")));
+        }
+
+        List<User> users = (List<User>) req.getAttribute("users");
+        for (User user: users) {
+//            req.setAttribute("adminStatus", false);
+            admins = roleDao.getByPropertyEqual("role", "admin");
+            req.setAttribute("admins", admins);
+            for (Role admin : admins) {
+                if(admin.getUsername().equals(user.getUserName())){
+
+                }
+            }
+
+
+        }
+
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/admin.jsp");
         dispatcher.forward(req, resp);
     }
 }

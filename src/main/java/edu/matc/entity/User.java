@@ -5,6 +5,8 @@ import org.apache.logging.log4j.Logger;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Contains all information related to User generation
@@ -34,6 +36,9 @@ public class User {
 
     @Column(name = "steamid")
     private String steamID;
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<Role> roles = new HashSet<>();
 
     /**
      * Instantiates a new User.
@@ -166,6 +171,28 @@ public class User {
     public void setSteamID(String steamID) {
         this.steamID = steamID;
     }
+
+
+    /**
+     * Add role.
+     *
+     * @param role the role
+     */
+    public void addRole(Role role) {
+        roles.add(role);
+        role.setUser(this);
+    }
+
+    /**
+     * Remove role.
+     *
+     * @param role the role
+     */
+    public void removeRole(Role role) {
+        roles.remove(role);
+        role.setUser(null);
+    }
+
 
     @Override
     public String toString() {

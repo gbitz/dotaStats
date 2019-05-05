@@ -1,6 +1,14 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@include file="head.jsp"%>
 <html>
+    <style>
+        .heroImg {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            width: 150px;
+        }
+    </style>
     <div class="container offset-md-2 col-md-8">
         <%@include file="header.jsp"%>
         <body>
@@ -23,15 +31,39 @@
                     <div class="card-header">
                         <img src="${userProfile.avatarfull}" alt="Profile Image">
                         <h3>${activeUser.userName}'s Summary</h3>
+                        <h3>MMR : ${userRank}</h3>
+
                     </div>
                     <div class="card-body">
                         <div class="card">
                             <div class="card-header">
                                 Last Match Played
                             </div>
-                            <div>
-                                    ID: ${activeUser.steamID}
-
+                            <div class="container">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                        <tr>
+                                            <th>Hero</th>
+                                            <th>Match ID</th>
+                                            <th>Duration (Min)</th>
+                                            <th>Kills</th>
+                                            <th>Deaths</th>
+                                            <th>Assists</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td><img class="heroImg" size="50%" src="https://api.opendota.com${lastMatchHero.img}"></td>
+                                            <td>${matchHistory.get(0).matchId}</td>
+                                            <td>${matchHistory.get(0).duration / 60}</td>
+                                            <td>${matchHistory.get(0).kills}</td>
+                                            <td>${matchHistory.get(0).deaths}</td>
+                                            <td>${matchHistory.get(0).assists}</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                         <div class="card">
