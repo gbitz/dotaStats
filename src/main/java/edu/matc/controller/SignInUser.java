@@ -40,6 +40,10 @@ public class SignInUser extends HttpServlet {
 
             session.setAttribute("activeUser", matchingUser.get(0));
             currentUser.setSteamID(matchingUser.get(0).getSteamID());
+<<<<<<< HEAD
+=======
+        }
+>>>>>>> 0029aa17746a38df3062093cb845aafbe4013981
 
 
         PlayerInfo playerInfo = new PlayerInfo();
