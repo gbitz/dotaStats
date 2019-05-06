@@ -27,6 +27,7 @@ public class GenerateHeroStats {
         List<String> heroes;
         HeroStats returnedHeroStats = new HeroStats();
         List<HeroStats> heroStats = new ArrayList<>();
+
         Client client = ClientBuilder.newClient();
         WebTarget target =
                 client.target("https://api.opendota.com/api/heroStats/");
