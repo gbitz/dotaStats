@@ -13,3 +13,18 @@
 3/18 - Added Authentication to project (4hours)
 
 3/31 - Deployed project to AWS(5 hours), Completed SOAP exercises(4hours), Completed Hibernated Validator Project(5hours) 
+
+4/1 - Started team project but only created repo (2hours)
+
+4/7 - Came up with features for project, could not find api but found data and dumped to 
+        database. (6hours)
+      Completed Mulithreading exercise (2hours)
+4/15- Completed Feature using location api and my database. (7hours)
+
+4/21 deployed to aws and made sure our team project was working properly. (7hours)
+
+4/24 made progress on my project. added proper authentication, and was able to gain more
+    information from api (8hours)
+    
+5/5 Added more stying to project, added match details but still need to organise info (8 hours) 
+      

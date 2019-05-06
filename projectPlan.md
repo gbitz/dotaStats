@@ -52,12 +52,10 @@
 **Week 11 Team project**
 - Journal 
 
-**Week 12**
+**Week 12 Team project**
 -Journal
--Create todo's
 
-**Week 13**
--complete todos
+**Week 13 Team Project**
 -Prepare for code review
 -Code quality check
 -Review rubric
@@ -65,6 +63,7 @@
 
 **Week 14**
 - Create final presentation
+-deploy to aws
 -journal
 
 **Week 15**

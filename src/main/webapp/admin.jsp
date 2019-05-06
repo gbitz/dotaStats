@@ -8,9 +8,16 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="head.jsp"%>
-<div class="container offset-md-2 col-md-8">
-    <%@include file="header.jsp"%>
-    <body>
+<%@include file="header.jsp"%>
+
+<!-- Masthead -->
+<header class="masthead">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center justify-content-center text-center">
+            <div class="col-lg-10 align-self-end">
+                <h1 class="text-uppercase text-white font-weight-bold">Admin</h1>
+                <hr class="divider my-4">
+            </div>
             <div class="card">
                 <div class="card-header">
                     Admin
@@ -18,59 +25,56 @@
                 <div class="card-body">
                     <c:choose>
 
-                    <c:when test="${users == null}" >
-                    <form action="userSearch" class="form-inline">
-                        <div class="form-group">
-                            <label for="userName">Username</label>
-                            <input class="form-control" id="userName" placeholder="" name="userName">
-                        </div>
-                        <button type="submit" name="submit" value="searchUsers" class="btn btn-primary">Search By Username</button>
-                        <button type="submit" name="submit" value="displayUsers" class="btn btn-primary">View all users</button>
-                    </form>
-                    </c:when>
-                    <c:otherwise>
+                        <c:when test="${users == null}" >
+                            <form action="userSearch" class="form-inline">
+                                <div class="form-group">
+                                    <label for="userName">Username</label>
+                                    <input class="form-control" id="userName" placeholder="" name="userName">
+                                </div>
+                                <button type="submit" name="submit" value="searchUsers" class="btn btn-primary">Search By Username</button>
+                                <button type="submit" name="submit" value="displayUsers" class="btn btn-primary">View all users</button>
+                            </form>
+                        </c:when>
+                        <c:otherwise>
 
-                        <div class="card">
-                            <div class="card-header">
-                                Users
-                            </div>
-                            <div class="container">
-                                <div class="table-responsive">
-                                    <table class="table">
-                                        <thead>
-                                        <th>Name</th>
-                                        <th>User Name</th>
-                                        <th>Steam Id</th>
-                                        </thead>
-                                        <c:set var="admins" value="${admins}"></c:set>
-                                        <c:forEach var="user" items="${users}">
-                                        <tr>
-                                            <td>${user.firstName} ${user.lastName}</td>
-                                            <td>${user.userName}</td>
-                                            <td>${user.steamID}</td>
-                                            <td>${user.steamID}</td>
-                                            <form action="createAdmin">
-                                                <input hidden name="newAdminName" value="${user.userName}">
-                                                <input hidden name="newAdminUser" value="${user}">
-                                                <td><button name="createAdmin" value="createAdmin" action="CreateAdmin">Make Admin</button></td>
-                                            </form>
-                                            <form action="deleteUser">
-                                                <input hidden value="${user.userName}">
-                                                <td><button name="deleteUser" value="deleteUser" action="DeleteUser">Delete User</button></td>
-                                            </form>
-                                        </tr>
-                                        </c:forEach>
-                                    </table>
+                            <div class="card">
+                                <div class="card-header">
+                                    Users
+                                </div>
+                                <div class="container">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                            <th>Name</th>
+                                            <th>User Name</th>
+                                            <th>Steam Id</th>
+                                            </thead>
+                                            <c:set var="admins" value="${admins}"></c:set>
+                                            <c:forEach var="user" items="${users}">
+                                                <tr>
+                                                    <td>${user.firstName} ${user.lastName}</td>
+                                                    <td>${user.userName}</td>
+                                                    <td>${user.steamID}</td>
+                                                    <td>${user.steamID}</td>
+                                                    <form action="createAdmin">
+                                                        <input hidden name="newAdminName" value="${user.userName}">
+                                                        <input hidden name="newAdminUser" value="${user}">
+                                                        <td><button name="createAdmin" value="createAdmin" action="CreateAdmin">Make Admin</button></td>
+                                                    </form>
+                                                    <form action="deleteUser">
+                                                        <input hidden value="${user.userName}">
+                                                        <td><button name="deleteUser" value="deleteUser" action="DeleteUser">Delete User</button></td>
+                                                    </form>
+                                                </tr>
+                                            </c:forEach>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </c:otherwise>
+                        </c:otherwise>
                     </c:choose>
                 </div>
             </div>
-    </body>
-</div>
-<body>
-
-</body>
-</html>
+        </div>
+    </div>
+</header>

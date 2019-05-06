@@ -13,3 +13,34 @@ history.
 
 * [User Stories](designDocuments/userStories.md)
 * [Screen Design](designDocuments/screens.md)
+
+### Project Technologies/Techniques
+
+* Security/roles
+    * Tomcat's JDBC Realm Authentication
+    * Admin role: create other admins, delete user
+    * User role: View stats, Save Fav Matches
+* Database
+    * Mysql
+    * Store Users/Roles/Favorite Matches
+* ORM
+    * Hibernate
+*CSS
+    * Bootstrap
+* Data Validation
+    * Hibernate Validator
+*Logging
+    * Log4j
+* Hosting
+    * AWS
+* Additional Tools
+    * OpenDotaApi
+* Unit Testing
+    *JUnit - 80% Code Coverage
+    
+### [Project Plan](ProjectPlan.md)
+
+### [Development Journal](Journal.md)
+    
+    
+

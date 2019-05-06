@@ -42,6 +42,7 @@ public class SignInUser extends HttpServlet {
             currentUser.setSteamID(matchingUser.get(0).getSteamID());
 
 
+
         PlayerInfo playerInfo = new PlayerInfo();
         MatchHistory matchHistory = new MatchHistory();
         GenerateHeroStats lastMatchHero = new GenerateHeroStats();
