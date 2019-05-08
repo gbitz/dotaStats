@@ -36,7 +36,7 @@ history.
 * Additional Tools
     * OpenDotaApi
 * Unit Testing
-    *JUnit - 80% Code Coverage
+    * JUnit - 80% Code Coverage
     
 ### [Project Plan](ProjectPlan.md)
 

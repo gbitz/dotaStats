@@ -35,22 +35,6 @@ public class GenerateMatchDetail {
         WebTarget target =
                 client.target("https://api.opendota.com/api/matches/" + matchId);
         String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
-//        matchDetailsString = split(response);
-
-
-//        for (String currentMatchDetail : matchDetailsString) {
-//            System.out.println("1");
-//            ObjectMapper mapper = new ObjectMapper();
-//            System.out.println("2");
-//            MatchDetail matchToAdd = mapper.readValue(currentMatchDetail, MatchDetail.class);
-//            System.out.println("3");
-//            matchDetails.add(matchToAdd);
-//            System.out.println("4");
-//
-//        }
-//        System.out.println("!!!!");
-
-//        System.out.println(matchDetails);
         ObjectMapper mapper = new ObjectMapper();
         mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
         matchDetail = mapper.readValue(response, MatchDetail.class);

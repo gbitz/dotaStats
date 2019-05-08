@@ -40,7 +40,6 @@ public class UserSearch extends HttpServlet {
 
         List<User> users = (List<User>) req.getAttribute("users");
         for (User user: users) {
-//            req.setAttribute("adminStatus", false);
             admins = roleDao.getByPropertyEqual("role", "admin");
             req.setAttribute("admins", admins);
             for (Role admin : admins) {

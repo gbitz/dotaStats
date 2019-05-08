@@ -41,7 +41,7 @@ public class CreateUser extends HttpServlet {
             newRole.setUsername(req.getParameter("userName"));
             roleDao.saveOrUpdate(newRole);
 
-//
+
         }
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/login.jsp");

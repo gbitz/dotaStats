@@ -35,11 +35,6 @@ public class ShowMatchDetail extends HttpServlet {
 
         GenerateMatchDetail generateMatchDetail = new GenerateMatchDetail();
         try {
-            System.out.println(generateMatchDetail.getMatchDetail(Long.parseLong(req.getParameter("matchIdDetail"))).getPlayers().get(3).getGoldPerMin());
-            System.out.println(generateMatchDetail.getMatchDetail(Long.parseLong(req.getParameter("matchIdDetail"))).getPlayers().get(3).getTotalGold());
-            System.out.println(generateMatchDetail.getMatchDetail(Long.parseLong(req.getParameter("matchIdDetail"))).getPlayers().get(3).getPersonaname());
-            System.out.println(generateMatchDetail.getMatchDetail(Long.parseLong(req.getParameter("matchIdDetail"))).getPlayers().get(3).getKills());
-            System.out.println(generateMatchDetail.getMatchDetail(Long.parseLong(req.getParameter("matchIdDetail"))).getPlayers().get(3).getXpPerMin());
             List<PlayersItem> players = generateMatchDetail.getMatchDetail(Long.parseLong(req.getParameter("matchIdDetail"))).getPlayers();
             session.setAttribute("players", generateMatchDetail.getMatchDetail(Long.parseLong(req.getParameter("matchIdDetail"))).getPlayers());
             for (PlayersItem player : players){
@@ -48,7 +43,7 @@ public class ShowMatchDetail extends HttpServlet {
 
 
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.error("show match detail error" + e);
         }
 
 
