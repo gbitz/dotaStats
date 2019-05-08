@@ -32,15 +32,41 @@ public class ShowMatchDetail extends HttpServlet {
         HttpSession session = req.getSession();
         logger.debug("User:" + req.getRemoteUser());
         GenericDao userDao = new GenericDao(User.class);
-
+        MatchDetail matchDetail = new MatchDetail();
         GenerateMatchDetail generateMatchDetail = new GenerateMatchDetail();
-        try {
-            List<PlayersItem> players = generateMatchDetail.getMatchDetail(Long.parseLong(req.getParameter("matchIdDetail"))).getPlayers();
-            session.setAttribute("players", generateMatchDetail.getMatchDetail(Long.parseLong(req.getParameter("matchIdDetail"))).getPlayers());
-            for (PlayersItem player : players){
-                player.getHeroId();
-            }
+        List<PlayersItem> radiant = new ArrayList<>();
+        List<PlayersItem> dire = new ArrayList<>();
 
+        //Generate Hero Stats
+        GenerateHeroStats generateHeroStats = new GenerateHeroStats();
+        HeroStats heroStats = new HeroStats();
+
+        //Generate Match Detail
+        try {
+            matchDetail = generateMatchDetail.getMatchDetail(Long.parseLong(req.getParameter("matchIdDetail")));
+        } catch (Exception e) {
+            logger.error("error generating match detail: " + e);
+        }
+
+        //Generate Player Stats
+        try {
+            List<PlayersItem> players = matchDetail.getPlayers();
+            for (PlayersItem player : players){
+                player.setHeroImg(generateHeroStats.getHeroStats(player.getHeroId()).getImg());
+
+                if(player.getPersonaname() == null) {
+                    player.setPersonaname("*Private Account*");
+                }
+
+                if (player.isIsRadiant() == true) {
+                    radiant.add(player);
+                } else {
+                    dire.add(player);
+                }
+            }
+            session.setAttribute("radiant", radiant);
+            session.setAttribute("dire", dire);
+            session.setAttribute("generalDetail", matchDetail);
 
         } catch (Exception e) {
             logger.error("show match detail error" + e);

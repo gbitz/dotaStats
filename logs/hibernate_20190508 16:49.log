@@ -1,0 +1,937 @@
+[DEBUG] 2019-05-08 16:49:23.682 [http-nio-8080-exec-4] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2019-05-08 16:49:23.684 [http-nio-8080-exec-4] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2019-05-08 16:49:23.688 [http-nio-8080-exec-4] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[INFO ] 2019-05-08 16:49:23.764 [http-nio-8080-exec-4] Version - HHH000412: Hibernate Core {5.2.12.Final}
+[INFO ] 2019-05-08 16:49:23.766 [http-nio-8080-exec-4] Environment - HHH000206: hibernate.properties not found
+[DEBUG] 2019-05-08 16:49:23.832 [http-nio-8080-exec-4] LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+[DEBUG] 2019-05-08 16:49:23.832 [http-nio-8080-exec-4] LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+[DEBUG] 2019-05-08 16:49:23.856 [http-nio-8080-exec-4] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2019-05-08 16:49:24.032 [http-nio-8080-exec-4] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2019-05-08 16:49:24.057 [http-nio-8080-exec-4] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[INFO ] 2019-05-08 16:49:24.068 [http-nio-8080-exec-4] Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[DEBUG] 2019-05-08 16:49:24.094 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@36e35b82
+[DEBUG] 2019-05-08 16:49:24.094 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@36e35b82
+[DEBUG] 2019-05-08 16:49:24.094 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@36e35b82
+[DEBUG] 2019-05-08 16:49:24.095 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@6ad09cf7
+[DEBUG] 2019-05-08 16:49:24.096 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@34e82898
+[DEBUG] 2019-05-08 16:49:24.097 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@184be4b1
+[DEBUG] 2019-05-08 16:49:24.098 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@37fe2271
+[DEBUG] 2019-05-08 16:49:24.098 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@37fe2271
+[DEBUG] 2019-05-08 16:49:24.098 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@37fe2271
+[DEBUG] 2019-05-08 16:49:24.099 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@38e69afa
+[DEBUG] 2019-05-08 16:49:24.099 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@38e69afa
+[DEBUG] 2019-05-08 16:49:24.099 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@38e69afa
+[DEBUG] 2019-05-08 16:49:24.101 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@70a57d15
+[DEBUG] 2019-05-08 16:49:24.101 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@70a57d15
+[DEBUG] 2019-05-08 16:49:24.101 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@70a57d15
+[DEBUG] 2019-05-08 16:49:24.102 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@3777c6da
+[DEBUG] 2019-05-08 16:49:24.102 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@3777c6da
+[DEBUG] 2019-05-08 16:49:24.102 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@3777c6da
+[DEBUG] 2019-05-08 16:49:24.103 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@842ffb8
+[DEBUG] 2019-05-08 16:49:24.103 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@842ffb8
+[DEBUG] 2019-05-08 16:49:24.103 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@842ffb8
+[DEBUG] 2019-05-08 16:49:24.105 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@565bfc17
+[DEBUG] 2019-05-08 16:49:24.105 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@565bfc17
+[DEBUG] 2019-05-08 16:49:24.105 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@565bfc17
+[DEBUG] 2019-05-08 16:49:24.106 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@51cf21de
+[DEBUG] 2019-05-08 16:49:24.106 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@51cf21de
+[DEBUG] 2019-05-08 16:49:24.106 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@51cf21de
+[DEBUG] 2019-05-08 16:49:24.108 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@7897b5a8
+[DEBUG] 2019-05-08 16:49:24.108 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@7897b5a8
+[DEBUG] 2019-05-08 16:49:24.109 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@4b7fd8a2
+[DEBUG] 2019-05-08 16:49:24.109 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@4b7fd8a2
+[DEBUG] 2019-05-08 16:49:24.110 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@61c431b0
+[DEBUG] 2019-05-08 16:49:24.110 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@61c431b0
+[DEBUG] 2019-05-08 16:49:24.111 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@73e0a5e
+[DEBUG] 2019-05-08 16:49:24.111 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@56925bfe
+[DEBUG] 2019-05-08 16:49:24.112 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@3dc1b831
+[DEBUG] 2019-05-08 16:49:24.112 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@3dc1b831
+[DEBUG] 2019-05-08 16:49:24.114 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@6182ee62
+[DEBUG] 2019-05-08 16:49:24.114 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@6182ee62
+[DEBUG] 2019-05-08 16:49:24.129 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@49a4071a
+[DEBUG] 2019-05-08 16:49:24.129 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@49a4071a
+[DEBUG] 2019-05-08 16:49:24.131 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@207c74d1
+[DEBUG] 2019-05-08 16:49:24.131 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@207c74d1
+[DEBUG] 2019-05-08 16:49:24.133 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@f9f4323
+[DEBUG] 2019-05-08 16:49:24.133 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@f9f4323
+[DEBUG] 2019-05-08 16:49:24.135 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@15d4df3
+[DEBUG] 2019-05-08 16:49:24.135 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@15d4df3
+[DEBUG] 2019-05-08 16:49:24.136 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@696a16fd
+[DEBUG] 2019-05-08 16:49:24.136 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@696a16fd
+[DEBUG] 2019-05-08 16:49:24.138 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@6a314281
+[DEBUG] 2019-05-08 16:49:24.138 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@6a314281
+[DEBUG] 2019-05-08 16:49:24.141 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@4da33d34
+[DEBUG] 2019-05-08 16:49:24.141 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@4da33d34
+[DEBUG] 2019-05-08 16:49:24.144 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@7203685a
+[DEBUG] 2019-05-08 16:49:24.146 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@7203685a
+[DEBUG] 2019-05-08 16:49:24.147 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@4bdabdd8
+[DEBUG] 2019-05-08 16:49:24.147 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@4bdabdd8
+[DEBUG] 2019-05-08 16:49:24.149 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@4791603f
+[DEBUG] 2019-05-08 16:49:24.149 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@4791603f
+[DEBUG] 2019-05-08 16:49:24.149 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@4791603f
+[DEBUG] 2019-05-08 16:49:24.152 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@5fbe482a
+[DEBUG] 2019-05-08 16:49:24.153 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@4b5c9912
+[DEBUG] 2019-05-08 16:49:24.153 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@4b5c9912
+[DEBUG] 2019-05-08 16:49:24.153 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@4b5c9912
+[DEBUG] 2019-05-08 16:49:24.154 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@2ee8b099
+[DEBUG] 2019-05-08 16:49:24.155 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@649445bc
+[DEBUG] 2019-05-08 16:49:24.156 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@649445bc
+[DEBUG] 2019-05-08 16:49:24.157 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@4f3705a5
+[DEBUG] 2019-05-08 16:49:24.157 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@4f3705a5
+[DEBUG] 2019-05-08 16:49:24.158 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@294ee3e3
+[DEBUG] 2019-05-08 16:49:24.158 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@294ee3e3
+[DEBUG] 2019-05-08 16:49:24.159 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@5c73cf18
+[DEBUG] 2019-05-08 16:49:24.159 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@5c73cf18
+[DEBUG] 2019-05-08 16:49:24.161 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@28b4c92b
+[DEBUG] 2019-05-08 16:49:24.161 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@28b4c92b
+[DEBUG] 2019-05-08 16:49:24.161 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@11261231
+[DEBUG] 2019-05-08 16:49:24.162 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@65452da6
+[DEBUG] 2019-05-08 16:49:24.162 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@65452da6
+[DEBUG] 2019-05-08 16:49:24.162 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@65452da6
+[DEBUG] 2019-05-08 16:49:24.163 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@7502ffe1
+[DEBUG] 2019-05-08 16:49:24.164 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@7502ffe1
+[DEBUG] 2019-05-08 16:49:24.164 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@7502ffe1
+[DEBUG] 2019-05-08 16:49:24.165 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@6af14f18
+[DEBUG] 2019-05-08 16:49:24.165 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@53fc3358
+[DEBUG] 2019-05-08 16:49:24.166 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@53b83bc5
+[DEBUG] 2019-05-08 16:49:24.166 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@53b83bc5
+[DEBUG] 2019-05-08 16:49:24.166 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@53b83bc5
+[DEBUG] 2019-05-08 16:49:24.167 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@34ee4fec
+[DEBUG] 2019-05-08 16:49:24.167 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@34ee4fec
+[DEBUG] 2019-05-08 16:49:24.167 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@34ee4fec
+[DEBUG] 2019-05-08 16:49:24.168 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@305974ef
+[DEBUG] 2019-05-08 16:49:24.168 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@450664f4
+[DEBUG] 2019-05-08 16:49:24.172 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@39a96a7
+[DEBUG] 2019-05-08 16:49:24.173 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@39a96a7
+[DEBUG] 2019-05-08 16:49:24.173 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@581bf83e
+[DEBUG] 2019-05-08 16:49:24.177 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@6007ede2
+[DEBUG] 2019-05-08 16:49:24.177 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@6007ede2
+[DEBUG] 2019-05-08 16:49:24.180 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@18cfc338
+[DEBUG] 2019-05-08 16:49:24.180 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@18cfc338
+[DEBUG] 2019-05-08 16:49:24.180 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@5ed8580e
+[DEBUG] 2019-05-08 16:49:24.180 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@765ed8c3
+[DEBUG] 2019-05-08 16:49:24.182 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@138175d5
+[DEBUG] 2019-05-08 16:49:24.185 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@563f57d4
+[DEBUG] 2019-05-08 16:49:24.185 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@563f57d4
+[DEBUG] 2019-05-08 16:49:24.186 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@36422e4e
+[DEBUG] 2019-05-08 16:49:24.186 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@1aef5ea5
+[DEBUG] 2019-05-08 16:49:24.186 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@3945906e
+[DEBUG] 2019-05-08 16:49:24.186 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@76da42ad
+[DEBUG] 2019-05-08 16:49:24.186 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@51cd2266
+[DEBUG] 2019-05-08 16:49:24.186 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@31b7448c
+[DEBUG] 2019-05-08 16:49:24.186 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@24646434
+[DEBUG] 2019-05-08 16:49:24.186 [http-nio-8080-exec-4] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@f853f
+[INFO ] 2019-05-08 16:49:24.198 [http-nio-8080-exec-4] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/dotaStats
+[INFO ] 2019-05-08 16:49:24.198 [http-nio-8080-exec-4] C3P0ConnectionProvider - HHH10001001: Connection properties: {user=root, password=****}
+[INFO ] 2019-05-08 16:49:24.199 [http-nio-8080-exec-4] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 2019-05-08 16:49:24.418 [http-nio-8080-exec-4] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[DEBUG] 2019-05-08 16:49:24.757 [http-nio-8080-exec-4] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 5.7.26-0ubuntu0.16.04.1
+      major : 5
+      minor : 7
+[DEBUG] 2019-05-08 16:49:24.758 [http-nio-8080-exec-4] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector Java
+    version : mysql-connector-java-5.1.39 ( Revision: 3289a357af6d09ecc1a10fd3c26e95183e5790ad )
+      major : 5
+      minor : 1
+[DEBUG] 2019-05-08 16:49:24.758 [http-nio-8080-exec-4] JdbcEnvironmentInitiator - JDBC version : 4.0
+[INFO ] 2019-05-08 16:49:24.778 [http-nio-8080-exec-4] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[DEBUG] 2019-05-08 16:49:24.812 [http-nio-8080-exec-4] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2019-05-08 16:49:24.813 [http-nio-8080-exec-4] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2019-05-08 16:49:24.854 [http-nio-8080-exec-4] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2019-05-08 16:49:24.854 [http-nio-8080-exec-4] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2019-05-08 16:49:24.855 [http-nio-8080-exec-4] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2019-05-08 16:49:24.855 [http-nio-8080-exec-4] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2019-05-08 16:49:24.855 [http-nio-8080-exec-4] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2019-05-08 16:49:24.856 [http-nio-8080-exec-4] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2019-05-08 16:49:24.856 [http-nio-8080-exec-4] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2019-05-08 16:49:24.857 [http-nio-8080-exec-4] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2019-05-08 16:49:24.858 [http-nio-8080-exec-4] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2019-05-08 16:49:24.858 [http-nio-8080-exec-4] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2019-05-08 16:49:24.859 [http-nio-8080-exec-4] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2019-05-08 16:49:24.859 [http-nio-8080-exec-4] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2019-05-08 16:49:24.859 [http-nio-8080-exec-4] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2019-05-08 16:49:24.860 [http-nio-8080-exec-4] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[DEBUG] 2019-05-08 16:49:24.891 [http-nio-8080-exec-4] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2019-05-08 16:49:24.918 [http-nio-8080-exec-4] AnnotationBinder - Binding entity from annotated class: edu.matc.entity.User
+[DEBUG] 2019-05-08 16:49:24.944 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2019-05-08 16:49:24.950 [http-nio-8080-exec-4] EntityBinder - Import with entity name User
+[DEBUG] 2019-05-08 16:49:24.953 [http-nio-8080-exec-4] EntityBinder - Bind entity edu.matc.entity.User on table users
+[DEBUG] 2019-05-08 16:49:24.983 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-05-08 16:49:24.986 [http-nio-8080-exec-4] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2019-05-08 16:49:24.989 [http-nio-8080-exec-4] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:id]
+[DEBUG] 2019-05-08 16:49:24.991 [http-nio-8080-exec-4] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2019-05-08 16:49:24.994 [http-nio-8080-exec-4] PropertyBinder - Building property id
+[DEBUG] 2019-05-08 16:49:24.998 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=first_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-05-08 16:49:24.998 [http-nio-8080-exec-4] PropertyBinder - MetadataSourceProcessor property firstName with lazy=false
+[DEBUG] 2019-05-08 16:49:24.998 [http-nio-8080-exec-4] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:firstName]
+[DEBUG] 2019-05-08 16:49:24.998 [http-nio-8080-exec-4] SimpleValueBinder - building SimpleValue for firstName
+[DEBUG] 2019-05-08 16:49:24.999 [http-nio-8080-exec-4] PropertyBinder - Building property firstName
+[DEBUG] 2019-05-08 16:49:24.999 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=last_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-05-08 16:49:24.999 [http-nio-8080-exec-4] PropertyBinder - MetadataSourceProcessor property lastName with lazy=false
+[DEBUG] 2019-05-08 16:49:24.999 [http-nio-8080-exec-4] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:lastName]
+[DEBUG] 2019-05-08 16:49:24.999 [http-nio-8080-exec-4] SimpleValueBinder - building SimpleValue for lastName
+[DEBUG] 2019-05-08 16:49:24.999 [http-nio-8080-exec-4] PropertyBinder - Building property lastName
+[DEBUG] 2019-05-08 16:49:24.999 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=password, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-05-08 16:49:24.999 [http-nio-8080-exec-4] PropertyBinder - MetadataSourceProcessor property password with lazy=false
+[DEBUG] 2019-05-08 16:49:24.999 [http-nio-8080-exec-4] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:password]
+[DEBUG] 2019-05-08 16:49:24.999 [http-nio-8080-exec-4] SimpleValueBinder - building SimpleValue for password
+[DEBUG] 2019-05-08 16:49:24.999 [http-nio-8080-exec-4] PropertyBinder - Building property password
+[DEBUG] 2019-05-08 16:49:25.001 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2019-05-08 16:49:25.001 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=roles, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-05-08 16:49:25.002 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=null, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-05-08 16:49:25.012 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=element, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-05-08 16:49:25.012 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=roles_KEY, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-05-08 16:49:25.013 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='roles_KEY', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2019-05-08 16:49:25.014 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2019-05-08 16:49:25.014 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2019-05-08 16:49:25.015 [http-nio-8080-exec-4] CollectionBinder - Collection role: edu.matc.entity.User.roles
+[DEBUG] 2019-05-08 16:49:25.018 [http-nio-8080-exec-4] PropertyBinder - Building property roles
+[DEBUG] 2019-05-08 16:49:25.018 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=steamid, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-05-08 16:49:25.018 [http-nio-8080-exec-4] PropertyBinder - MetadataSourceProcessor property steamID with lazy=false
+[DEBUG] 2019-05-08 16:49:25.018 [http-nio-8080-exec-4] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:steamID]
+[DEBUG] 2019-05-08 16:49:25.018 [http-nio-8080-exec-4] SimpleValueBinder - building SimpleValue for steamID
+[DEBUG] 2019-05-08 16:49:25.018 [http-nio-8080-exec-4] PropertyBinder - Building property steamID
+[DEBUG] 2019-05-08 16:49:25.018 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=user_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-05-08 16:49:25.018 [http-nio-8080-exec-4] PropertyBinder - MetadataSourceProcessor property userName with lazy=false
+[DEBUG] 2019-05-08 16:49:25.019 [http-nio-8080-exec-4] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:userName]
+[DEBUG] 2019-05-08 16:49:25.019 [http-nio-8080-exec-4] SimpleValueBinder - building SimpleValue for userName
+[DEBUG] 2019-05-08 16:49:25.019 [http-nio-8080-exec-4] PropertyBinder - Building property userName
+[DEBUG] 2019-05-08 16:49:25.020 [http-nio-8080-exec-4] AnnotationBinder - Binding entity from annotated class: edu.matc.entity.Role
+[DEBUG] 2019-05-08 16:49:25.020 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2019-05-08 16:49:25.020 [http-nio-8080-exec-4] EntityBinder - Import with entity name Role
+[DEBUG] 2019-05-08 16:49:25.020 [http-nio-8080-exec-4] EntityBinder - Bind entity edu.matc.entity.Role on table roles
+[DEBUG] 2019-05-08 16:49:25.024 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(roles), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-05-08 16:49:25.024 [http-nio-8080-exec-4] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2019-05-08 16:49:25.024 [http-nio-8080-exec-4] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Role:id]
+[DEBUG] 2019-05-08 16:49:25.024 [http-nio-8080-exec-4] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2019-05-08 16:49:25.024 [http-nio-8080-exec-4] PropertyBinder - Building property id
+[DEBUG] 2019-05-08 16:49:25.024 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(roles), mappingColumn=role_title, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-05-08 16:49:25.024 [http-nio-8080-exec-4] PropertyBinder - MetadataSourceProcessor property role with lazy=false
+[DEBUG] 2019-05-08 16:49:25.024 [http-nio-8080-exec-4] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Role:role]
+[DEBUG] 2019-05-08 16:49:25.024 [http-nio-8080-exec-4] SimpleValueBinder - building SimpleValue for role
+[DEBUG] 2019-05-08 16:49:25.025 [http-nio-8080-exec-4] PropertyBinder - Building property role
+[DEBUG] 2019-05-08 16:49:25.025 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='user_id', referencedColumn='', mappedBy=''}
+[DEBUG] 2019-05-08 16:49:25.025 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(roles), mappingColumn=user, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-05-08 16:49:25.026 [http-nio-8080-exec-4] PropertyBinder - Building property user
+[DEBUG] 2019-05-08 16:49:25.027 [http-nio-8080-exec-4] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(roles), mappingColumn=user_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-05-08 16:49:25.027 [http-nio-8080-exec-4] PropertyBinder - MetadataSourceProcessor property username with lazy=false
+[DEBUG] 2019-05-08 16:49:25.027 [http-nio-8080-exec-4] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Role:username]
+[DEBUG] 2019-05-08 16:49:25.027 [http-nio-8080-exec-4] SimpleValueBinder - building SimpleValue for username
+[DEBUG] 2019-05-08 16:49:25.027 [http-nio-8080-exec-4] PropertyBinder - Building property username
+[DEBUG] 2019-05-08 16:49:25.028 [http-nio-8080-exec-4] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2019-05-08 16:49:25.028 [http-nio-8080-exec-4] SimpleValueBinder - Starting fillSimpleValue for firstName
+[DEBUG] 2019-05-08 16:49:25.028 [http-nio-8080-exec-4] SimpleValueBinder - Starting fillSimpleValue for lastName
+[DEBUG] 2019-05-08 16:49:25.028 [http-nio-8080-exec-4] SimpleValueBinder - Starting fillSimpleValue for password
+[DEBUG] 2019-05-08 16:49:25.028 [http-nio-8080-exec-4] SimpleValueBinder - Starting fillSimpleValue for steamID
+[DEBUG] 2019-05-08 16:49:25.028 [http-nio-8080-exec-4] SimpleValueBinder - Starting fillSimpleValue for userName
+[DEBUG] 2019-05-08 16:49:25.028 [http-nio-8080-exec-4] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2019-05-08 16:49:25.029 [http-nio-8080-exec-4] SimpleValueBinder - Starting fillSimpleValue for role
+[DEBUG] 2019-05-08 16:49:25.029 [http-nio-8080-exec-4] SimpleValueBinder - Starting fillSimpleValue for username
+[DEBUG] 2019-05-08 16:49:25.032 [http-nio-8080-exec-4] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [users]
+[DEBUG] 2019-05-08 16:49:25.032 [http-nio-8080-exec-4] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [roles]
+[DEBUG] 2019-05-08 16:49:25.032 [http-nio-8080-exec-4] CollectionSecondPass - Second pass for collection: edu.matc.entity.User.roles
+[DEBUG] 2019-05-08 16:49:25.033 [http-nio-8080-exec-4] CollectionBinder - Binding a OneToMany: edu.matc.entity.User.roles through a foreign key
+[DEBUG] 2019-05-08 16:49:25.033 [http-nio-8080-exec-4] CollectionBinder - Mapping collection: edu.matc.entity.User.roles -> roles
+[DEBUG] 2019-05-08 16:49:25.034 [http-nio-8080-exec-4] TableBinder - Retrieving property edu.matc.entity.Role.user
+[DEBUG] 2019-05-08 16:49:25.034 [http-nio-8080-exec-4] CollectionSecondPass - Mapped collection key: user_id, one-to-many: edu.matc.entity.Role
+[DEBUG] 2019-05-08 16:49:25.034 [http-nio-8080-exec-4] InFlightMetadataCollectorImpl - Resolving reference to class: edu.matc.entity.User
+[DEBUG] 2019-05-08 16:49:25.036 [http-nio-8080-exec-4] InFlightMetadataCollectorImpl - Resolving reference to class: edu.matc.entity.User
+[DEBUG] 2019-05-08 16:49:25.072 [http-nio-8080-exec-4] SessionFactoryImpl - Building session factory
+[DEBUG] 2019-05-08 16:49:25.073 [http-nio-8080-exec-4] Settings - SessionFactory name : null
+[DEBUG] 2019-05-08 16:49:25.073 [http-nio-8080-exec-4] Settings - Automatic flush during beforeCompletion(): enabled
+[DEBUG] 2019-05-08 16:49:25.073 [http-nio-8080-exec-4] Settings - Automatic session close at end of transaction: disabled
+[DEBUG] 2019-05-08 16:49:25.073 [http-nio-8080-exec-4] Settings - Statistics: disabled
+[DEBUG] 2019-05-08 16:49:25.073 [http-nio-8080-exec-4] Settings - Deleted entity synthetic identifier rollback: disabled
+[DEBUG] 2019-05-08 16:49:25.073 [http-nio-8080-exec-4] Settings - Default entity-mode: pojo
+[DEBUG] 2019-05-08 16:49:25.073 [http-nio-8080-exec-4] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[DEBUG] 2019-05-08 16:49:25.073 [http-nio-8080-exec-4] Settings - Allow initialization of lazy state outside session : disabled
+[DEBUG] 2019-05-08 16:49:25.073 [http-nio-8080-exec-4] Settings - Using BatchFetchStyle : LEGACY
+[DEBUG] 2019-05-08 16:49:25.074 [http-nio-8080-exec-4] Settings - Default batch fetch size: -1
+[DEBUG] 2019-05-08 16:49:25.074 [http-nio-8080-exec-4] Settings - Maximum outer join fetch depth: 2
+[DEBUG] 2019-05-08 16:49:25.074 [http-nio-8080-exec-4] Settings - Default null ordering: NONE
+[DEBUG] 2019-05-08 16:49:25.074 [http-nio-8080-exec-4] Settings - Order SQL updates by primary key: disabled
+[DEBUG] 2019-05-08 16:49:25.074 [http-nio-8080-exec-4] Settings - Order SQL inserts for batching: disabled
+[DEBUG] 2019-05-08 16:49:25.074 [http-nio-8080-exec-4] Settings - multi-tenancy strategy : NONE
+[DEBUG] 2019-05-08 16:49:25.074 [http-nio-8080-exec-4] Settings - JTA Track by Thread: enabled
+[DEBUG] 2019-05-08 16:49:25.074 [http-nio-8080-exec-4] Settings - Query language substitutions: {}
+[DEBUG] 2019-05-08 16:49:25.074 [http-nio-8080-exec-4] Settings - JPA query language strict compliance: disabled
+[DEBUG] 2019-05-08 16:49:25.074 [http-nio-8080-exec-4] Settings - Named query checking : enabled
+[DEBUG] 2019-05-08 16:49:25.074 [http-nio-8080-exec-4] Settings - Second-level cache: enabled
+[DEBUG] 2019-05-08 16:49:25.074 [http-nio-8080-exec-4] Settings - Second-level query cache: disabled
+[DEBUG] 2019-05-08 16:49:25.074 [http-nio-8080-exec-4] Settings - Second-level query cache factory: org.hibernate.cache.internal.StandardQueryCacheFactory@7c366e07
+[DEBUG] 2019-05-08 16:49:25.074 [http-nio-8080-exec-4] Settings - Second-level cache region prefix: null
+[DEBUG] 2019-05-08 16:49:25.074 [http-nio-8080-exec-4] Settings - Optimize second-level cache for minimal puts: disabled
+[DEBUG] 2019-05-08 16:49:25.074 [http-nio-8080-exec-4] Settings - Structured second-level cache entries: disabled
+[DEBUG] 2019-05-08 16:49:25.075 [http-nio-8080-exec-4] Settings - Second-level cache direct-reference entries: disabled
+[DEBUG] 2019-05-08 16:49:25.075 [http-nio-8080-exec-4] Settings - Automatic eviction of collection cache: disabled
+[DEBUG] 2019-05-08 16:49:25.075 [http-nio-8080-exec-4] Settings - JDBC batch size: 15
+[DEBUG] 2019-05-08 16:49:25.075 [http-nio-8080-exec-4] Settings - JDBC batch updates for versioned data: enabled
+[DEBUG] 2019-05-08 16:49:25.075 [http-nio-8080-exec-4] Settings - Scrollable result sets: enabled
+[DEBUG] 2019-05-08 16:49:25.075 [http-nio-8080-exec-4] Settings - Wrap result sets: disabled
+[DEBUG] 2019-05-08 16:49:25.075 [http-nio-8080-exec-4] Settings - JDBC3 getGeneratedKeys(): enabled
+[DEBUG] 2019-05-08 16:49:25.075 [http-nio-8080-exec-4] Settings - JDBC result set fetch size: null
+[DEBUG] 2019-05-08 16:49:25.075 [http-nio-8080-exec-4] Settings - Connection release mode: AFTER_TRANSACTION
+[DEBUG] 2019-05-08 16:49:25.075 [http-nio-8080-exec-4] Settings - Generate SQL with comments: disabled
+[DEBUG] 2019-05-08 16:49:25.235 [http-nio-8080-exec-4] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[DEBUG] 2019-05-08 16:49:25.235 [http-nio-8080-exec-4] SessionFactoryImpl - Instantiating session factory with properties: {awt.toolkit=sun.awt.X11.XToolkit, java.specification.version=1.8, sun.cpu.isalist=, hibernate.c3p0.idle_test_period=3000, sun.jnu.encoding=UTF-8, hibernate.c3p0.min_size=5, sun.arch.data.model=64, catalina.useNaming=true, java.vendor.url=http://java.oracle.com/, openejb.provider.default=org.apache.tomee, sun.boot.library.path=/usr/lib/jvm/java-8-oracle/jre/lib/amd64, com.sun.management.jmxremote.ssl=false, sun.java.command=org.apache.catalina.startup.Bootstrap start, java.specification.vendor=Oracle Corporation, openejb.embedder.source=ServerListener, java.naming.factory.url.pkgs=org.apache.naming:org.apache.openejb.core.ivm.naming, java.home=/usr/lib/jvm/java-8-oracle/jre, file.separator=/, line.separator=
+, hibernate.c3p0.timeout=300, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, package.definition=sun.,java.,org.apache.catalina.,org.apache.coyote.,org.apache.jasper.,org.apache.naming.,org.apache.tomcat., openejb.deployments.classpath.filter.systemapps=false, sun.boot.class.path=/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes, jdk.tls.ephemeralDHKeySize=2048, java.util.logging.config.file=/home/student/.IntelliJIdea2017.2/system/tomcat/Unnamed_dotaStats/conf/logging.properties, connection.password=student, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=1.8.0_144-b01, user.name=student, org.apache.johnzon.max-string-length=8192, file.encoding=UTF-8, derby.system.home=/home/student/tomcat/bin, hibernate.connection.driver_class=com.mysql.jdbc.Driver, java.io.tmpdir=/home/student/tomcat/temp, tomcat.util.scan.StandardJarScanFilter.jarsToScan=log4j-core*.jar,log4j-taglib*.jar,log4javascript*.jar,slf4j-taglib*.jar, com.sun.management.jmxremote.port=1099, java.version=1.8.0_144, tomcat.util.scan.StandardJarScanFilter.jarsToSkip=bootstrap.jar,commons-daemon.jar,tomcat-juli.jar,annotations-api.jar,el-api.jar,jsp-api.jar,servlet-api.jar,websocket-api.jar,jaspic-api.jar,catalina.jar,catalina-ant.jar,catalina-ha.jar,catalina-storeconfig.jar,catalina-tribes.jar,jasper.jar,jasper-el.jar,ecj-*.jar,tomcat-api.jar,tomcat-util.jar,tomcat-util-scan.jar,tomcat-coyote.jar,tomcat-dbcp.jar,tomcat-jni.jar,tomcat-websocket.jar,tomcat-i18n-en.jar,tomcat-i18n-es.jar,tomcat-i18n-fr.jar,tomcat-i18n-ja.jar,tomcat-juli-adapters.jar,catalina-jmx-remote.jar,catalina-ws.jar,tomcat-jdbc.jar,tools.jar,commons-beanutils*.jar,commons-codec*.jar,commons-collections*.jar,commons-dbcp*.jar,commons-digester*.jar,commons-fileupload*.jar,commons-httpclient*.jar,commons-io*.jar,commons-lang*.jar,commons-logging*.jar,commons-math*.jar,commons-pool*.jar,jstl.jar,taglibs-standard-spec-*.jar,geronimo-spec-jaxrpc*.jar,wsdl4j*.jar,ant.jar,ant-junit*.jar,aspectj*.jar,jmx.jar,h2*.jar,hibernate*.jar,httpclient*.jar,jmx-tools.jar,jta*.jar,log4j*.jar,mail*.jar,slf4j*.jar,xercesImpl.jar,xmlParserAPIs.jar,xml-apis.jar,junit.jar,junit-*.jar,ant-launcher.jar,cobertura-*.jar,asm-*.jar,dom4j-*.jar,icu4j-*.jar,jaxen-*.jar,jdom-*.jar,jetty-*.jar,oro-*.jar,servlet-api-*.jar,tagsoup-*.jar,xmlParserAPIs-*.jar,xom-*.jar, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.print.PSPrinterJob, sun.os.patch.level=unknown, connection.driver_class=com.mysql.jdbc.Driver, tomcat.built=Jun 9 2016 11:16:29 UTC, java.library.path=/home/student/intellij/bin::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib, java.vendor=Oracle Corporation, tomee.version=7.0.1, java.rmi.server.randomIDs=true, sun.io.unicode.encoding=UnicodeLittle, tomcat.util.buf.StringCache.byte.enabled=true, sun.desktop=gnome, file.encoding.pkg=sun.io, com.sun.management.jmxremote.authenticate=false, java.class.path=/home/student/tomcat/bin/bootstrap.jar:/home/student/tomcat/bin/tomcat-juli.jar:/home/student/tomcat/lib/openejb-javaagent.jar, tomcat.version=8.5.3.0, java.vm.vendor=Oracle Corporation, openejb.home=/home/student/tomcat, openejb.system.apps=true, user.timezone=America/Chicago, os.name=Linux, java.vm.specification.version=1.8, sun.java.launcher=SUN_STANDARD, user.country=US, openejb.base=/home/student/.IntelliJIdea2017.2/system/tomcat/Unnamed_dotaStats, com.sun.management.jmxremote=, sun.cpu.endian=little, user.home=/home/student, hibernate.c3p0.max_statements=50, user.language=en, openejb.deployments.classpath=false, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, package.access=sun.,org.apache.catalina.,org.apache.coyote.,org.apache.jasper.,org.apache.tomcat., openejb.loader=tomcat-system, server.loader=, hibernate.c3p0.max_size=20, java.naming.factory.initial=org.apache.naming.java.javaURLContextFactory, org.apache.openejb.core.security.JaccProvider=org.apache.openejb.core.security.jacc.BasicJaccProvider, path.separator=:, hibernate.connection.username=root, common.loader="/home/student/tomcat/lib","/home/student/tomcat/lib/*.jar","/home/student/tomcat/lib","/home/student/tomcat/lib/*.jar", openejb.java9.hack=false, os.version=4.4.0-57-generic, openejb.version=7.0.1, java.endorsed.dirs=/usr/lib/jvm/java-8-oracle/jre/lib/endorsed, org.apache.security.jacc.EJBMethodPermission.methodInterfaces=BusinessLocalHome,BusinessRemoteHome,BusinessRemote,BusinessLocal, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/dotaStats, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, tomee.remote.support=true, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, catalina.home=/home/student/tomcat, bval.in-container=true, user.dir=/home/student/tomcat/bin, os.arch=amd64, openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory, hibernate.connection.password=****, tomee.serialization.class.blacklist=-, tomee.serialization.class.whitelist=, catalina.base=/home/student/.IntelliJIdea2017.2/system/tomcat/Unnamed_dotaStats, shared.loader=, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@46f5437e, java.util.logging.manager=org.apache.juli.ClassLoaderLogManager, noBanner=true, org.apache.webbeans.logger.WebBeansLoggerFacade=org.apache.openejb.cdi.logging.ContainerJULLoggerFactory, java.vm.info=mixed mode, java.vm.version=25.144-b01, hibernate.bytecode.use_reflection_optimizer=false, java.rmi.server.hostname=127.0.0.1, javax.security.jacc.PolicyConfigurationFactory.provider=org.apache.openejb.core.security.JaccProvider$Factory, java.ext.dirs=/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext, connection.url=jdbc:mysql://localhost:3306/dotaStats, java.class.version=52.0, authconfigprovider.factory=false}
+[DEBUG] 2019-05-08 16:49:25.254 [http-nio-8080-exec-4] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.User] is safe
+[DEBUG] 2019-05-08 16:49:25.254 [http-nio-8080-exec-4] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.User
+[DEBUG] 2019-05-08 16:49:25.268 [http-nio-8080-exec-4] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.Role] is safe
+[DEBUG] 2019-05-08 16:49:25.269 [http-nio-8080-exec-4] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.Role
+[DEBUG] 2019-05-08 16:49:25.272 [http-nio-8080-exec-4] JaccIntegrator - Skipping JACC integration as it was not enabled
+[DEBUG] 2019-05-08 16:49:25.277 [http-nio-8080-exec-4] SessionFactoryImpl - Instantiated session factory
+[DEBUG] 2019-05-08 16:49:25.319 [http-nio-8080-exec-4] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.User] is safe
+[DEBUG] 2019-05-08 16:49:25.319 [http-nio-8080-exec-4] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.User
+[DEBUG] 2019-05-08 16:49:25.340 [http-nio-8080-exec-4] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.User] is safe
+[DEBUG] 2019-05-08 16:49:25.340 [http-nio-8080-exec-4] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.User
+[DEBUG] 2019-05-08 16:49:25.394 [http-nio-8080-exec-4] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.Role] is safe
+[DEBUG] 2019-05-08 16:49:25.394 [http-nio-8080-exec-4] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.Role
+[DEBUG] 2019-05-08 16:49:25.394 [http-nio-8080-exec-4] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.Role] is safe
+[DEBUG] 2019-05-08 16:49:25.394 [http-nio-8080-exec-4] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.Role
+[DEBUG] 2019-05-08 16:49:25.405 [http-nio-8080-exec-4] AbstractCollectionPersister - Static SQL for collection: edu.matc.entity.User.roles
+[DEBUG] 2019-05-08 16:49:25.405 [http-nio-8080-exec-4] AbstractCollectionPersister -  Row insert: update roles set user_id=? where id=?
+[DEBUG] 2019-05-08 16:49:25.405 [http-nio-8080-exec-4] AbstractCollectionPersister -  Row update: update roles set  where id=?
+[DEBUG] 2019-05-08 16:49:25.405 [http-nio-8080-exec-4] AbstractCollectionPersister -  Row delete: update roles set user_id=null where user_id=? and id=?
+[DEBUG] 2019-05-08 16:49:25.405 [http-nio-8080-exec-4] AbstractCollectionPersister -  One-shot delete: update roles set user_id=null where user_id=?
+[DEBUG] 2019-05-08 16:49:25.409 [http-nio-8080-exec-4] AbstractEntityPersister - Static SQL for entity: edu.matc.entity.User
+[DEBUG] 2019-05-08 16:49:25.409 [http-nio-8080-exec-4] AbstractEntityPersister -  Version select: select id from users where id =?
+[DEBUG] 2019-05-08 16:49:25.410 [http-nio-8080-exec-4] AbstractEntityPersister -  Snapshot select: select user_.id, user_.first_name as first_na2_1_, user_.last_name as last_nam3_1_, user_.password as password4_1_, user_.steamid as steamid5_1_, user_.user_name as user_nam6_1_ from users user_ where user_.id=?
+[DEBUG] 2019-05-08 16:49:25.410 [http-nio-8080-exec-4] AbstractEntityPersister -  Insert 0: insert into users (first_name, last_name, password, steamid, user_name, id) values (?, ?, ?, ?, ?, ?)
+[DEBUG] 2019-05-08 16:49:25.410 [http-nio-8080-exec-4] AbstractEntityPersister -  Update 0: update users set first_name=?, last_name=?, password=?, steamid=?, user_name=? where id=?
+[DEBUG] 2019-05-08 16:49:25.410 [http-nio-8080-exec-4] AbstractEntityPersister -  Delete 0: delete from users where id=?
+[DEBUG] 2019-05-08 16:49:25.410 [http-nio-8080-exec-4] AbstractEntityPersister -  Identity insert: insert into users (first_name, last_name, password, steamid, user_name) values (?, ?, ?, ?, ?)
+[DEBUG] 2019-05-08 16:49:25.428 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@19c90e9f]
+[DEBUG] 2019-05-08 16:49:25.430 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2019-05-08 16:49:25.430 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2019-05-08 16:49:25.430 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2019-05-08 16:49:25.430 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : roles
+[DEBUG] 2019-05-08 16:49:25.433 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@6dd32e66]
+[DEBUG] 2019-05-08 16:49:25.435 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@a751e54]
+[DEBUG] 2019-05-08 16:49:25.437 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : roles.role
+[DEBUG] 2019-05-08 16:49:25.437 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : roles.user
+[DEBUG] 2019-05-08 16:49:25.437 [http-nio-8080-exec-4] MetamodelGraphWalker - Property path deemed to be circular : roles.user
+[DEBUG] 2019-05-08 16:49:25.437 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : roles.username
+[DEBUG] 2019-05-08 16:49:25.437 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : steamID
+[DEBUG] 2019-05-08 16:49:25.437 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2019-05-08 16:49:25.437 [http-nio-8080-exec-4] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-05-08 16:49:25.448 [http-nio-8080-exec-4] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-05-08 16:49:25.454 [http-nio-8080-exec-4] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.roles, querySpaceUid=<gen:1>, path=edu.matc.entity.User.roles)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Role, querySpaceUid=<gen:2>, path=edu.matc.entity.User.roles.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(roles)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=edu.matc.entity.User.roles)
+                - SQL table alias mapping - roles1_
+                - alias suffix - 1_
+                - suffixed key columns - {user_id4_0_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - id1_0_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=edu.matc.entity.Role)
+                      - SQL table alias mapping - roles1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_0_2_}
+
+[DEBUG] 2019-05-08 16:49:25.456 [http-nio-8080-exec-4] EntityLoader - Static select for entity edu.matc.entity.User [NONE]: select user0_.id as id1_1_0_, user0_.first_name as first_na2_1_0_, user0_.last_name as last_nam3_1_0_, user0_.password as password4_1_0_, user0_.steamid as steamid5_1_0_, user0_.user_name as user_nam6_1_0_, roles1_.user_id as user_id4_0_1_, roles1_.id as id1_0_1_, roles1_.id as id1_0_2_, roles1_.role_title as role_tit2_0_2_, roles1_.user_id as user_id4_0_2_, roles1_.user_name as user_nam3_0_2_ from users user0_ left outer join roles roles1_ on user0_.id=roles1_.user_id where user0_.id=?
+[DEBUG] 2019-05-08 16:49:25.456 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5e9d2f56]
+[DEBUG] 2019-05-08 16:49:25.456 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2019-05-08 16:49:25.456 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2019-05-08 16:49:25.456 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2019-05-08 16:49:25.457 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : roles
+[DEBUG] 2019-05-08 16:49:25.457 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@122f13ae]
+[DEBUG] 2019-05-08 16:49:25.457 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1beea94b]
+[DEBUG] 2019-05-08 16:49:25.457 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : roles.role
+[DEBUG] 2019-05-08 16:49:25.457 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : roles.user
+[DEBUG] 2019-05-08 16:49:25.457 [http-nio-8080-exec-4] MetamodelGraphWalker - Property path deemed to be circular : roles.user
+[DEBUG] 2019-05-08 16:49:25.457 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : roles.username
+[DEBUG] 2019-05-08 16:49:25.457 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : steamID
+[DEBUG] 2019-05-08 16:49:25.457 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2019-05-08 16:49:25.457 [http-nio-8080-exec-4] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-05-08 16:49:25.458 [http-nio-8080-exec-4] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-05-08 16:49:25.458 [http-nio-8080-exec-4] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.roles, querySpaceUid=<gen:1>, path=edu.matc.entity.User.roles)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Role, querySpaceUid=<gen:2>, path=edu.matc.entity.User.roles.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(roles)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=edu.matc.entity.User.roles)
+                - SQL table alias mapping - roles1_
+                - alias suffix - 1_
+                - suffixed key columns - {user_id4_0_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - id1_0_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=edu.matc.entity.Role)
+                      - SQL table alias mapping - roles1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_0_2_}
+
+[DEBUG] 2019-05-08 16:49:25.458 [http-nio-8080-exec-4] EntityLoader - Static select for entity edu.matc.entity.User [READ]: select user0_.id as id1_1_0_, user0_.first_name as first_na2_1_0_, user0_.last_name as last_nam3_1_0_, user0_.password as password4_1_0_, user0_.steamid as steamid5_1_0_, user0_.user_name as user_nam6_1_0_, roles1_.user_id as user_id4_0_1_, roles1_.id as id1_0_1_, roles1_.id as id1_0_2_, roles1_.role_title as role_tit2_0_2_, roles1_.user_id as user_id4_0_2_, roles1_.user_name as user_nam3_0_2_ from users user0_ left outer join roles roles1_ on user0_.id=roles1_.user_id where user0_.id=?
+[DEBUG] 2019-05-08 16:49:25.459 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@116779c]
+[DEBUG] 2019-05-08 16:49:25.459 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2019-05-08 16:49:25.459 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2019-05-08 16:49:25.459 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2019-05-08 16:49:25.459 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : roles
+[DEBUG] 2019-05-08 16:49:25.459 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@352fac2a]
+[DEBUG] 2019-05-08 16:49:25.459 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2ba6d64c]
+[DEBUG] 2019-05-08 16:49:25.459 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : steamID
+[DEBUG] 2019-05-08 16:49:25.459 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2019-05-08 16:49:25.459 [http-nio-8080-exec-4] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-05-08 16:49:25.460 [http-nio-8080-exec-4] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-05-08 16:49:25.460 [http-nio-8080-exec-4] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.roles, querySpaceUid=<gen:1>, path=edu.matc.entity.User.roles)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Role, querySpaceUid=<gen:2>, path=edu.matc.entity.User.roles.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2019-05-08 16:49:25.460 [http-nio-8080-exec-4] EntityLoader - Static select for entity edu.matc.entity.User [UPGRADE]: select user0_.id as id1_1_0_, user0_.first_name as first_na2_1_0_, user0_.last_name as last_nam3_1_0_, user0_.password as password4_1_0_, user0_.steamid as steamid5_1_0_, user0_.user_name as user_nam6_1_0_ from users user0_ where user0_.id=? for update
+[DEBUG] 2019-05-08 16:49:25.460 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@19beee33]
+[DEBUG] 2019-05-08 16:49:25.460 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2019-05-08 16:49:25.460 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2019-05-08 16:49:25.460 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2019-05-08 16:49:25.460 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : roles
+[DEBUG] 2019-05-08 16:49:25.460 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@5ffa132b]
+[DEBUG] 2019-05-08 16:49:25.460 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@42f3aa2e]
+[DEBUG] 2019-05-08 16:49:25.460 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : steamID
+[DEBUG] 2019-05-08 16:49:25.460 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2019-05-08 16:49:25.460 [http-nio-8080-exec-4] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-05-08 16:49:25.461 [http-nio-8080-exec-4] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-05-08 16:49:25.461 [http-nio-8080-exec-4] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.roles, querySpaceUid=<gen:1>, path=edu.matc.entity.User.roles)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Role, querySpaceUid=<gen:2>, path=edu.matc.entity.User.roles.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2019-05-08 16:49:25.461 [http-nio-8080-exec-4] EntityLoader - Static select for entity edu.matc.entity.User [UPGRADE_NOWAIT]: select user0_.id as id1_1_0_, user0_.first_name as first_na2_1_0_, user0_.last_name as last_nam3_1_0_, user0_.password as password4_1_0_, user0_.steamid as steamid5_1_0_, user0_.user_name as user_nam6_1_0_ from users user0_ where user0_.id=? for update
+[DEBUG] 2019-05-08 16:49:25.461 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2c520b35]
+[DEBUG] 2019-05-08 16:49:25.461 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2019-05-08 16:49:25.461 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2019-05-08 16:49:25.461 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2019-05-08 16:49:25.461 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : roles
+[DEBUG] 2019-05-08 16:49:25.461 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@5128eab6]
+[DEBUG] 2019-05-08 16:49:25.461 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@ed58867]
+[DEBUG] 2019-05-08 16:49:25.461 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : steamID
+[DEBUG] 2019-05-08 16:49:25.461 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2019-05-08 16:49:25.461 [http-nio-8080-exec-4] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-05-08 16:49:25.461 [http-nio-8080-exec-4] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-05-08 16:49:25.462 [http-nio-8080-exec-4] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.roles, querySpaceUid=<gen:1>, path=edu.matc.entity.User.roles)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Role, querySpaceUid=<gen:2>, path=edu.matc.entity.User.roles.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2019-05-08 16:49:25.462 [http-nio-8080-exec-4] EntityLoader - Static select for entity edu.matc.entity.User [UPGRADE_SKIPLOCKED]: select user0_.id as id1_1_0_, user0_.first_name as first_na2_1_0_, user0_.last_name as last_nam3_1_0_, user0_.password as password4_1_0_, user0_.steamid as steamid5_1_0_, user0_.user_name as user_nam6_1_0_ from users user0_ where user0_.id=? for update
+[DEBUG] 2019-05-08 16:49:25.462 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@32e2312b]
+[DEBUG] 2019-05-08 16:49:25.462 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2019-05-08 16:49:25.462 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2019-05-08 16:49:25.462 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2019-05-08 16:49:25.462 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : roles
+[DEBUG] 2019-05-08 16:49:25.462 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@5c7dacfe]
+[DEBUG] 2019-05-08 16:49:25.462 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7ec991a6]
+[DEBUG] 2019-05-08 16:49:25.462 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : steamID
+[DEBUG] 2019-05-08 16:49:25.463 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2019-05-08 16:49:25.463 [http-nio-8080-exec-4] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-05-08 16:49:25.463 [http-nio-8080-exec-4] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-05-08 16:49:25.463 [http-nio-8080-exec-4] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.roles, querySpaceUid=<gen:1>, path=edu.matc.entity.User.roles)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Role, querySpaceUid=<gen:2>, path=edu.matc.entity.User.roles.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2019-05-08 16:49:25.463 [http-nio-8080-exec-4] EntityLoader - Static select for entity edu.matc.entity.User [FORCE]: select user0_.id as id1_1_0_, user0_.first_name as first_na2_1_0_, user0_.last_name as last_nam3_1_0_, user0_.password as password4_1_0_, user0_.steamid as steamid5_1_0_, user0_.user_name as user_nam6_1_0_ from users user0_ where user0_.id=? for update
+[DEBUG] 2019-05-08 16:49:25.463 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5d018c3d]
+[DEBUG] 2019-05-08 16:49:25.463 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2019-05-08 16:49:25.463 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2019-05-08 16:49:25.463 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2019-05-08 16:49:25.463 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : roles
+[DEBUG] 2019-05-08 16:49:25.464 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@1250d392]
+[DEBUG] 2019-05-08 16:49:25.464 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@20a624df]
+[DEBUG] 2019-05-08 16:49:25.464 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : steamID
+[DEBUG] 2019-05-08 16:49:25.464 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2019-05-08 16:49:25.464 [http-nio-8080-exec-4] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-05-08 16:49:25.464 [http-nio-8080-exec-4] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-05-08 16:49:25.464 [http-nio-8080-exec-4] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.roles, querySpaceUid=<gen:1>, path=edu.matc.entity.User.roles)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Role, querySpaceUid=<gen:2>, path=edu.matc.entity.User.roles.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2019-05-08 16:49:25.464 [http-nio-8080-exec-4] EntityLoader - Static select for entity edu.matc.entity.User [PESSIMISTIC_READ]: select user0_.id as id1_1_0_, user0_.first_name as first_na2_1_0_, user0_.last_name as last_nam3_1_0_, user0_.password as password4_1_0_, user0_.steamid as steamid5_1_0_, user0_.user_name as user_nam6_1_0_ from users user0_ where user0_.id=? lock in share mode
+[DEBUG] 2019-05-08 16:49:25.464 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@71972492]
+[DEBUG] 2019-05-08 16:49:25.464 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2019-05-08 16:49:25.464 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2019-05-08 16:49:25.464 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2019-05-08 16:49:25.464 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : roles
+[DEBUG] 2019-05-08 16:49:25.465 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@1a41ac84]
+[DEBUG] 2019-05-08 16:49:25.465 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@bd0f3cf]
+[DEBUG] 2019-05-08 16:49:25.465 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : steamID
+[DEBUG] 2019-05-08 16:49:25.465 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2019-05-08 16:49:25.465 [http-nio-8080-exec-4] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-05-08 16:49:25.465 [http-nio-8080-exec-4] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-05-08 16:49:25.465 [http-nio-8080-exec-4] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.roles, querySpaceUid=<gen:1>, path=edu.matc.entity.User.roles)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Role, querySpaceUid=<gen:2>, path=edu.matc.entity.User.roles.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2019-05-08 16:49:25.465 [http-nio-8080-exec-4] EntityLoader - Static select for entity edu.matc.entity.User [PESSIMISTIC_WRITE]: select user0_.id as id1_1_0_, user0_.first_name as first_na2_1_0_, user0_.last_name as last_nam3_1_0_, user0_.password as password4_1_0_, user0_.steamid as steamid5_1_0_, user0_.user_name as user_nam6_1_0_ from users user0_ where user0_.id=? for update
+[DEBUG] 2019-05-08 16:49:25.465 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@43abf593]
+[DEBUG] 2019-05-08 16:49:25.465 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2019-05-08 16:49:25.465 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2019-05-08 16:49:25.465 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2019-05-08 16:49:25.465 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : roles
+[DEBUG] 2019-05-08 16:49:25.465 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@13d3dbe6]
+[DEBUG] 2019-05-08 16:49:25.465 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1f111cd8]
+[DEBUG] 2019-05-08 16:49:25.466 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : steamID
+[DEBUG] 2019-05-08 16:49:25.466 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2019-05-08 16:49:25.466 [http-nio-8080-exec-4] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-05-08 16:49:25.466 [http-nio-8080-exec-4] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-05-08 16:49:25.466 [http-nio-8080-exec-4] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.roles, querySpaceUid=<gen:1>, path=edu.matc.entity.User.roles)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Role, querySpaceUid=<gen:2>, path=edu.matc.entity.User.roles.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2019-05-08 16:49:25.466 [http-nio-8080-exec-4] EntityLoader - Static select for entity edu.matc.entity.User [PESSIMISTIC_FORCE_INCREMENT]: select user0_.id as id1_1_0_, user0_.first_name as first_na2_1_0_, user0_.last_name as last_nam3_1_0_, user0_.password as password4_1_0_, user0_.steamid as steamid5_1_0_, user0_.user_name as user_nam6_1_0_ from users user0_ where user0_.id=? for update
+[DEBUG] 2019-05-08 16:49:25.466 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@38a65c4]
+[DEBUG] 2019-05-08 16:49:25.466 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2019-05-08 16:49:25.466 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2019-05-08 16:49:25.466 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2019-05-08 16:49:25.466 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : roles
+[DEBUG] 2019-05-08 16:49:25.466 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@17613b6]
+[DEBUG] 2019-05-08 16:49:25.466 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1696289c]
+[DEBUG] 2019-05-08 16:49:25.466 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : steamID
+[DEBUG] 2019-05-08 16:49:25.466 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2019-05-08 16:49:25.466 [http-nio-8080-exec-4] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-05-08 16:49:25.467 [http-nio-8080-exec-4] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-05-08 16:49:25.467 [http-nio-8080-exec-4] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.roles, querySpaceUid=<gen:1>, path=edu.matc.entity.User.roles)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Role, querySpaceUid=<gen:2>, path=edu.matc.entity.User.roles.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2019-05-08 16:49:25.467 [http-nio-8080-exec-4] EntityLoader - Static select for entity edu.matc.entity.User [OPTIMISTIC]: select user0_.id as id1_1_0_, user0_.first_name as first_na2_1_0_, user0_.last_name as last_nam3_1_0_, user0_.password as password4_1_0_, user0_.steamid as steamid5_1_0_, user0_.user_name as user_nam6_1_0_ from users user0_ where user0_.id=?
+[DEBUG] 2019-05-08 16:49:25.467 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4662dbcf]
+[DEBUG] 2019-05-08 16:49:25.467 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2019-05-08 16:49:25.467 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2019-05-08 16:49:25.467 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2019-05-08 16:49:25.467 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : roles
+[DEBUG] 2019-05-08 16:49:25.467 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@4455065f]
+[DEBUG] 2019-05-08 16:49:25.467 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@63a01481]
+[DEBUG] 2019-05-08 16:49:25.467 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : steamID
+[DEBUG] 2019-05-08 16:49:25.467 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2019-05-08 16:49:25.467 [http-nio-8080-exec-4] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-05-08 16:49:25.468 [http-nio-8080-exec-4] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-05-08 16:49:25.468 [http-nio-8080-exec-4] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.roles, querySpaceUid=<gen:1>, path=edu.matc.entity.User.roles)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Role, querySpaceUid=<gen:2>, path=edu.matc.entity.User.roles.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2019-05-08 16:49:25.468 [http-nio-8080-exec-4] EntityLoader - Static select for entity edu.matc.entity.User [OPTIMISTIC_FORCE_INCREMENT]: select user0_.id as id1_1_0_, user0_.first_name as first_na2_1_0_, user0_.last_name as last_nam3_1_0_, user0_.password as password4_1_0_, user0_.steamid as steamid5_1_0_, user0_.user_name as user_nam6_1_0_ from users user0_ where user0_.id=?
+[DEBUG] 2019-05-08 16:49:25.492 [http-nio-8080-exec-4] Loader - Static select for action ACTION_MERGE on entity edu.matc.entity.User: select user0_.id as id1_1_1_, user0_.first_name as first_na2_1_1_, user0_.last_name as last_nam3_1_1_, user0_.password as password4_1_1_, user0_.steamid as steamid5_1_1_, user0_.user_name as user_nam6_1_1_, roles1_.user_id as user_id4_0_3_, roles1_.id as id1_0_3_, roles1_.id as id1_0_0_, roles1_.role_title as role_tit2_0_0_, roles1_.user_id as user_id4_0_0_, roles1_.user_name as user_nam3_0_0_ from users user0_ left outer join roles roles1_ on user0_.id=roles1_.user_id where user0_.id=?
+[DEBUG] 2019-05-08 16:49:25.493 [http-nio-8080-exec-4] Loader - Static select for action ACTION_REFRESH on entity edu.matc.entity.User: select user0_.id as id1_1_1_, user0_.first_name as first_na2_1_1_, user0_.last_name as last_nam3_1_1_, user0_.password as password4_1_1_, user0_.steamid as steamid5_1_1_, user0_.user_name as user_nam6_1_1_, roles1_.user_id as user_id4_0_3_, roles1_.id as id1_0_3_, roles1_.id as id1_0_0_, roles1_.role_title as role_tit2_0_0_, roles1_.user_id as user_id4_0_0_, roles1_.user_name as user_nam3_0_0_ from users user0_ left outer join roles roles1_ on user0_.id=roles1_.user_id where user0_.id=?
+[DEBUG] 2019-05-08 16:49:25.493 [http-nio-8080-exec-4] AbstractEntityPersister - Static SQL for entity: edu.matc.entity.Role
+[DEBUG] 2019-05-08 16:49:25.493 [http-nio-8080-exec-4] AbstractEntityPersister -  Version select: select id from roles where id =?
+[DEBUG] 2019-05-08 16:49:25.493 [http-nio-8080-exec-4] AbstractEntityPersister -  Snapshot select: select role_.id, role_.role_title as role_tit2_0_, role_.user_id as user_id4_0_, role_.user_name as user_nam3_0_ from roles role_ where role_.id=?
+[DEBUG] 2019-05-08 16:49:25.493 [http-nio-8080-exec-4] AbstractEntityPersister -  Insert 0: insert into roles (role_title, user_id, user_name, id) values (?, ?, ?, ?)
+[DEBUG] 2019-05-08 16:49:25.494 [http-nio-8080-exec-4] AbstractEntityPersister -  Update 0: update roles set role_title=?, user_id=?, user_name=? where id=?
+[DEBUG] 2019-05-08 16:49:25.494 [http-nio-8080-exec-4] AbstractEntityPersister -  Delete 0: delete from roles where id=?
+[DEBUG] 2019-05-08 16:49:25.494 [http-nio-8080-exec-4] AbstractEntityPersister -  Identity insert: insert into roles (role_title, user_id, user_name) values (?, ?, ?)
+[DEBUG] 2019-05-08 16:49:25.494 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@f9cff66]
+[DEBUG] 2019-05-08 16:49:25.494 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : role
+[DEBUG] 2019-05-08 16:49:25.494 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2019-05-08 16:49:25.494 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1d6a6206]
+[DEBUG] 2019-05-08 16:49:25.495 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user.firstName
+[DEBUG] 2019-05-08 16:49:25.495 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user.lastName
+[DEBUG] 2019-05-08 16:49:25.495 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user.password
+[DEBUG] 2019-05-08 16:49:25.496 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user.roles
+[DEBUG] 2019-05-08 16:49:25.496 [http-nio-8080-exec-4] MetamodelGraphWalker - Property path deemed to be circular : user.roles
+[DEBUG] 2019-05-08 16:49:25.496 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user.steamID
+[DEBUG] 2019-05-08 16:49:25.496 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user.userName
+[DEBUG] 2019-05-08 16:49:25.496 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2019-05-08 16:49:25.496 [http-nio-8080-exec-4] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-05-08 16:49:25.496 [http-nio-8080-exec-4] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-05-08 16:49:25.497 [http-nio-8080-exec-4] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Role, querySpaceUid=<gen:0>, path=edu.matc.entity.Role)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:1>, path=edu.matc.entity.Role.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=edu.matc.entity.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+
+[DEBUG] 2019-05-08 16:49:25.497 [http-nio-8080-exec-4] EntityLoader - Static select for entity edu.matc.entity.Role [NONE]: select role0_.id as id1_0_0_, role0_.role_title as role_tit2_0_0_, role0_.user_id as user_id4_0_0_, role0_.user_name as user_nam3_0_0_, user1_.id as id1_1_1_, user1_.first_name as first_na2_1_1_, user1_.last_name as last_nam3_1_1_, user1_.password as password4_1_1_, user1_.steamid as steamid5_1_1_, user1_.user_name as user_nam6_1_1_ from roles role0_ left outer join users user1_ on role0_.user_id=user1_.id where role0_.id=?
+[DEBUG] 2019-05-08 16:49:25.497 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7214f43e]
+[DEBUG] 2019-05-08 16:49:25.497 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : role
+[DEBUG] 2019-05-08 16:49:25.497 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2019-05-08 16:49:25.498 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@67f461fa]
+[DEBUG] 2019-05-08 16:49:25.498 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user.firstName
+[DEBUG] 2019-05-08 16:49:25.498 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user.lastName
+[DEBUG] 2019-05-08 16:49:25.498 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user.password
+[DEBUG] 2019-05-08 16:49:25.498 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user.roles
+[DEBUG] 2019-05-08 16:49:25.498 [http-nio-8080-exec-4] MetamodelGraphWalker - Property path deemed to be circular : user.roles
+[DEBUG] 2019-05-08 16:49:25.498 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user.steamID
+[DEBUG] 2019-05-08 16:49:25.498 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user.userName
+[DEBUG] 2019-05-08 16:49:25.498 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2019-05-08 16:49:25.499 [http-nio-8080-exec-4] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-05-08 16:49:25.499 [http-nio-8080-exec-4] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-05-08 16:49:25.499 [http-nio-8080-exec-4] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Role, querySpaceUid=<gen:0>, path=edu.matc.entity.Role)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:1>, path=edu.matc.entity.Role.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=edu.matc.entity.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+
+[DEBUG] 2019-05-08 16:49:25.500 [http-nio-8080-exec-4] EntityLoader - Static select for entity edu.matc.entity.Role [READ]: select role0_.id as id1_0_0_, role0_.role_title as role_tit2_0_0_, role0_.user_id as user_id4_0_0_, role0_.user_name as user_nam3_0_0_, user1_.id as id1_1_1_, user1_.first_name as first_na2_1_1_, user1_.last_name as last_nam3_1_1_, user1_.password as password4_1_1_, user1_.steamid as steamid5_1_1_, user1_.user_name as user_nam6_1_1_ from roles role0_ left outer join users user1_ on role0_.user_id=user1_.id where role0_.id=?
+[DEBUG] 2019-05-08 16:49:25.500 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@8d1034d]
+[DEBUG] 2019-05-08 16:49:25.500 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : role
+[DEBUG] 2019-05-08 16:49:25.500 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2019-05-08 16:49:25.500 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3d135849]
+[DEBUG] 2019-05-08 16:49:25.500 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2019-05-08 16:49:25.500 [http-nio-8080-exec-4] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-05-08 16:49:25.500 [http-nio-8080-exec-4] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-05-08 16:49:25.501 [http-nio-8080-exec-4] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Role, querySpaceUid=<gen:0>, path=edu.matc.entity.Role)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:1>, path=edu.matc.entity.Role.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2019-05-08 16:49:25.501 [http-nio-8080-exec-4] EntityLoader - Static select for entity edu.matc.entity.Role [UPGRADE]: select role0_.id as id1_0_0_, role0_.role_title as role_tit2_0_0_, role0_.user_id as user_id4_0_0_, role0_.user_name as user_nam3_0_0_ from roles role0_ where role0_.id=? for update
+[DEBUG] 2019-05-08 16:49:25.501 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6dbc018b]
+[DEBUG] 2019-05-08 16:49:25.501 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : role
+[DEBUG] 2019-05-08 16:49:25.501 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2019-05-08 16:49:25.501 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@742bc1b6]
+[DEBUG] 2019-05-08 16:49:25.501 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2019-05-08 16:49:25.502 [http-nio-8080-exec-4] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-05-08 16:49:25.502 [http-nio-8080-exec-4] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-05-08 16:49:25.502 [http-nio-8080-exec-4] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Role, querySpaceUid=<gen:0>, path=edu.matc.entity.Role)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:1>, path=edu.matc.entity.Role.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2019-05-08 16:49:25.502 [http-nio-8080-exec-4] EntityLoader - Static select for entity edu.matc.entity.Role [UPGRADE_NOWAIT]: select role0_.id as id1_0_0_, role0_.role_title as role_tit2_0_0_, role0_.user_id as user_id4_0_0_, role0_.user_name as user_nam3_0_0_ from roles role0_ where role0_.id=? for update
+[DEBUG] 2019-05-08 16:49:25.502 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@535d0e6a]
+[DEBUG] 2019-05-08 16:49:25.503 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : role
+[DEBUG] 2019-05-08 16:49:25.503 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2019-05-08 16:49:25.503 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@ea71d79]
+[DEBUG] 2019-05-08 16:49:25.503 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2019-05-08 16:49:25.504 [http-nio-8080-exec-4] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-05-08 16:49:25.504 [http-nio-8080-exec-4] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-05-08 16:49:25.504 [http-nio-8080-exec-4] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Role, querySpaceUid=<gen:0>, path=edu.matc.entity.Role)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:1>, path=edu.matc.entity.Role.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2019-05-08 16:49:25.504 [http-nio-8080-exec-4] EntityLoader - Static select for entity edu.matc.entity.Role [UPGRADE_SKIPLOCKED]: select role0_.id as id1_0_0_, role0_.role_title as role_tit2_0_0_, role0_.user_id as user_id4_0_0_, role0_.user_name as user_nam3_0_0_ from roles role0_ where role0_.id=? for update
+[DEBUG] 2019-05-08 16:49:25.505 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@24ab4b6a]
+[DEBUG] 2019-05-08 16:49:25.505 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : role
+[DEBUG] 2019-05-08 16:49:25.505 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2019-05-08 16:49:25.505 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4669d78a]
+[DEBUG] 2019-05-08 16:49:25.505 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2019-05-08 16:49:25.505 [http-nio-8080-exec-4] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-05-08 16:49:25.506 [http-nio-8080-exec-4] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-05-08 16:49:25.506 [http-nio-8080-exec-4] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Role, querySpaceUid=<gen:0>, path=edu.matc.entity.Role)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:1>, path=edu.matc.entity.Role.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2019-05-08 16:49:25.506 [http-nio-8080-exec-4] EntityLoader - Static select for entity edu.matc.entity.Role [FORCE]: select role0_.id as id1_0_0_, role0_.role_title as role_tit2_0_0_, role0_.user_id as user_id4_0_0_, role0_.user_name as user_nam3_0_0_ from roles role0_ where role0_.id=? for update
+[DEBUG] 2019-05-08 16:49:25.506 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@701346eb]
+[DEBUG] 2019-05-08 16:49:25.507 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : role
+[DEBUG] 2019-05-08 16:49:25.507 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2019-05-08 16:49:25.507 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@603385e7]
+[DEBUG] 2019-05-08 16:49:25.507 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2019-05-08 16:49:25.507 [http-nio-8080-exec-4] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-05-08 16:49:25.507 [http-nio-8080-exec-4] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-05-08 16:49:25.508 [http-nio-8080-exec-4] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Role, querySpaceUid=<gen:0>, path=edu.matc.entity.Role)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:1>, path=edu.matc.entity.Role.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2019-05-08 16:49:25.508 [http-nio-8080-exec-4] EntityLoader - Static select for entity edu.matc.entity.Role [PESSIMISTIC_READ]: select role0_.id as id1_0_0_, role0_.role_title as role_tit2_0_0_, role0_.user_id as user_id4_0_0_, role0_.user_name as user_nam3_0_0_ from roles role0_ where role0_.id=? lock in share mode
+[DEBUG] 2019-05-08 16:49:25.508 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@68eecbec]
+[DEBUG] 2019-05-08 16:49:25.508 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : role
+[DEBUG] 2019-05-08 16:49:25.508 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2019-05-08 16:49:25.508 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@61420ebb]
+[DEBUG] 2019-05-08 16:49:25.509 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2019-05-08 16:49:25.509 [http-nio-8080-exec-4] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-05-08 16:49:25.509 [http-nio-8080-exec-4] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-05-08 16:49:25.509 [http-nio-8080-exec-4] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Role, querySpaceUid=<gen:0>, path=edu.matc.entity.Role)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:1>, path=edu.matc.entity.Role.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2019-05-08 16:49:25.510 [http-nio-8080-exec-4] EntityLoader - Static select for entity edu.matc.entity.Role [PESSIMISTIC_WRITE]: select role0_.id as id1_0_0_, role0_.role_title as role_tit2_0_0_, role0_.user_id as user_id4_0_0_, role0_.user_name as user_nam3_0_0_ from roles role0_ where role0_.id=? for update
+[DEBUG] 2019-05-08 16:49:25.510 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1d22b3c9]
+[DEBUG] 2019-05-08 16:49:25.510 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : role
+[DEBUG] 2019-05-08 16:49:25.510 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2019-05-08 16:49:25.510 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6483683]
+[DEBUG] 2019-05-08 16:49:25.510 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2019-05-08 16:49:25.510 [http-nio-8080-exec-4] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-05-08 16:49:25.510 [http-nio-8080-exec-4] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-05-08 16:49:25.510 [http-nio-8080-exec-4] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Role, querySpaceUid=<gen:0>, path=edu.matc.entity.Role)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:1>, path=edu.matc.entity.Role.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2019-05-08 16:49:25.510 [http-nio-8080-exec-4] EntityLoader - Static select for entity edu.matc.entity.Role [PESSIMISTIC_FORCE_INCREMENT]: select role0_.id as id1_0_0_, role0_.role_title as role_tit2_0_0_, role0_.user_id as user_id4_0_0_, role0_.user_name as user_nam3_0_0_ from roles role0_ where role0_.id=? for update
+[DEBUG] 2019-05-08 16:49:25.510 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@778ed727]
+[DEBUG] 2019-05-08 16:49:25.511 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : role
+[DEBUG] 2019-05-08 16:49:25.511 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2019-05-08 16:49:25.511 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1108b7d3]
+[DEBUG] 2019-05-08 16:49:25.511 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2019-05-08 16:49:25.511 [http-nio-8080-exec-4] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-05-08 16:49:25.511 [http-nio-8080-exec-4] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-05-08 16:49:25.511 [http-nio-8080-exec-4] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Role, querySpaceUid=<gen:0>, path=edu.matc.entity.Role)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:1>, path=edu.matc.entity.Role.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2019-05-08 16:49:25.511 [http-nio-8080-exec-4] EntityLoader - Static select for entity edu.matc.entity.Role [OPTIMISTIC]: select role0_.id as id1_0_0_, role0_.role_title as role_tit2_0_0_, role0_.user_id as user_id4_0_0_, role0_.user_name as user_nam3_0_0_ from roles role0_ where role0_.id=?
+[DEBUG] 2019-05-08 16:49:25.511 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@56b3675f]
+[DEBUG] 2019-05-08 16:49:25.511 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : role
+[DEBUG] 2019-05-08 16:49:25.511 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2019-05-08 16:49:25.511 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7c63cceb]
+[DEBUG] 2019-05-08 16:49:25.512 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2019-05-08 16:49:25.512 [http-nio-8080-exec-4] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-05-08 16:49:25.512 [http-nio-8080-exec-4] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-05-08 16:49:25.512 [http-nio-8080-exec-4] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Role, querySpaceUid=<gen:0>, path=edu.matc.entity.Role)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:1>, path=edu.matc.entity.Role.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2019-05-08 16:49:25.512 [http-nio-8080-exec-4] EntityLoader - Static select for entity edu.matc.entity.Role [OPTIMISTIC_FORCE_INCREMENT]: select role0_.id as id1_0_0_, role0_.role_title as role_tit2_0_0_, role0_.user_id as user_id4_0_0_, role0_.user_name as user_nam3_0_0_ from roles role0_ where role0_.id=?
+[DEBUG] 2019-05-08 16:49:25.512 [http-nio-8080-exec-4] Loader - Static select for action ACTION_MERGE on entity edu.matc.entity.Role: select role0_.id as id1_0_0_, role0_.role_title as role_tit2_0_0_, role0_.user_id as user_id4_0_0_, role0_.user_name as user_nam3_0_0_ from roles role0_ where role0_.id=?
+[DEBUG] 2019-05-08 16:49:25.512 [http-nio-8080-exec-4] Loader - Static select for action ACTION_REFRESH on entity edu.matc.entity.Role: select role0_.id as id1_0_0_, role0_.role_title as role_tit2_0_0_, role0_.user_id as user_id4_0_0_, role0_.user_name as user_nam3_0_0_ from roles role0_ where role0_.id=?
+[DEBUG] 2019-05-08 16:49:25.519 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@73881057]
+[DEBUG] 2019-05-08 16:49:25.519 [http-nio-8080-exec-4] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@11993a61]
+[DEBUG] 2019-05-08 16:49:25.519 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : role
+[DEBUG] 2019-05-08 16:49:25.519 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2019-05-08 16:49:25.519 [http-nio-8080-exec-4] MetamodelGraphWalker - Property path deemed to be circular : user
+[DEBUG] 2019-05-08 16:49:25.519 [http-nio-8080-exec-4] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2019-05-08 16:49:25.519 [http-nio-8080-exec-4] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-05-08 16:49:25.521 [http-nio-8080-exec-4] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-05-08 16:49:25.521 [http-nio-8080-exec-4] LoadPlanTreePrinter - LoadPlan(collection=edu.matc.entity.User.roles)
+    - Returns
+       - CollectionReturnImpl(collection=edu.matc.entity.User.roles, querySpaceUid=<gen:0>, path=[edu.matc.entity.User.roles])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Role, querySpaceUid=<gen:1>, path=[edu.matc.entity.User.roles].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=edu.matc.entity.User.roles)
+          - SQL table alias mapping - roles0_
+          - alias suffix - 0_
+          - suffixed key columns - {user_id4_0_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_0_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=edu.matc.entity.Role)
+                - SQL table alias mapping - roles0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+
+[DEBUG] 2019-05-08 16:49:25.521 [http-nio-8080-exec-4] CollectionLoader - Static select for collection edu.matc.entity.User.roles: select roles0_.user_id as user_id4_0_0_, roles0_.id as id1_0_0_, roles0_.id as id1_0_1_, roles0_.role_title as role_tit2_0_1_, roles0_.user_id as user_id4_0_1_, roles0_.user_name as user_nam3_0_1_ from roles roles0_ where roles0_.user_id=?
+[DEBUG] 2019-05-08 16:49:25.550 [http-nio-8080-exec-4] SchemaManagementToolCoordinator - No actions specified; doing nothing
+[DEBUG] 2019-05-08 16:49:25.550 [http-nio-8080-exec-4] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+[DEBUG] 2019-05-08 16:49:25.551 [http-nio-8080-exec-4] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[DEBUG] 2019-05-08 16:49:25.563 [http-nio-8080-exec-4] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[DEBUG] 2019-05-08 16:49:25.564 [http-nio-8080-exec-4] NamedQueryRepository - Checking 0 named HQL queries
+[DEBUG] 2019-05-08 16:49:25.564 [http-nio-8080-exec-4] NamedQueryRepository - Checking 0 named SQL queries
+[DEBUG] 2019-05-08 16:49:25.567 [http-nio-8080-exec-4] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@76384b2a
+[DEBUG] 2019-05-08 16:49:25.571 [http-nio-8080-exec-4] SessionFactoryRegistry - Registering SessionFactory: 0373a759-b42e-4c76-98ab-d65b721e56a1 (<unnamed>)
+[DEBUG] 2019-05-08 16:49:25.571 [http-nio-8080-exec-4] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+[DEBUG] 2019-05-08 16:49:25.657 [http-nio-8080-exec-4] StatisticsInitiator - Statistics initialized [enabled=false]
+[DEBUG] 2019-05-08 16:49:25.688 [http-nio-8080-exec-4] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0 where generatedAlias0.userName like :param0
+[DEBUG] 2019-05-08 16:49:25.703 [http-nio-8080-exec-4] QueryTranslatorFactoryInitiator - QueryTranslatorFactory : org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@400ec6f2
+[INFO ] 2019-05-08 16:49:25.703 [http-nio-8080-exec-4] QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+[DEBUG] 2019-05-08 16:49:25.743 [http-nio-8080-exec-4] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from edu.matc.entity.User as generatedAlias0 where generatedAlias0.userName like :param0
+[DEBUG] 2019-05-08 16:49:25.751 [http-nio-8080-exec-4] ErrorCounter - throwQueryException() : no errors
+[DEBUG] 2019-05-08 16:49:25.754 [http-nio-8080-exec-4] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'from'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[DOT] Node: '.'
+    |  |     |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  +-[IDENT] Node: 'edu'
+    |  |     |  |  |  \-[IDENT] Node: 'matc'
+    |  |     |  |  \-[IDENT] Node: 'entity'
+    |  |     |  \-[IDENT] Node: 'User'
+    |  |     \-[ALIAS] Node: 'generatedAlias0'
+    |  \-[SELECT] Node: 'select'
+    |     \-[IDENT] Node: 'generatedAlias0'
+    \-[WHERE] Node: 'where'
+       \-[LIKE] Node: 'like'
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'generatedAlias0'
+          |  \-[IDENT] Node: 'userName'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'param0'
+
+[DEBUG] 2019-05-08 16:49:25.788 [http-nio-8080-exec-4] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2019-05-08 16:49:25.816 [http-nio-8080-exec-4] FromElement - FromClause{level=1} : edu.matc.entity.User (generatedAlias0) -> user0_
+[DEBUG] 2019-05-08 16:49:25.816 [http-nio-8080-exec-4] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2019-05-08 16:49:25.819 [http-nio-8080-exec-4] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2019-05-08 16:49:25.820 [http-nio-8080-exec-4] DotNode - getDataType() : userName -> org.hibernate.type.StringType@61c431b0
+[DEBUG] 2019-05-08 16:49:25.821 [http-nio-8080-exec-4] FromReferenceNode - Resolved : generatedAlias0.userName -> user0_.user_name
+[DEBUG] 2019-05-08 16:49:25.822 [http-nio-8080-exec-4] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2019-05-08 16:49:25.822 [http-nio-8080-exec-4] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} user0_.id ) ( FromClause{level=1} users user0_ ) ( where ( like ( user0_.user_name user0_.id userName ) ? ) ) )
+[DEBUG] 2019-05-08 16:49:25.831 [http-nio-8080-exec-4] JoinProcessor - Using FROM fragment [users user0_]
+[DEBUG] 2019-05-08 16:49:25.831 [http-nio-8080-exec-4] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2019-05-08 16:49:25.831 [http-nio-8080-exec-4] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (users)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'user0_.id as id1_1_' {alias=generatedAlias0, className=edu.matc.entity.User, tableAlias=user0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'user0_.first_name as first_na2_1_, user0_.last_name as last_nam3_1_, user0_.password as password4_1_, user0_.steamid as steamid5_1_, user0_.user_name as user_nam6_1_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[user0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'users user0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=users,tableAlias=user0_,origin=null,columns={,className=edu.matc.entity.User}}
+    \-[WHERE] SqlNode: 'where'
+       \-[LIKE] BinaryLogicOperatorNode: 'like'
+          +-[DOT] DotNode: 'user0_.user_name' {propertyName=userName,dereferenceType=PRIMITIVE,getPropertyPath=userName,path=generatedAlias0.userName,tableAlias=user0_,className=edu.matc.entity.User,classAlias=generatedAlias0}
+          |  +-[ALIAS_REF] IdentNode: 'user0_.id' {alias=generatedAlias0, className=edu.matc.entity.User, tableAlias=user0_}
+          |  \-[IDENT] IdentNode: 'userName' {originalText=userName}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=param0, expectedType=org.hibernate.type.StringType@61c431b0}
+
+[DEBUG] 2019-05-08 16:49:25.831 [http-nio-8080-exec-4] ErrorCounter - throwQueryException() : no errors
+[DEBUG] 2019-05-08 16:49:25.838 [http-nio-8080-exec-4] QueryTranslatorImpl - HQL: select generatedAlias0 from edu.matc.entity.User as generatedAlias0 where generatedAlias0.userName like :param0
+[DEBUG] 2019-05-08 16:49:25.838 [http-nio-8080-exec-4] QueryTranslatorImpl - SQL: select user0_.id as id1_1_, user0_.first_name as first_na2_1_, user0_.last_name as last_nam3_1_, user0_.password as password4_1_, user0_.steamid as steamid5_1_, user0_.user_name as user_nam6_1_ from users user0_ where user0_.user_name like ?
+[DEBUG] 2019-05-08 16:49:25.839 [http-nio-8080-exec-4] ErrorCounter - throwQueryException() : no errors
+[DEBUG] 2019-05-08 16:49:25.857 [http-nio-8080-exec-4] SQL - select user0_.id as id1_1_, user0_.first_name as first_na2_1_, user0_.last_name as last_nam3_1_, user0_.password as password4_1_, user0_.steamid as steamid5_1_, user0_.user_name as user_nam6_1_ from users user0_ where user0_.user_name like ?
+[DEBUG] 2019-05-08 16:49:25.881 [http-nio-8080-exec-4] Loader - Result set row: 0
+[DEBUG] 2019-05-08 16:49:25.884 [http-nio-8080-exec-4] Loader - Result row: EntityKey[edu.matc.entity.User#1]
+[DEBUG] 2019-05-08 16:49:25.891 [http-nio-8080-exec-4] TwoPhaseLoad - Resolving associations for [edu.matc.entity.User#1]
+[DEBUG] 2019-05-08 16:49:25.900 [http-nio-8080-exec-4] TwoPhaseLoad - Done materializing entity [edu.matc.entity.User#1]
+[DEBUG] 2019-05-08 16:49:25.901 [http-nio-8080-exec-4] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [edu.matc.entity.User.roles#1]
+[DEBUG] 2019-05-08 16:49:25.901 [http-nio-8080-exec-4] SQL - select roles0_.user_id as user_id4_0_0_, roles0_.id as id1_0_0_, roles0_.id as id1_0_1_, roles0_.role_title as role_tit2_0_1_, roles0_.user_id as user_id4_0_1_, roles0_.user_name as user_nam3_0_1_ from roles roles0_ where roles0_.user_id=?
+[DEBUG] 2019-05-08 16:49:25.904 [http-nio-8080-exec-4] ResultSetProcessorImpl - Preparing collection intializer : [edu.matc.entity.User.roles#1]
+[DEBUG] 2019-05-08 16:49:25.907 [http-nio-8080-exec-4] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-05-08 16:49:25.909 [http-nio-8080-exec-4] CollectionReferenceInitializerImpl - Found row of collection: [edu.matc.entity.User.roles#1]
+[DEBUG] 2019-05-08 16:49:25.910 [http-nio-8080-exec-4] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2019-05-08 16:49:25.911 [http-nio-8080-exec-4] CollectionReferenceInitializerImpl - Found row of collection: [edu.matc.entity.User.roles#1]
+[DEBUG] 2019-05-08 16:49:25.911 [http-nio-8080-exec-4] TwoPhaseLoad - Resolving associations for [edu.matc.entity.Role#1]
+[DEBUG] 2019-05-08 16:49:25.911 [http-nio-8080-exec-4] TwoPhaseLoad - Done materializing entity [edu.matc.entity.Role#1]
+[DEBUG] 2019-05-08 16:49:25.911 [http-nio-8080-exec-4] TwoPhaseLoad - Resolving associations for [edu.matc.entity.Role#2]
+[DEBUG] 2019-05-08 16:49:25.911 [http-nio-8080-exec-4] TwoPhaseLoad - Done materializing entity [edu.matc.entity.Role#2]
+[DEBUG] 2019-05-08 16:49:25.911 [http-nio-8080-exec-4] CollectionLoadContext - 1 collections were found in result set for role: edu.matc.entity.User.roles
+[DEBUG] 2019-05-08 16:49:25.911 [http-nio-8080-exec-4] CollectionLoadContext - Collection fully initialized: [edu.matc.entity.User.roles#1]
+[DEBUG] 2019-05-08 16:49:25.911 [http-nio-8080-exec-4] CollectionLoadContext - 1 collections initialized for role: edu.matc.entity.User.roles
+[DEBUG] 2019-05-08 16:49:25.912 [http-nio-8080-exec-4] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-05-08 16:49:25.912 [http-nio-8080-exec-4] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2019-05-08 16:49:25.913 [http-nio-8080-exec-4] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction

@@ -338,6 +338,17 @@ public class PlayersItem{
 	@JsonProperty("personaname")
 	private String personaname;
 
+	public String getHeroImg() {
+		return heroImg;
+	}
+
+	public void setHeroImg(String heroImg) {
+		this.heroImg = heroImg;
+	}
+
+	@JsonProperty("heroImg")
+	private String heroImg;
+
 	@JsonProperty("name")
 	private Object name;
 
