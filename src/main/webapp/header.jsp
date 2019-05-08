@@ -10,14 +10,15 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">page2</a>
+                    <a class="nav-link" href="show50Matches">Match History</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="admin.jsp">admin</a>
+                    <a class="nav-link" href="admin.jsp">Admin</a>
                 </li>
+
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <c:choose>

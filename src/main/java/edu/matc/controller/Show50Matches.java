@@ -1,6 +1,7 @@
 package edu.matc.controller;
 
-import com.opendota.heroStats.HeroStats;
+
+import com.opendota.matches.Match;
 import edu.matc.entity.User;
 import edu.matc.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
@@ -19,38 +20,49 @@ import java.util.List;
 
 
 @WebServlet(
-        urlPatterns = {"/signInUser"}
+        urlPatterns = {"/show50Matches"}
 )
 
-public class SignInUser extends HttpServlet {
+public class Show50Matches extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         final Logger logger = LogManager.getLogger(this.getClass());
-
         HttpSession session = req.getSession();
         logger.debug("User:" + req.getRemoteUser());
         GenericDao userDao = new GenericDao(User.class);
-        List<User> matchingUser;
-        matchingUser = userDao.getByPropertyLike("userName", req.getRemoteUser());
+        List<User> matchingUser = userDao.getByPropertyLike("userName", req.getRemoteUser());
         User currentUser = new User();
         currentUser.setUserName(req.getRemoteUser());
         session.setAttribute("activeUser", matchingUser.get(0));
         currentUser.setSteamID(matchingUser.get(0).getSteamID());
-
-        PlayerInfo playerInfo = new PlayerInfo();
+        GenerateHeroStats heroStatGenerator = new GenerateHeroStats();
+        int i = 0;
+        List<Match> fiftyMatches = new ArrayList<>();
         MatchHistory matchHistory = new MatchHistory();
-        GenerateHeroStats lastMatchHero = new GenerateHeroStats();
-
         try {
-            session.setAttribute("userProfile", playerInfo.getPlayerInfo(currentUser.getSteamID()).getProfile());
-            session.setAttribute("userRank", playerInfo.getPlayerInfo(currentUser.getSteamID()).getMmrEstimate().getEstimate());
-            session.setAttribute("matchHistory", matchHistory.getMatches(currentUser.getSteamID()));
-            session.setAttribute("lastMatchHero", lastMatchHero.getHeroStats(matchHistory.getMatches(currentUser.getSteamID()).get(0).getHeroId()));
+            List<Match> allMatches = matchHistory.getMatches(currentUser.getSteamID());
+            for (Match match: allMatches) {
+                i++;
+                if (i == 50) {
+                    break;
+                }
+                fiftyMatches.add(match);
+
+            }
+            for (Match match : fiftyMatches) {
+                i++;
+                if (i == 100) {
+                    break;
+                }
+                match.setHeroImg(heroStatGenerator.getHeroStats(match.getHeroId()).getIcon());
+            }
+            session.setAttribute("matches", fiftyMatches);
         } catch (Exception e) {
-            logger.debug("error signing in: " + e);
+            logger.error("Problem Finding Match History:" + e);
         }
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/index.jsp");
+
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/50Matches.jsp");
         dispatcher.forward(req, resp);
     }
 }

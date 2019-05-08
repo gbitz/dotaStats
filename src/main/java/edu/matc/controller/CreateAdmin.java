@@ -32,11 +32,7 @@ public class CreateAdmin extends HttpServlet {
         newAdmin.setUsername(req.getParameter("newAdminName"));
 
         if (req.getParameter("createAdmin").equals("createAdmin")) {
-
             roleDao.insert(newAdmin);
-
-
-
         }
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/admin.jsp");

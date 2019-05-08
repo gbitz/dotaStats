@@ -51,6 +51,17 @@ public class Match{
 	@JsonProperty("deaths")
 	private int deaths;
 
+	public String getHeroImg() {
+		return heroImg;
+	}
+
+	public void setHeroImg(String heroImg) {
+		this.heroImg = heroImg;
+	}
+
+	@JsonProperty("heroImg")
+	private String heroImg;
+
 	public void setKills(int kills){
 		this.kills = kills;
 	}
@@ -170,6 +181,8 @@ public class Match{
 	public int getDeaths(){
 		return deaths;
 	}
+
+
 
 	@Override
  	public String toString(){

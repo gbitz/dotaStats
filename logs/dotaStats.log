@@ -224,3 +224,129 @@
 [DEBUG] 2019-05-08 16:51:17.805 [http-nio-8080-exec-9] GenericDao - Searching for ** with role = admin
 [DEBUG] 2019-05-08 16:51:17.815 [http-nio-8080-exec-9] GenericDao - Searching for ** with role = admin
 [DEBUG] 2019-05-08 16:51:17.826 [http-nio-8080-exec-9] GenericDao - Searching for ** with role = admin
+[DEBUG] 2019-05-08 17:21:50.871 [http-nio-8080-exec-4] SignInUser - User:gbitzer
+[DEBUG] 2019-05-08 17:21:52.843 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-08 17:21:53.033 [http-nio-8080-exec-4] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 17:21:53.969 [http-nio-8080-exec-4] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 17:24:38.057 [http-nio-8080-exec-2] SignInUser - User:gbitzer
+[DEBUG] 2019-05-08 17:24:40.281 [http-nio-8080-exec-2] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-08 17:24:40.503 [http-nio-8080-exec-2] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 17:24:41.482 [http-nio-8080-exec-2] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 17:26:53.183 [http-nio-8080-exec-1] SignInUser - User:gbitzer
+[DEBUG] 2019-05-08 17:26:55.370 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-08 17:26:55.595 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 17:26:56.520 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 17:28:24.011 [http-nio-8080-exec-1] SignInUser - User:gbitzer
+[DEBUG] 2019-05-08 17:28:26.204 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-08 17:28:26.544 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 17:28:27.647 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 17:28:32.884 [http-nio-8080-exec-4] ShowAllMatches - User:gbitzer
+[DEBUG] 2019-05-08 17:28:32.885 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-08 17:29:50.119 [http-nio-8080-exec-1] SignInUser - User:gbitzer
+[DEBUG] 2019-05-08 17:29:52.158 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-08 17:29:52.404 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 17:29:53.452 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 17:29:59.291 [http-nio-8080-exec-4] ShowAllMatches - User:gbitzer
+[DEBUG] 2019-05-08 17:29:59.291 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-08 17:31:08.331 [http-nio-8080-exec-1] SignInUser - User:gbitzer
+[DEBUG] 2019-05-08 17:31:10.368 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-08 17:31:10.582 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 17:31:12.058 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 17:31:17.706 [http-nio-8080-exec-4] ShowAllMatches - User:gbitzer
+[DEBUG] 2019-05-08 17:31:17.707 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-08 17:32:35.073 [http-nio-8080-exec-2] SignInUser - User:gbitzer
+[DEBUG] 2019-05-08 17:32:37.137 [http-nio-8080-exec-2] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-08 17:32:37.414 [http-nio-8080-exec-2] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 17:32:38.543 [http-nio-8080-exec-2] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 17:32:43.862 [http-nio-8080-exec-5] ShowAllMatches - User:gbitzer
+[DEBUG] 2019-05-08 17:32:43.863 [http-nio-8080-exec-5] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-08 17:32:50.252 [http-nio-8080-exec-6] ShowMatchDetail - User:gbitzer
+[DEBUG] 2019-05-08 17:33:05.072 [http-nio-8080-exec-8] ShowMatchDetail - User:gbitzer
+[DEBUG] 2019-05-08 17:35:30.562 [http-nio-8080-exec-2] SignInUser - User:gbitzer
+[DEBUG] 2019-05-08 17:35:32.794 [http-nio-8080-exec-2] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-08 17:35:33.063 [http-nio-8080-exec-2] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 17:35:34.065 [http-nio-8080-exec-2] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 17:35:39.447 [http-nio-8080-exec-5] ShowAllMatches - User:gbitzer
+[DEBUG] 2019-05-08 17:35:39.448 [http-nio-8080-exec-5] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-08 17:37:06.754 [http-nio-8080-exec-1] SignInUser - User:gbitzer
+[DEBUG] 2019-05-08 17:37:08.950 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-08 17:37:09.268 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 17:37:10.240 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 17:37:16.193 [http-nio-8080-exec-4] ShowAllMatches - User:gbitzer
+[DEBUG] 2019-05-08 17:37:16.194 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-08 17:37:20.993 [http-nio-8080-exec-5] ShowMatchDetail - User:gbitzer
+[DEBUG] 2019-05-08 17:37:52.584 [http-nio-8080-exec-9] ShowMatchDetail - User:gbitzer
+[DEBUG] 2019-05-08 17:38:17.044 [http-nio-8080-exec-2] ShowMatchDetail - User:gbitzer
+[DEBUG] 2019-05-08 17:38:41.069 [http-nio-8080-exec-3] ShowMatchDetail - User:gbitzer
+[DEBUG] 2019-05-08 17:38:58.972 [http-nio-8080-exec-1] ShowMatchDetail - User:gbitzer
+[DEBUG] 2019-05-08 17:39:39.636 [http-nio-8080-exec-7] ShowMatchDetail - User:gbitzer
+[DEBUG] 2019-05-08 17:40:01.101 [http-nio-8080-exec-5] ShowMatchDetail - User:gbitzer
+[DEBUG] 2019-05-08 17:40:16.682 [http-nio-8080-exec-6] ShowMatchDetail - User:gbitzer
+[DEBUG] 2019-05-08 17:51:40.854 [http-nio-8080-exec-2] ShowAllMatches - User:null
+[DEBUG] 2019-05-08 17:51:43.204 [http-nio-8080-exec-2] GenericDao - Searching for ** with userName = null
+[DEBUG] 2019-05-08 17:51:48.824 [http-nio-8080-exec-6] SignInUser - User:gbitzer
+[DEBUG] 2019-05-08 17:51:48.825 [http-nio-8080-exec-6] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-08 17:51:48.861 [http-nio-8080-exec-6] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 17:51:49.833 [http-nio-8080-exec-6] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 17:51:55.640 [http-nio-8080-exec-9] ShowAllMatches - User:gbitzer
+[DEBUG] 2019-05-08 17:51:55.640 [http-nio-8080-exec-9] GenericDao - Searching for ** with userName = gbitzer
+[ERROR] 2019-05-08 17:52:20.909 [http-nio-8080-exec-9] ShowAllMatches - Problem Finding Match History:javax.ws.rs.ClientErrorException: HTTP 429 
+[DEBUG] 2019-05-08 17:53:20.757 [http-nio-8080-exec-1] SignInUser - User:gbitzer
+[DEBUG] 2019-05-08 17:53:22.932 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-08 17:53:23.158 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 17:53:24.124 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 17:53:33.036 [http-nio-8080-exec-4] ShowAllMatches - User:gbitzer
+[DEBUG] 2019-05-08 17:53:33.037 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = gbitzer
+[ERROR] 2019-05-08 17:53:51.841 [http-nio-8080-exec-4] ShowAllMatches - Problem Finding Match History:javax.ws.rs.ClientErrorException: HTTP 429 
+[DEBUG] 2019-05-08 17:55:39.869 [http-nio-8080-exec-6] ShowAllMatches - User:gbitzer
+[DEBUG] 2019-05-08 17:55:39.870 [http-nio-8080-exec-6] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-08 17:55:43.837 [http-nio-8080-exec-7] ShowMatchDetail - User:gbitzer
+[ERROR] 2019-05-08 17:55:56.222 [http-nio-8080-exec-6] ShowAllMatches - Problem Finding Match History:javax.ws.rs.ClientErrorException: HTTP 429 
+[DEBUG] 2019-05-08 17:59:50.445 [http-nio-8080-exec-9] ShowAllMatches - User:gbitzer
+[DEBUG] 2019-05-08 17:59:50.445 [http-nio-8080-exec-9] GenericDao - Searching for ** with userName = gbitzer
+[ERROR] 2019-05-08 18:00:21.735 [http-nio-8080-exec-9] ShowAllMatches - Problem Finding Match History:javax.ws.rs.ClientErrorException: HTTP 429 
+[DEBUG] 2019-05-08 18:06:42.578 [http-nio-8080-exec-1] SignInUser - User:gbitzer
+[DEBUG] 2019-05-08 18:06:44.611 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-08 18:06:44.833 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 18:06:45.815 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 18:06:51.634 [http-nio-8080-exec-4] ShowAllMatches - User:gbitzer
+[DEBUG] 2019-05-08 18:06:51.635 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = gbitzer
+[ERROR] 2019-05-08 18:07:23.319 [http-nio-8080-exec-4] ShowAllMatches - Problem Finding Match History:javax.ws.rs.ClientErrorException: HTTP 429 
+[DEBUG] 2019-05-08 18:10:31.164 [http-nio-8080-exec-1] SignInUser - User:gbitzer
+[DEBUG] 2019-05-08 18:10:33.406 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-08 18:10:33.692 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 18:10:39.374 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 18:10:40.868 [http-nio-8080-exec-4] ShowAllMatches - User:gbitzer
+[DEBUG] 2019-05-08 18:10:40.869 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-08 18:12:22.915 [http-nio-8080-exec-1] SignInUser - User:gbitzer
+[DEBUG] 2019-05-08 18:12:25.095 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-08 18:12:25.311 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 18:12:26.158 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 18:14:53.803 [http-nio-8080-exec-3] SignInUser - User:gbitzer
+[DEBUG] 2019-05-08 18:14:56.281 [http-nio-8080-exec-3] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-08 18:14:56.482 [http-nio-8080-exec-3] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 18:14:57.408 [http-nio-8080-exec-3] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 18:15:02.774 [http-nio-8080-exec-4] Show50Matches - User:gbitzer
+[DEBUG] 2019-05-08 18:15:02.775 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-08 18:16:47.096 [http-nio-8080-exec-10] ShowMatchDetail - User:gbitzer
+[DEBUG] 2019-05-08 18:17:43.296 [http-nio-8080-exec-5] ShowMatchDetail - User:gbitzer
+[DEBUG] 2019-05-08 18:29:45.418 [http-nio-8080-exec-1] SignInUser - User:gbitzer
+[DEBUG] 2019-05-08 18:29:47.470 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-08 18:29:47.728 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 18:29:48.811 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 18:29:54.395 [http-nio-8080-exec-3] Show50Matches - User:gbitzer
+[DEBUG] 2019-05-08 18:29:54.396 [http-nio-8080-exec-3] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-08 18:31:45.151 [http-nio-8080-exec-4] SignInUser - User:gbitzer
+[DEBUG] 2019-05-08 18:31:47.287 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-08 18:31:47.504 [http-nio-8080-exec-4] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 18:31:48.522 [http-nio-8080-exec-4] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 18:31:54.847 [http-nio-8080-exec-6] Show50Matches - User:gbitzer
+[DEBUG] 2019-05-08 18:31:54.848 [http-nio-8080-exec-6] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-08 18:32:20.783 [http-nio-8080-exec-8] ShowMatchDetail - User:gbitzer
+[DEBUG] 2019-05-08 18:33:42.076 [http-nio-8080-exec-5] SignInUser - User:gbitzer
+[DEBUG] 2019-05-08 18:33:44.389 [http-nio-8080-exec-5] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-08 18:33:44.725 [http-nio-8080-exec-5] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 18:33:45.628 [http-nio-8080-exec-5] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-08 18:33:52.308 [http-nio-8080-exec-6] Show50Matches - User:gbitzer
+[DEBUG] 2019-05-08 18:33:52.310 [http-nio-8080-exec-6] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-08 18:34:13.267 [http-nio-8080-exec-7] ShowMatchDetail - User:gbitzer
