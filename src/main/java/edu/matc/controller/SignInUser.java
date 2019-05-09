@@ -32,23 +32,15 @@ public class SignInUser extends HttpServlet {
         GenericDao userDao = new GenericDao(User.class);
         List<User> matchingUser;
         matchingUser = userDao.getByPropertyLike("userName", req.getRemoteUser());
-
-
         User currentUser = new User();
         currentUser.setUserName(req.getRemoteUser());
-
-
-            session.setAttribute("activeUser", matchingUser.get(0));
-            currentUser.setSteamID(matchingUser.get(0).getSteamID());
-
-
+        session.setAttribute("activeUser", matchingUser.get(0));
+        currentUser.setSteamID(matchingUser.get(0).getSteamID());
 
         PlayerInfo playerInfo = new PlayerInfo();
         MatchHistory matchHistory = new MatchHistory();
         GenerateHeroStats lastMatchHero = new GenerateHeroStats();
 
-
-//        https://api.opendota.com/apps/dota2/images/heroes/slardar_full.png
         try {
             session.setAttribute("userProfile", playerInfo.getPlayerInfo(currentUser.getSteamID()).getProfile());
             session.setAttribute("userRank", playerInfo.getPlayerInfo(currentUser.getSteamID()).getMmrEstimate().getEstimate());
