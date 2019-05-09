@@ -2,6 +2,7 @@ package edu.matc.controller;
 
 
 import com.opendota.matches.Match;
+import edu.matc.entity.FavoriteMatch;
 import edu.matc.entity.User;
 import edu.matc.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
@@ -29,13 +30,21 @@ public class ShowFavoriteMatches extends HttpServlet {
         final Logger logger = LogManager.getLogger(this.getClass());
         HttpSession session = req.getSession();
         logger.debug("User:" + req.getRemoteUser());
+        //Create Daos
         GenericDao userDao = new GenericDao(User.class);
-        List<User> matchingUser = userDao.getByPropertyLike("userName", req.getRemoteUser());
+        GenericDao favoriteMatchDao = new GenericDao(FavoriteMatch.class);
+        //Set Current User
         User currentUser = new User();
+        List<User> matchingUser = userDao.getByPropertyLike("userName", req.getRemoteUser());
         currentUser.setUserName(req.getRemoteUser());
         session.setAttribute("activeUser", matchingUser.get(0));
         currentUser.setSteamID(matchingUser.get(0).getSteamID());
+        //Obtain Favorite Matches
         GenerateHeroStats heroStatGenerator = new GenerateHeroStats();
+        List<Match> favoriteMatches = favoriteMatchDao.getByPropertyLike("user_id", String.valueOf(currentUser.getId()));
+
+
+        System.out.println(favoriteMatches);
 
 
 
