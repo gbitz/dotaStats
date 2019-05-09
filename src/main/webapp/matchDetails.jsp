@@ -23,11 +23,14 @@
                 <div class="card">
                     <div class="card-header">
                         Match Details
+<<<<<<< HEAD
 
                         <form action="saveMatch">
                             <button class="btn btn-primary" value="${generalDetail.matchId}" name="saveMatch">Add To Favorites</button>
                             <span style="color:rgba(254,0,0,0.62);">${successMessage}</span>
                         </form>
+=======
+>>>>>>> 674a118aeb9dd668b7a9af5019dd0d64edd7b5f6
                     </div>
 
                     <div class="card">
