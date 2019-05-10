@@ -16,7 +16,7 @@
                     <a class="nav-link" href="show50Matches">Match History</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="showFavoriteMatches">Match History</a>
+                    <a class="nav-link" href="showFavoriteMatches">Favorite Matches</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="admin.jsp">Admin</a>

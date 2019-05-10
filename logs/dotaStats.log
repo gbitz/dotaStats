@@ -1,4 +1,0 @@
-[DEBUG] 2019-05-09 18:26:42.622 [http-nio-8080-exec-4] SignInUser - User:gbitzer
-[DEBUG] 2019-05-09 18:26:45.172 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = gbitzer
-[DEBUG] 2019-05-09 18:26:45.506 [http-nio-8080-exec-4] PlayerInfo - current user steamId : 4765894
-[DEBUG] 2019-05-09 18:26:46.658 [http-nio-8080-exec-4] PlayerInfo - current user steamId : 4765894

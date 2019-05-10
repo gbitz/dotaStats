@@ -15,6 +15,9 @@ public class FavoriteMatch {
     @Column(name = "match_id")
     private String matchId;
 
+    @Column(name = "user_name")
+    private String username;
+
     @ManyToOne
     @JoinColumn(name = "user_id",
             foreignKey = @ForeignKey(name = "matches_users_id_fk")
@@ -24,8 +27,9 @@ public class FavoriteMatch {
     public FavoriteMatch() {
     }
 
-    public FavoriteMatch(String matchId, User user) {
+    public FavoriteMatch(String matchId,String username, User user) {
         this.matchId = matchId;
+        this.username = username;
         this.user = user;
     }
 
@@ -45,6 +49,14 @@ public class FavoriteMatch {
         this.matchId = matchId;
     }
 
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
     public User getUser() {
         return user;
     }
@@ -58,6 +70,7 @@ public class FavoriteMatch {
         return "FavoriteMatch{" +
                 "id=" + id +
                 ", matchId=" + matchId +
+                ", username=" + username +
                 ", user=" + user +
                 '}';
     }

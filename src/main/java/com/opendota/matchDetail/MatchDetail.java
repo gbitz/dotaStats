@@ -73,7 +73,16 @@ public class MatchDetail{
 	@JsonProperty("tower_status_radiant")
 	private int towerStatusRadiant;
 
+	public String getHeroImg() {
+		return heroImg;
+	}
 
+	public void setHeroImg(String heroImg) {
+		this.heroImg = heroImg;
+	}
+
+	@JsonProperty("heroImg")
+	private String heroImg;
 
 	@JsonProperty("players")
 	private List<PlayersItem> players;

@@ -16,17 +16,17 @@
                     Match History
                     </div>
 
-                    <div class="card">
-                        <div class="card-body">
-                            <table>
+                    <div class="container">
+                        <div class="table-responsive">
+                            <table class="table">
                                 <thead>
                                 <tr>
                                     <th>Hero</th>
                                     <th>Id</th>
-                                    <%--<th>Duration</th>--%>
-                                    <%--<th>Kills</th>--%>
-                                    <%--<th>Deaths</th>--%>
-                                    <%--<th>Assists</th>--%>
+                                    <th>Duration</th>
+                                    <th>Kills</th>
+                                    <th>Deaths</th>
+                                    <th>Assists</th>
 
                                 </tr>
                                 </thead>
@@ -39,10 +39,10 @@
                                                 <button name="matchIdDetail" value="${match.matchId}" class="btn btn-primary">${match.matchId}</button>
                                             </form>
                                         </td>
-                                        <%--<td>${match.duration / 60}</td>--%>
-                                        <%--<td>${match.kills}</td>--%>
-                                        <%--<td>${match.deaths}</td>--%>
-                                        <%--<td>${match.assists}</td>--%>
+                                        <td>${match.duration / 60}</td>
+                                        <td>${match.kills}</td>
+                                        <td>${match.deaths}</td>
+                                        <td>${match.assists}</td>
                                     </tr>
                                 </c:forEach>
                                 </tbody>

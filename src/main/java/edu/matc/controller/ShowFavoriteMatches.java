@@ -1,6 +1,8 @@
 package edu.matc.controller;
 
 
+import com.opendota.matchDetail.MatchDetail;
+import com.opendota.matchDetail.PlayersItem;
 import com.opendota.matches.Match;
 import edu.matc.entity.FavoriteMatch;
 import edu.matc.entity.User;
@@ -34,18 +36,39 @@ public class ShowFavoriteMatches extends HttpServlet {
         GenericDao userDao = new GenericDao(User.class);
         GenericDao favoriteMatchDao = new GenericDao(FavoriteMatch.class);
         //Set Current User
-        User currentUser = new User();
+        User currentUser;
         List<User> matchingUser = userDao.getByPropertyLike("userName", req.getRemoteUser());
-        currentUser.setUserName(req.getRemoteUser());
-        session.setAttribute("activeUser", matchingUser.get(0));
-        currentUser.setSteamID(matchingUser.get(0).getSteamID());
+        currentUser = matchingUser.get(0);
         //Obtain Favorite Matches
         GenerateHeroStats heroStatGenerator = new GenerateHeroStats();
-        List<Match> favoriteMatches = favoriteMatchDao.getByPropertyLike("user_id", String.valueOf(currentUser.getId()));
+        MatchHistory matchHistory = new MatchHistory();
+        List<FavoriteMatch> favoriteMatches = favoriteMatchDao.getByPropertyLike("username", "gbitzer");
+        List<Match> allMatches = new ArrayList<>();
 
+        try {
+            allMatches = matchHistory.getMatches(currentUser.getSteamID());
+        } catch (Exception e) {
+            logger.error("problem obtaining all matches " + e);
+        }
+        List<Match> filteredMatches = new ArrayList<>();
 
-        System.out.println(favoriteMatches);
+        for (FavoriteMatch favoriteMatch : favoriteMatches) {
+            for (Match match : allMatches) {
+                if(match.getMatchId() == Long.parseLong(favoriteMatch.getMatchId())) {
+                    filteredMatches.add(match);
+                }
+            }
+        }
 
+        for (Match match : filteredMatches) {
+            try {
+                match.setHeroImg(heroStatGenerator.getHeroStats(match.getHeroId()).getIcon());
+
+            } catch (Exception e) {
+                logger.error("Error obtaining hero stats");
+            }
+        }
+        session.setAttribute("favoriteMatches", filteredMatches);
 
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/favoriteMatches.jsp");
