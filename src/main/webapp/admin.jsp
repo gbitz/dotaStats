@@ -30,7 +30,7 @@
                                 <div class="form-group">
                                     <label for="userName">Username</label>
                                     <input class="form-control" id="userName" placeholder="" name="userName">
-                                </div>
+                                </div
                                 <button type="submit" name="submit" value="searchUsers" class="btn btn-primary">Search By Username</button>
                                 <button type="submit" name="submit" value="displayUsers" class="btn btn-primary">View all users</button>
                             </form>

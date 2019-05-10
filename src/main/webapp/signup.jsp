@@ -42,7 +42,7 @@
                             <input type="password" class="form-control" id="confirmPassword" name="confirmPassword">
                         </div>
                         <div class="form-group">
-                            <label class="form-check-label" for="steamID">Steam Friend Code</label>
+                            <label class="form-check-label" for="steamID">Dota Friend ID</label>
                             <input class="form-control"  aria-describedby="steamIdHelp" name="steamID" id="steamID">
                             <small id="steamIdHelp" class="form-text text-muted">Found on your Dota 2 Client Profile Page</small>
                         </div>

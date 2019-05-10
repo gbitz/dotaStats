@@ -25,7 +25,6 @@ public class CreateUser extends HttpServlet {
 
         GenericDao userDao = new GenericDao(User.class);
         GenericDao roleDao = new GenericDao(Role.class);
-
         User newUser = new User();
 
         if (req.getParameter("createAccount").equals("confirm")) {
@@ -35,12 +34,16 @@ public class CreateUser extends HttpServlet {
             newUser.setPassword(req.getParameter("password"));
             newUser.setSteamID(req.getParameter("steamID"));
             userDao.saveOrUpdate(newUser);
-
-
             Role newRole = new Role("user", newUser);
             newRole.setUsername(req.getParameter("userName"));
             roleDao.saveOrUpdate(newRole);
 
+        }
+
+        if (req.getParameter("editAccount").equals("confirm")) {
+            newUser = (User)userDao.getByPropertyLike("userName", req.getRemoteUser()).get(0);
+            newUser.setSteamID(req.getParameter("steamID"));
+            userDao.saveOrUpdate(newUser);
 
         }
 

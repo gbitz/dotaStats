@@ -40,14 +40,15 @@ public class SignInUser extends HttpServlet {
         PlayerInfo playerInfo = new PlayerInfo();
         MatchHistory matchHistory = new MatchHistory();
         GenerateHeroStats lastMatchHero = new GenerateHeroStats();
-
         try {
-            session.setAttribute("userProfile", playerInfo.getPlayerInfo(currentUser.getSteamID()).getProfile());
-            session.setAttribute("userRank", playerInfo.getPlayerInfo(currentUser.getSteamID()).getMmrEstimate().getEstimate());
-            session.setAttribute("matchHistory", matchHistory.getMatches(currentUser.getSteamID()));
-            session.setAttribute("lastMatchHero", lastMatchHero.getHeroStats(matchHistory.getMatches(currentUser.getSteamID()).get(0).getHeroId()));
+            if (playerInfo.getPlayerInfo(currentUser.getSteamID()).getProfile() != null) {
+                session.setAttribute("userProfile", playerInfo.getPlayerInfo(currentUser.getSteamID()).getProfile());
+                session.setAttribute("userRank", playerInfo.getPlayerInfo(currentUser.getSteamID()).getMmrEstimate().getEstimate());
+                session.setAttribute("matchHistory", matchHistory.getMatches(currentUser.getSteamID()));
+                session.setAttribute("lastMatchHero", lastMatchHero.getHeroStats(matchHistory.getMatches(currentUser.getSteamID()).get(0).getHeroId()));
+            }
         } catch (Exception e) {
-            logger.debug("error signing in: " + e);
+            logger.error("error signing in: " + e);
         }
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/index.jsp");

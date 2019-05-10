@@ -1,0 +1,174 @@
+[DEBUG] 2019-05-10 11:00:44.447 [http-nio-8080-exec-9] SignInUser - User:gbitzer
+[DEBUG] 2019-05-10 11:00:49.661 [http-nio-8080-exec-9] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-10 11:00:50.005 [http-nio-8080-exec-9] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 11:00:51.233 [http-nio-8080-exec-9] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 11:01:06.091 [http-nio-8080-exec-4] Show50Matches - User:gbitzer
+[DEBUG] 2019-05-10 11:01:06.092 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-10 11:01:48.045 [http-nio-8080-exec-3] ShowMatchDetail - User:gbitzer
+[ERROR] 2019-05-10 11:01:51.563 [http-nio-8080-exec-3] ShowMatchDetail - show match detail errorjavax.ws.rs.ClientErrorException: HTTP 429 
+[DEBUG] 2019-05-10 11:01:59.350 [http-nio-8080-exec-5] ShowMatchDetail - User:gbitzer
+[ERROR] 2019-05-10 11:01:59.576 [http-nio-8080-exec-5] ShowMatchDetail - error generating match detail: javax.ws.rs.ClientErrorException: HTTP 429 
+[ERROR] 2019-05-10 11:01:59.576 [http-nio-8080-exec-5] ShowMatchDetail - show match detail errorjava.lang.NullPointerException
+[DEBUG] 2019-05-10 11:02:44.233 [http-nio-8080-exec-7] ShowMatchDetail - User:gbitzer
+[DEBUG] 2019-05-10 11:02:49.812 [http-nio-8080-exec-1] ShowMatchDetail - User:gbitzer
+[DEBUG] 2019-05-10 11:02:56.296 [http-nio-8080-exec-9] Show50Matches - User:gbitzer
+[DEBUG] 2019-05-10 11:02:56.297 [http-nio-8080-exec-9] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-10 11:03:19.897 [http-nio-8080-exec-2] ShowMatchDetail - User:gbitzer
+[DEBUG] 2019-05-10 11:03:27.521 [http-nio-8080-exec-3] ShowMatchDetail - User:gbitzer
+[ERROR] 2019-05-10 11:03:28.887 [http-nio-8080-exec-3] ShowMatchDetail - show match detail errorjavax.ws.rs.ClientErrorException: HTTP 429 
+[DEBUG] 2019-05-10 11:03:33.067 [http-nio-8080-exec-5] ShowFavoriteMatches - User:gbitzer
+[DEBUG] 2019-05-10 11:03:33.067 [http-nio-8080-exec-5] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-10 11:03:33.077 [http-nio-8080-exec-5] GenericDao - Searching for ** with username = gbitzer
+[ERROR] 2019-05-10 11:03:33.284 [http-nio-8080-exec-5] ShowFavoriteMatches - problem obtaining all matches javax.ws.rs.ClientErrorException: HTTP 429 
+[DEBUG] 2019-05-10 11:03:39.013 [http-nio-8080-exec-6] ShowFavoriteMatches - User:gbitzer
+[DEBUG] 2019-05-10 11:03:39.013 [http-nio-8080-exec-6] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-10 11:03:39.022 [http-nio-8080-exec-6] GenericDao - Searching for ** with username = gbitzer
+[ERROR] 2019-05-10 11:03:39.231 [http-nio-8080-exec-6] ShowFavoriteMatches - problem obtaining all matches javax.ws.rs.ClientErrorException: HTTP 429 
+[DEBUG] 2019-05-10 11:03:40.896 [http-nio-8080-exec-7] Show50Matches - User:gbitzer
+[DEBUG] 2019-05-10 11:03:40.896 [http-nio-8080-exec-7] GenericDao - Searching for ** with userName = gbitzer
+[ERROR] 2019-05-10 11:03:41.104 [http-nio-8080-exec-7] Show50Matches - Problem Finding Match History:javax.ws.rs.ClientErrorException: HTTP 429 
+[DEBUG] 2019-05-10 11:03:43.363 [http-nio-8080-exec-8] ShowMatchDetail - User:gbitzer
+[ERROR] 2019-05-10 11:03:43.554 [http-nio-8080-exec-8] ShowMatchDetail - error generating match detail: javax.ws.rs.ClientErrorException: HTTP 429 
+[ERROR] 2019-05-10 11:03:43.554 [http-nio-8080-exec-8] ShowMatchDetail - show match detail errorjava.lang.NullPointerException
+[DEBUG] 2019-05-10 11:03:44.933 [http-nio-8080-exec-10] SaveMatch - User:gbitzer
+[DEBUG] 2019-05-10 11:03:44.934 [http-nio-8080-exec-10] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-10 11:03:44.949 [http-nio-8080-exec-10] GenericDao - Searching for ** with matchId = 4721621778
+[DEBUG] 2019-05-10 11:03:46.949 [http-nio-8080-exec-1] ShowFavoriteMatches - User:gbitzer
+[DEBUG] 2019-05-10 11:03:46.949 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-10 11:03:46.956 [http-nio-8080-exec-1] GenericDao - Searching for ** with username = gbitzer
+[ERROR] 2019-05-10 11:03:47.189 [http-nio-8080-exec-1] ShowFavoriteMatches - problem obtaining all matches javax.ws.rs.ClientErrorException: HTTP 429 
+[DEBUG] 2019-05-10 11:03:49.233 [http-nio-8080-exec-9] ShowFavoriteMatches - User:gbitzer
+[DEBUG] 2019-05-10 11:03:49.233 [http-nio-8080-exec-9] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-10 11:03:49.242 [http-nio-8080-exec-9] GenericDao - Searching for ** with username = gbitzer
+[ERROR] 2019-05-10 11:03:49.460 [http-nio-8080-exec-9] ShowFavoriteMatches - problem obtaining all matches javax.ws.rs.ClientErrorException: HTTP 429 
+[DEBUG] 2019-05-10 11:03:51.069 [http-nio-8080-exec-4] ShowFavoriteMatches - User:gbitzer
+[DEBUG] 2019-05-10 11:03:51.070 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-10 11:03:51.076 [http-nio-8080-exec-4] GenericDao - Searching for ** with username = gbitzer
+[ERROR] 2019-05-10 11:03:51.283 [http-nio-8080-exec-4] ShowFavoriteMatches - problem obtaining all matches javax.ws.rs.ClientErrorException: HTTP 429 
+[DEBUG] 2019-05-10 11:04:35.527 [http-nio-8080-exec-8] ShowFavoriteMatches - User:gbitzer
+[DEBUG] 2019-05-10 11:04:35.527 [http-nio-8080-exec-8] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-10 11:04:35.532 [http-nio-8080-exec-8] GenericDao - Searching for ** with username = gbitzer
+[DEBUG] 2019-05-10 11:04:41.136 [http-nio-8080-exec-2] ShowMatchDetail - User:gbitzer
+[DEBUG] 2019-05-10 11:15:01.067 [http-nio-8080-exec-2] SignInUser - User:gbitzer
+[DEBUG] 2019-05-10 11:15:02.962 [http-nio-8080-exec-2] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-10 11:15:03.196 [http-nio-8080-exec-2] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 11:15:04.080 [http-nio-8080-exec-2] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 11:16:52.371 [http-nio-8080-exec-2] SignInUser - User:gbitzer
+[DEBUG] 2019-05-10 11:16:54.147 [http-nio-8080-exec-2] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-10 11:16:54.337 [http-nio-8080-exec-2] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 11:16:55.216 [http-nio-8080-exec-2] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 11:20:14.742 [http-nio-8080-exec-9] SignInUser - User:gbitzer
+[DEBUG] 2019-05-10 11:20:14.743 [http-nio-8080-exec-9] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-10 11:20:14.756 [http-nio-8080-exec-9] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 11:20:15.054 [http-nio-8080-exec-9] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 11:40:21.707 [http-nio-8080-exec-3] SignInUser - User:gbitzer
+[DEBUG] 2019-05-10 11:40:23.650 [http-nio-8080-exec-3] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-10 11:40:23.859 [http-nio-8080-exec-3] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 11:40:24.699 [http-nio-8080-exec-3] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 11:41:07.361 [http-nio-8080-exec-10] SignInUser - User:test
+[DEBUG] 2019-05-10 11:41:07.363 [http-nio-8080-exec-10] GenericDao - Searching for ** with userName = test
+[DEBUG] 2019-05-10 11:41:07.377 [http-nio-8080-exec-10] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 11:41:07.675 [http-nio-8080-exec-10] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 11:42:30.219 [http-nio-8080-exec-1] SignInUser - User:gbitzer
+[DEBUG] 2019-05-10 11:42:32.287 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-10 11:42:32.543 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 11:42:33.425 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 11:45:21.594 [http-nio-8080-exec-1] SignInUser - User:gbitzer
+[DEBUG] 2019-05-10 11:45:23.301 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-10 11:45:23.491 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 11:45:24.326 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 11:45:39.950 [http-nio-8080-exec-7] SignInUser - User:gbitzer
+[DEBUG] 2019-05-10 11:45:39.951 [http-nio-8080-exec-7] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-10 11:45:39.963 [http-nio-8080-exec-7] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 11:45:40.202 [http-nio-8080-exec-7] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 11:45:54.281 [http-nio-8080-exec-1] SignInUser - User:test
+[DEBUG] 2019-05-10 11:45:54.281 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = test
+[DEBUG] 2019-05-10 11:45:54.292 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 11:45:54.536 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 11:46:02.088 [http-nio-8080-exec-3] GenericDao - Searching for ** with userName = test
+[DEBUG] 2019-05-10 11:46:23.536 [http-nio-8080-exec-8] SignInUser - User:test
+[DEBUG] 2019-05-10 11:46:23.536 [http-nio-8080-exec-8] GenericDao - Searching for ** with userName = test
+[DEBUG] 2019-05-10 11:46:23.542 [http-nio-8080-exec-8] PlayerInfo - current user steamId : 1
+[DEBUG] 2019-05-10 11:46:23.767 [http-nio-8080-exec-8] PlayerInfo - current user steamId : 1
+[DEBUG] 2019-05-10 11:46:24.658 [http-nio-8080-exec-8] SignInUser - error signing in: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+[DEBUG] 2019-05-10 11:46:38.080 [http-nio-8080-exec-9] SignInUser - User:test
+[DEBUG] 2019-05-10 11:46:38.081 [http-nio-8080-exec-9] GenericDao - Searching for ** with userName = test
+[DEBUG] 2019-05-10 11:46:38.093 [http-nio-8080-exec-9] PlayerInfo - current user steamId : 1
+[DEBUG] 2019-05-10 11:46:38.298 [http-nio-8080-exec-9] PlayerInfo - current user steamId : 1
+[DEBUG] 2019-05-10 11:46:39.122 [http-nio-8080-exec-9] SignInUser - error signing in: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+[DEBUG] 2019-05-10 11:46:46.386 [http-nio-8080-exec-1] ShowFavoriteMatches - User:test
+[DEBUG] 2019-05-10 11:46:46.387 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = test
+[DEBUG] 2019-05-10 11:46:46.394 [http-nio-8080-exec-1] GenericDao - Searching for ** with username = gbitzer
+[DEBUG] 2019-05-10 11:46:54.160 [http-nio-8080-exec-5] SignInUser - User:test
+[DEBUG] 2019-05-10 11:46:54.160 [http-nio-8080-exec-5] GenericDao - Searching for ** with userName = test
+[DEBUG] 2019-05-10 11:46:54.172 [http-nio-8080-exec-5] PlayerInfo - current user steamId : 1
+[DEBUG] 2019-05-10 11:46:54.370 [http-nio-8080-exec-5] PlayerInfo - current user steamId : 1
+[DEBUG] 2019-05-10 11:46:55.014 [http-nio-8080-exec-5] SignInUser - error signing in: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+[DEBUG] 2019-05-10 11:55:53.616 [http-nio-8080-exec-1] SignInUser - User:test
+[DEBUG] 2019-05-10 11:55:55.752 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = test
+[DEBUG] 2019-05-10 11:55:55.963 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 1
+[DEBUG] 2019-05-10 11:55:56.820 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 1
+[DEBUG] 2019-05-10 11:55:57.584 [http-nio-8080-exec-1] SignInUser - error signing in: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+[DEBUG] 2019-05-10 11:57:09.950 [http-nio-8080-exec-1] SignInUser - User:gbitzer
+[DEBUG] 2019-05-10 11:57:12.029 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-10 11:57:12.296 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 11:57:13.179 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 11:57:55.986 [http-nio-8080-exec-6] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-10 11:58:01.217 [http-nio-8080-exec-7] ShowFavoriteMatches - User:gbitzer
+[DEBUG] 2019-05-10 11:58:01.217 [http-nio-8080-exec-7] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-10 11:58:01.226 [http-nio-8080-exec-7] GenericDao - Searching for ** with username = gbitzer
+[DEBUG] 2019-05-10 11:58:34.373 [http-nio-8080-exec-3] Show50Matches - User:null
+[DEBUG] 2019-05-10 11:58:34.374 [http-nio-8080-exec-3] GenericDao - Searching for ** with userName = null
+[DEBUG] 2019-05-10 12:05:06.799 [http-nio-8080-exec-1] SignInUser - User:gbitzer
+[DEBUG] 2019-05-10 12:05:08.585 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-10 12:05:08.785 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 12:05:09.717 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 12:05:20.198 [http-nio-8080-exec-7] SignInUser - User:test
+[DEBUG] 2019-05-10 12:05:20.199 [http-nio-8080-exec-7] GenericDao - Searching for ** with userName = test
+[DEBUG] 2019-05-10 12:05:20.206 [http-nio-8080-exec-7] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 12:05:20.459 [http-nio-8080-exec-7] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 12:05:28.047 [http-nio-8080-exec-9] GenericDao - Searching for ** with userName = test
+[DEBUG] 2019-05-10 12:05:35.438 [http-nio-8080-exec-4] SignInUser - User:test
+[DEBUG] 2019-05-10 12:05:35.438 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = test
+[DEBUG] 2019-05-10 12:05:35.444 [http-nio-8080-exec-4] PlayerInfo - current user steamId : 1
+[DEBUG] 2019-05-10 12:05:35.686 [http-nio-8080-exec-4] PlayerInfo - current user steamId : 1
+[DEBUG] 2019-05-10 12:05:36.350 [http-nio-8080-exec-4] SignInUser - error signing in: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+[DEBUG] 2019-05-10 12:07:55.533 [http-nio-8080-exec-4] SignInUser - User:test
+[DEBUG] 2019-05-10 12:07:57.321 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = test
+[DEBUG] 2019-05-10 12:07:57.524 [http-nio-8080-exec-4] PlayerInfo - current user steamId : 1
+[DEBUG] 2019-05-10 12:07:58.421 [http-nio-8080-exec-4] PlayerInfo - current user steamId : 1
+[DEBUG] 2019-05-10 12:07:59.124 [http-nio-8080-exec-4] SignInUser - error signing in: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+[DEBUG] 2019-05-10 12:14:41.647 [http-nio-8080-exec-1] SignInUser - User:test
+[DEBUG] 2019-05-10 12:14:43.873 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = test
+[DEBUG] 2019-05-10 12:14:44.103 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 1
+[DEBUG] 2019-05-10 12:22:04.964 [http-nio-8080-exec-1] SignInUser - User:test
+[DEBUG] 2019-05-10 12:22:07.055 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = test
+[DEBUG] 2019-05-10 12:22:07.270 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 1
+[DEBUG] 2019-05-10 12:23:57.571 [http-nio-8080-exec-4] SignInUser - User:test
+[DEBUG] 2019-05-10 12:23:59.573 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = test
+[DEBUG] 2019-05-10 12:23:59.832 [http-nio-8080-exec-4] PlayerInfo - current user steamId : 1
+[DEBUG] 2019-05-10 12:26:53.575 [http-nio-8080-exec-1] SignInUser - User:gbitzer
+[DEBUG] 2019-05-10 12:26:55.783 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-10 12:26:56.078 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 12:26:56.990 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 12:26:57.247 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 12:27:20.993 [http-nio-8080-exec-4] SignInUser - User:gbitzer
+[DEBUG] 2019-05-10 12:27:20.995 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-10 12:27:21.010 [http-nio-8080-exec-4] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 12:27:21.259 [http-nio-8080-exec-4] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 12:27:21.480 [http-nio-8080-exec-4] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 12:27:27.836 [http-nio-8080-exec-5] SignInUser - User:gbitzer
+[DEBUG] 2019-05-10 12:27:27.836 [http-nio-8080-exec-5] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-10 12:27:27.844 [http-nio-8080-exec-5] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 12:27:28.108 [http-nio-8080-exec-5] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 12:27:28.349 [http-nio-8080-exec-5] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 12:30:18.746 [http-nio-8080-exec-1] SignInUser - User:gbitzer
+[DEBUG] 2019-05-10 12:30:20.819 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-10 12:30:21.057 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 12:30:22.001 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 12:30:22.237 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 12:32:53.093 [http-nio-8080-exec-3] SignInUser - User:gbitzer
+[DEBUG] 2019-05-10 12:32:54.975 [http-nio-8080-exec-3] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-10 12:32:55.160 [http-nio-8080-exec-3] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 12:32:56.014 [http-nio-8080-exec-3] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-10 12:32:56.247 [http-nio-8080-exec-3] PlayerInfo - current user steamId : 4765894

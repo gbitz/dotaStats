@@ -26,11 +26,13 @@
             <ul class="nav navbar-nav navbar-right">
                 <c:choose>
                     <c:when test="${activeUser.id == null}">
+
                         <li><a href="signup.jsp"><span class="fa fa-user-plus"></span> Sign Up </a></li>
                         <li><a href="signedIn.jsp"><span class="fa fa-sign-in"></span> Login</a></li>
                     </c:when>
                     <c:otherwise>
-                        <li><a href="logoutUser"><span class="fa fa-sign-out"></span> Logout</a></li>
+                        <li><a href="editSteamId.jsp"><span class="fa fa-user-edit"></span> Edit Id</a></li>
+                        <li><a href="logoutUser"><span class="fa sign-out-alt"></span> Logout</a></li>
                     </c:otherwise>
                 </c:choose>
             </ul>
