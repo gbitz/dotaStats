@@ -42,7 +42,7 @@ public class SaveMatch extends HttpServlet {
         try {
             matchToAdd.setMatchId(req.getParameter("saveMatch"));
             matchToAdd.setUser(currentUsers.get(0));
-            System.out.println(favoriteMatchDao.getByPropertyLike("matchId", req.getParameter("saveMatch")).isEmpty());
+            matchToAdd.setUsername(req.getRemoteUser());
             if (favoriteMatchDao.getByPropertyLike("matchId", req.getParameter("saveMatch")).isEmpty()) {
                 favoriteMatchDao.insert(matchToAdd);
                 successMessage = "Added Match " + matchToAdd.getMatchId() + " to Favorites";

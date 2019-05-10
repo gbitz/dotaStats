@@ -10,20 +10,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-<<<<<<< HEAD
                     <a class="nav-link" href="index.jsp">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="show50Matches">Match History</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="showFavoriteMatches">Match History</a>
-=======
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="show50Matches">Match History</a>
->>>>>>> 674a118aeb9dd668b7a9af5019dd0d64edd7b5f6
+                    <a class="nav-link" href="showFavoriteMatches">Favorite Matches</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="admin.jsp">Admin</a>
