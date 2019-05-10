@@ -27,9 +27,6 @@ public class GenerateMatchDetail {
     public MatchDetail getMatchDetail(long matchId) throws Exception {
         final Logger logger = LogManager.getLogger(this.getClass());
         MatchDetail matchDetail;
-//        MatchDetail returnedMatchDetails;
-//        List<MatchDetail> matchDetails = new ArrayList<>();
-
 
         Client client = ClientBuilder.newClient();
         WebTarget target =
