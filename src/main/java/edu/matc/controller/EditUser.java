@@ -30,7 +30,6 @@ public class EditUser extends HttpServlet {
             userToEdit = (User)userDao.getByPropertyLike("userName", req.getRemoteUser()).get(0);
             userToEdit.setSteamID(req.getParameter("steamID"));
             userDao.saveOrUpdate(userToEdit);
-
         }
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/login.jsp");

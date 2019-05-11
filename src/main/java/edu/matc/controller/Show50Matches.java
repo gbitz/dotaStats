@@ -47,7 +47,6 @@ public class Show50Matches extends HttpServlet {
                     break;
                 }
                 fiftyMatches.add(match);
-
             }
             for (Match match : fiftyMatches) {
                 i++;
@@ -60,7 +59,6 @@ public class Show50Matches extends HttpServlet {
         } catch (Exception e) {
             logger.error("Problem Finding Match History:" + e);
         }
-
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/50Matches.jsp");
         dispatcher.forward(req, resp);

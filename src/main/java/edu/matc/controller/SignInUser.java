@@ -36,7 +36,7 @@ public class SignInUser extends HttpServlet {
         currentUser.setUserName(req.getRemoteUser());
         session.setAttribute("activeUser", matchingUser.get(0));
         currentUser.setSteamID(matchingUser.get(0).getSteamID());
-
+        System.out.println(req);
         PlayerInfo playerInfo = new PlayerInfo();
         MatchHistory matchHistory = new MatchHistory();
         GenerateHeroStats lastMatchHero = new GenerateHeroStats();

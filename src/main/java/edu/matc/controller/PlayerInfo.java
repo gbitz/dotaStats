@@ -27,7 +27,6 @@ public class PlayerInfo {
         String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
 
         ObjectMapper mapper = new ObjectMapper();
-//        mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
         player = mapper.readValue(response, Player.class);
 
         return player;

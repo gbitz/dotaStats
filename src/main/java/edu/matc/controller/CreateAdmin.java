@@ -25,19 +25,6 @@ public class CreateAdmin extends HttpServlet {
 
         GenericDao userDao = new GenericDao(User.class);
         GenericDao roleDao = new GenericDao(Role.class);
-
-        try {
-            makeAdmin(req, userDao, roleDao);
-        } catch (Exception e) {
-            logger.error("Error creating admin status");
-        }
-
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/admin.jsp");
-        dispatcher.forward(req, resp);
-    }
-
-
-    public static void makeAdmin(HttpServletRequest req, GenericDao userDao, GenericDao roleDao) {
         Role newAdmin = new Role();
         newAdmin.setUser((User)(userDao.getByPropertyEqual("userName", req.getParameter("newAdminName"))).get(0));
         newAdmin.setRole("admin");
@@ -45,5 +32,9 @@ public class CreateAdmin extends HttpServlet {
         if (req.getParameter("createAdmin").equals("createAdmin")) {
             roleDao.insert(newAdmin);
         }
+
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/admin.jsp");
+        dispatcher.forward(req, resp);
     }
+
 }
