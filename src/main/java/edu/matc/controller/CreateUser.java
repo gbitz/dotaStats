@@ -19,35 +19,50 @@ import java.io.IOException;
 )
 
 public class CreateUser extends HttpServlet {
+    GenericDao userDao = new GenericDao(User.class);
+    GenericDao roleDao = new GenericDao(Role.class);
+    User newUser = new User();
+    Role newRole;
+    final Logger logger = LogManager.getLogger(this.getClass());
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        final Logger logger = LogManager.getLogger(this.getClass());
 
-        GenericDao userDao = new GenericDao(User.class);
-        GenericDao roleDao = new GenericDao(Role.class);
-        User newUser = new User();
+        String username = req.getParameter("userName");
+        String firstname = req.getParameter("firstName");
+        String lastname = req.getParameter("lastName");
+        String password = req.getParameter("password");
+        String steamId = req.getParameter("steamID");
 
         if (req.getParameter("createAccount").equals("confirm")) {
-            newUser.setUserName(req.getParameter("userName"));
-            newUser.setFirstName(req.getParameter("firstName"));
-            newUser.setLastName(req.getParameter("lastName"));
-            newUser.setPassword(req.getParameter("password"));
-            newUser.setSteamID(req.getParameter("steamID"));
-            userDao.saveOrUpdate(newUser);
-            Role newRole = new Role("user", newUser);
-            newRole.setUsername(req.getParameter("userName"));
-            roleDao.saveOrUpdate(newRole);
-
-        }
-
-        if (req.getParameter("editAccount").equals("confirm")) {
-            newUser = (User)userDao.getByPropertyLike("userName", req.getRemoteUser()).get(0);
-            newUser.setSteamID(req.getParameter("steamID"));
-            userDao.saveOrUpdate(newUser);
-
+            newUser = createAccount(newUser, username, firstname,lastname,password,steamId);
+            newRole = setDefaultRole(newRole, newUser, username);
+            doPost(req, resp);
         }
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/login.jsp");
         dispatcher.forward(req, resp);
     }
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        userDao.saveOrUpdate(newUser);
+        roleDao.saveOrUpdate(newRole);
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/login.jsp");
+        dispatcher.forward(req, resp);
+    }
+
+    public Role setDefaultRole(Role newRole, User newUser, String username) {
+        newRole = new Role ("user", newUser);
+        newRole.setUsername(username);
+        return newRole;
+    }
+
+    public User createAccount(User newUser, String username, String firstname, String lastname, String password, String steamId) {
+        newUser.setUserName(username);
+        newUser.setFirstName(firstname);
+        newUser.setLastName(lastname);
+        newUser.setPassword(password);
+        newUser.setSteamID(steamId);
+        return newUser;
+    }
+
 }

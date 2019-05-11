@@ -19,22 +19,36 @@ import java.io.IOException;
 )
 
 public class CreateAdmin extends HttpServlet {
+    GenericDao userDao = new GenericDao(User.class);
+    GenericDao roleDao = new GenericDao(Role.class);
+    Role newAdmin = new Role();
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         final Logger logger = LogManager.getLogger(this.getClass());
+        String username = req.getParameter("newAdminName");
+        newAdmin = makeAdmin(newAdmin, username);
 
-        GenericDao userDao = new GenericDao(User.class);
-        GenericDao roleDao = new GenericDao(Role.class);
-        Role newAdmin = new Role();
-        newAdmin.setUser((User)(userDao.getByPropertyEqual("userName", req.getParameter("newAdminName"))).get(0));
-        newAdmin.setRole("admin");
-        newAdmin.setUsername(req.getParameter("newAdminName"));
         if (req.getParameter("createAdmin").equals("createAdmin")) {
-            roleDao.insert(newAdmin);
+            doPost(req, resp);
         }
 
+
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        roleDao.insert(newAdmin);
         RequestDispatcher dispatcher = req.getRequestDispatcher("/admin.jsp");
         dispatcher.forward(req, resp);
+    }
+
+
+    public Role makeAdmin(Role newAdmin, String username) {
+        newAdmin.setUser((User)(userDao.getByPropertyEqual("userName", username).get(0)));
+        newAdmin.setRole("admin");
+        newAdmin.setUsername(username);
+        return newAdmin;
     }
 
 }
