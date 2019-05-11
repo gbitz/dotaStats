@@ -374,3 +374,387 @@
 [DEBUG] 2019-05-10 18:19:18.539 [http-nio-8080-exec-6] ShowFavoriteMatches - User:gbitzer
 [DEBUG] 2019-05-10 18:19:18.539 [http-nio-8080-exec-6] GenericDao - Searching for ** with userName = gbitzer
 [DEBUG] 2019-05-10 18:19:18.547 [http-nio-8080-exec-6] GenericDao - Searching for ** with username = gbitzer
+[DEBUG] 2019-05-11 10:06:35.569 [main] PlayerInfo - current user steamId : 4765894
+[ERROR] 2019-05-11 10:06:43.709 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:06:47.135 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:06:47.430 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:06:47.475 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 10:06:47.479 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-11 10:06:47.517 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:06:47.539 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 10:06:47.539 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-11 10:06:47.567 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 10:07:21.201 [http-nio-8080-exec-9] SignInUser - User:gbitzer
+[DEBUG] 2019-05-11 10:07:25.750 [http-nio-8080-exec-9] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-11 10:07:26.038 [http-nio-8080-exec-9] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-11 10:07:27.208 [http-nio-8080-exec-9] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-11 10:07:31.404 [http-nio-8080-exec-9] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-11 10:08:03.419 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = dklein
+[DEBUG] 2019-05-11 10:12:22.141 [main] PlayerInfo - current user steamId : 4765894
+[ERROR] 2019-05-11 10:12:54.241 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:12:55.786 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:12:55.935 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:12:55.965 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 10:12:55.967 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-11 10:12:55.989 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:12:56.000 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 10:12:56.001 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-11 10:12:56.026 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 10:13:20.787 [http-nio-8080-exec-7] GenericDao - Searching for ** with userName = kmack
+[ERROR] 2019-05-11 10:33:23.242 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:33:24.579 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:33:24.798 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:33:24.831 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 10:33:24.833 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-11 10:33:24.856 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:33:24.868 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 10:33:24.869 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-11 10:33:24.887 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 10:33:43.002 [http-nio-8080-exec-1] SignInUser - User:gbitzer
+[DEBUG] 2019-05-11 10:33:44.996 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-11 10:33:45.223 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-11 10:33:46.135 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-11 10:33:46.361 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 4765894
+[ERROR] 2019-05-11 10:37:30.257 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:37:31.644 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:37:31.849 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:37:31.880 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 10:37:31.882 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-11 10:37:31.905 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:37:31.917 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 10:37:31.918 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-11 10:37:31.937 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:39:01.850 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:39:03.068 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:39:03.294 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:39:03.353 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 10:39:03.355 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-11 10:39:03.399 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:39:03.420 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 10:39:03.422 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-11 10:39:03.454 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:40:35.249 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:40:36.671 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:40:36.879 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:40:36.937 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 10:40:36.939 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-11 10:40:36.963 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:40:36.974 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 10:40:36.976 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-11 10:40:36.997 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:42:17.176 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:42:18.356 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:42:18.585 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:42:18.619 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 10:42:18.621 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-11 10:42:18.648 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:42:18.660 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 10:42:18.661 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-11 10:42:18.683 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 10:42:37.436 [http-nio-8080-exec-1] SignInUser - User:dave
+[DEBUG] 2019-05-11 10:42:39.340 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 10:42:39.555 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 10:42:43.573 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 10:42:46.387 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 10:43:06.276 [http-nio-8080-exec-4] ShowMatchDetail - User:dave
+[DEBUG] 2019-05-11 10:43:45.813 [http-nio-8080-exec-7] ShowFavoriteMatches - User:dave
+[DEBUG] 2019-05-11 10:43:45.813 [http-nio-8080-exec-7] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 10:43:45.821 [http-nio-8080-exec-7] GenericDao - Searching for ** with username = gbitzer
+[DEBUG] 2019-05-11 10:43:47.974 [http-nio-8080-exec-8] Show50Matches - User:dave
+[DEBUG] 2019-05-11 10:43:47.975 [http-nio-8080-exec-8] GenericDao - Searching for ** with userName = dave
+[ERROR] 2019-05-11 10:47:08.770 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:47:10.030 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:47:10.253 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:47:10.287 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 10:47:10.289 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-11 10:47:10.315 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 10:47:10.328 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 10:47:10.329 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-11 10:47:10.348 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 10:48:05.841 [http-nio-8080-exec-3] SignInUser - User:dave
+[DEBUG] 2019-05-11 10:48:05.845 [http-nio-8080-exec-3] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 10:48:06.028 [http-nio-8080-exec-3] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 10:48:07.037 [http-nio-8080-exec-3] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 10:48:07.289 [http-nio-8080-exec-3] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 10:48:32.783 [http-nio-8080-exec-7] SignInUser - User:dave
+[DEBUG] 2019-05-11 10:48:32.787 [http-nio-8080-exec-7] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 10:48:32.795 [http-nio-8080-exec-7] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 10:48:33.048 [http-nio-8080-exec-7] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 10:48:33.254 [http-nio-8080-exec-7] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 10:49:02.757 [http-nio-8080-exec-9] ShowMatchDetail - User:dave
+[ERROR] 2019-05-11 11:06:58.731 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 11:06:59.938 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 11:07:00.124 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 11:07:00.159 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 11:07:00.161 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-11 11:07:00.184 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 11:07:00.197 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 11:07:00.198 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-11 11:07:00.216 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 11:07:22.650 [http-nio-8080-exec-1] SignInUser - User:dave
+[DEBUG] 2019-05-11 11:07:24.624 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 11:07:24.822 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 11:07:25.702 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 11:07:28.585 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 11:07:44.888 [http-nio-8080-exec-3] ShowMatchDetail - User:dave
+[DEBUG] 2019-05-11 11:08:00.907 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 11:08:00.922 [http-nio-8080-exec-4] GenericDao - Searching for ** with matchId = 4740433691
+[DEBUG] 2019-05-11 11:08:02.889 [http-nio-8080-exec-5] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 11:08:02.895 [http-nio-8080-exec-5] GenericDao - Searching for ** with matchId = 4740433691
+[DEBUG] 2019-05-11 11:08:08.557 [http-nio-8080-exec-6] ShowFavoriteMatches - User:dave
+[DEBUG] 2019-05-11 11:08:08.558 [http-nio-8080-exec-6] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 11:08:08.567 [http-nio-8080-exec-6] GenericDao - Searching for ** with username = gbitzer
+[DEBUG] 2019-05-11 11:08:23.760 [http-nio-8080-exec-7] ShowFavoriteMatches - User:dave
+[DEBUG] 2019-05-11 11:08:23.760 [http-nio-8080-exec-7] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 11:08:23.767 [http-nio-8080-exec-7] GenericDao - Searching for ** with username = gbitzer
+[DEBUG] 2019-05-11 11:08:46.217 [http-nio-8080-exec-3] ShowMatchDetail - User:dave
+[DEBUG] 2019-05-11 11:09:06.343 [http-nio-8080-exec-6] ShowFavoriteMatches - User:dave
+[DEBUG] 2019-05-11 11:09:06.343 [http-nio-8080-exec-6] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 11:09:06.350 [http-nio-8080-exec-6] GenericDao - Searching for ** with username = gbitzer
+[DEBUG] 2019-05-11 11:09:11.686 [http-nio-8080-exec-7] ShowMatchDetail - User:dave
+[DEBUG] 2019-05-11 11:10:24.119 [http-nio-8080-exec-1] SignInUser - User:dave
+[DEBUG] 2019-05-11 11:10:24.119 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 11:10:24.128 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 11:10:25.894 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 11:10:26.111 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 11:10:43.446 [http-nio-8080-exec-4] ShowMatchDetail - User:dave
+[ERROR] 2019-05-11 11:11:50.266 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 11:11:51.473 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 11:11:51.656 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 11:11:51.703 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 11:11:51.705 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-11 11:11:51.745 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 11:11:51.764 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 11:11:51.765 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-11 11:11:51.797 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 11:20:24.991 [http-nio-8080-exec-6] SignInUser - User:dave
+[DEBUG] 2019-05-11 11:20:26.965 [http-nio-8080-exec-6] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 11:20:27.179 [http-nio-8080-exec-6] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 11:20:30.413 [http-nio-8080-exec-6] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 11:20:34.836 [http-nio-8080-exec-6] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 11:20:46.123 [http-nio-8080-exec-7] ShowFavoriteMatches - User:dave
+[DEBUG] 2019-05-11 11:20:46.124 [http-nio-8080-exec-7] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 11:20:46.135 [http-nio-8080-exec-7] GenericDao - Searching for ** with username = dave
+[ERROR] 2019-05-11 11:58:05.956 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 11:58:07.276 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 11:58:07.495 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 11:58:07.527 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 11:58:07.530 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-11 11:58:07.554 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 11:58:07.566 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 11:58:07.567 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-11 11:58:07.585 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 11:58:37.353 [http-nio-8080-exec-4] SignInUser - User:dave
+[DEBUG] 2019-05-11 11:58:39.251 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 11:58:39.484 [http-nio-8080-exec-4] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 11:58:42.211 [http-nio-8080-exec-4] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 11:58:48.085 [http-nio-8080-exec-4] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 11:59:00.027 [http-nio-8080-exec-5] GenericDao - Searching for ** with userName = dave
+[ERROR] 2019-05-11 13:21:20.071 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:21:23.059 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:21:23.834 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:21:23.861 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 13:21:23.863 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-11 13:21:23.885 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:21:23.895 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 13:21:23.896 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-11 13:21:23.913 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 13:22:53.949 [http-nio-8080-exec-6] SignInUser - User:dave
+[DEBUG] 2019-05-11 13:22:57.708 [http-nio-8080-exec-6] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:22:58.089 [http-nio-8080-exec-6] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 13:23:02.223 [http-nio-8080-exec-6] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 13:23:02.962 [http-nio-8080-exec-6] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 13:23:18.631 [http-nio-8080-exec-9] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:23:18.641 [http-nio-8080-exec-9] GenericDao - Searching for ** with username = dave
+[DEBUG] 2019-05-11 13:23:25.041 [http-nio-8080-exec-10] ShowMatchDetail - User:dave
+[DEBUG] 2019-05-11 13:23:46.008 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:23:46.016 [http-nio-8080-exec-1] GenericDao - Searching for ** with username = dave
+[DEBUG] 2019-05-11 13:23:52.851 [http-nio-8080-exec-2] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:23:52.859 [http-nio-8080-exec-2] GenericDao - Searching for ** with username = dave
+[DEBUG] 2019-05-11 13:24:04.336 [http-nio-8080-exec-3] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:24:04.343 [http-nio-8080-exec-3] GenericDao - Searching for ** with username = dave
+[DEBUG] 2019-05-11 13:24:11.220 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = dave
+[ERROR] 2019-05-11 13:25:56.375 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:25:57.679 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:25:57.872 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:25:57.907 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 13:25:57.909 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-11 13:25:57.933 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:25:57.944 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 13:25:57.945 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-11 13:25:57.962 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 13:26:17.345 [http-nio-8080-exec-1] SignInUser - User:dave
+[DEBUG] 2019-05-11 13:26:19.139 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:26:19.330 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 13:26:23.440 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 13:26:23.639 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 13:26:43.683 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:26:43.694 [http-nio-8080-exec-4] GenericDao - Searching for ** with username = dave
+[DEBUG] 2019-05-11 13:26:52.102 [http-nio-8080-exec-5] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:26:52.109 [http-nio-8080-exec-5] GenericDao - Searching for ** with username = dave
+[ERROR] 2019-05-11 13:27:52.817 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:27:54.105 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:27:54.304 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:27:54.366 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 13:27:54.368 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-11 13:27:54.392 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:27:54.402 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 13:27:54.403 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-11 13:27:54.422 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 13:28:13.968 [http-nio-8080-exec-2] SignInUser - User:dave
+[DEBUG] 2019-05-11 13:28:15.920 [http-nio-8080-exec-2] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:28:16.116 [http-nio-8080-exec-2] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 13:28:17.356 [http-nio-8080-exec-2] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 13:28:18.650 [http-nio-8080-exec-2] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 13:28:28.985 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:28:28.995 [http-nio-8080-exec-4] GenericDao - Searching for ** with username = dave
+[DEBUG] 2019-05-11 13:28:35.468 [http-nio-8080-exec-5] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:28:35.478 [http-nio-8080-exec-5] GenericDao - Searching for ** with username = dave
+[DEBUG] 2019-05-11 13:29:57.795 [http-nio-8080-exec-7] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:30:03.078 [http-nio-8080-exec-9] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:30:03.085 [http-nio-8080-exec-9] GenericDao - Searching for ** with username = dave
+[ERROR] 2019-05-11 13:32:00.382 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:32:01.655 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:32:01.871 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:32:01.912 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 13:32:01.914 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-11 13:32:01.942 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:32:01.953 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 13:32:01.955 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-11 13:32:01.973 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 13:38:06.510 [http-nio-8080-exec-5] SignInUser - User:gbitzer
+[DEBUG] 2019-05-11 13:38:08.369 [http-nio-8080-exec-5] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-11 13:38:08.579 [http-nio-8080-exec-5] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-11 13:38:09.358 [http-nio-8080-exec-5] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-11 13:38:09.571 [http-nio-8080-exec-5] PlayerInfo - current user steamId : 4765894
+[ERROR] 2019-05-11 13:40:07.055 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:40:08.304 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:40:08.494 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:40:08.532 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 13:40:08.535 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-11 13:40:08.560 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:40:08.573 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 13:40:08.575 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-11 13:40:08.596 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 13:40:42.043 [http-nio-8080-exec-3] SignInUser - User:dave
+[DEBUG] 2019-05-11 13:40:43.857 [http-nio-8080-exec-3] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:40:44.048 [http-nio-8080-exec-3] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 13:40:44.842 [http-nio-8080-exec-3] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 13:40:47.412 [http-nio-8080-exec-3] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 13:40:52.277 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:40:52.286 [http-nio-8080-exec-4] GenericDao - Searching for ** with username = dave
+[DEBUG] 2019-05-11 13:40:55.897 [http-nio-8080-exec-5] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:40:55.904 [http-nio-8080-exec-5] GenericDao - Searching for ** with username = dave
+[ERROR] 2019-05-11 13:44:58.363 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:44:59.670 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:44:59.869 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:44:59.908 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 13:44:59.910 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-11 13:44:59.936 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:44:59.949 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 13:44:59.950 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-11 13:44:59.970 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 13:45:28.278 [http-nio-8080-exec-3] SignInUser - User:dave
+[DEBUG] 2019-05-11 13:45:30.180 [http-nio-8080-exec-3] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:45:30.422 [http-nio-8080-exec-3] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 13:45:36.255 [http-nio-8080-exec-3] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 13:45:36.477 [http-nio-8080-exec-3] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 13:45:43.720 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:45:43.727 [http-nio-8080-exec-4] GenericDao - Searching for ** with username = dave
+[DEBUG] 2019-05-11 13:45:47.076 [http-nio-8080-exec-5] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:45:47.084 [http-nio-8080-exec-5] GenericDao - Searching for ** with username = dave
+[ERROR] 2019-05-11 13:46:55.873 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:46:57.273 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:46:57.483 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:46:57.514 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 13:46:57.517 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-11 13:46:57.543 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:46:57.554 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 13:46:57.555 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-11 13:46:57.573 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 13:49:38.121 [http-nio-8080-exec-3] SignInUser - User:dave
+[DEBUG] 2019-05-11 13:49:39.913 [http-nio-8080-exec-3] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:49:40.118 [http-nio-8080-exec-3] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 13:49:40.930 [http-nio-8080-exec-3] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 13:49:41.799 [http-nio-8080-exec-3] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 13:49:52.178 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:49:52.187 [http-nio-8080-exec-4] GenericDao - Searching for ** with username = dave
+[DEBUG] 2019-05-11 13:49:58.412 [http-nio-8080-exec-5] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:49:58.421 [http-nio-8080-exec-5] GenericDao - Searching for ** with username = dave
+[ERROR] 2019-05-11 13:53:30.069 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:53:31.290 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:53:31.487 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:53:31.517 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 13:53:31.519 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-11 13:53:31.546 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:53:31.558 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 13:53:31.559 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-11 13:53:31.578 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 13:53:53.498 [http-nio-8080-exec-1] SignInUser - User:dave
+[DEBUG] 2019-05-11 13:53:55.383 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:53:55.605 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 13:53:56.554 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 13:53:56.771 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 13:54:02.080 [http-nio-8080-exec-3] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:54:02.092 [http-nio-8080-exec-3] GenericDao - Searching for ** with username = dave
+[DEBUG] 2019-05-11 13:54:08.378 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:54:08.390 [http-nio-8080-exec-4] GenericDao - Searching for ** with username = dave
+[ERROR] 2019-05-11 13:54:50.079 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:54:51.346 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:54:51.533 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:54:51.570 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 13:54:51.572 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-11 13:54:51.596 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 13:54:51.609 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 13:54:51.610 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-11 13:54:51.628 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 13:55:13.298 [http-nio-8080-exec-1] SignInUser - User:dave
+[DEBUG] 2019-05-11 13:55:15.215 [http-nio-8080-exec-1] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:55:15.429 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 13:55:18.702 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 13:55:18.949 [http-nio-8080-exec-1] PlayerInfo - current user steamId : 75446543
+[DEBUG] 2019-05-11 13:55:25.944 [http-nio-8080-exec-3] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:55:25.952 [http-nio-8080-exec-3] GenericDao - Searching for ** with username = dave
+[DEBUG] 2019-05-11 13:55:38.260 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:55:38.265 [http-nio-8080-exec-4] GenericDao - Searching for ** with username = dave
+[DEBUG] 2019-05-11 13:55:44.413 [http-nio-8080-exec-9] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:55:44.418 [http-nio-8080-exec-9] GenericDao - Searching for ** with username = dave
+[DEBUG] 2019-05-11 13:55:45.655 [http-nio-8080-exec-10] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:55:45.665 [http-nio-8080-exec-10] GenericDao - Searching for ** with username = dave
+[DEBUG] 2019-05-11 13:55:48.728 [http-nio-8080-exec-2] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:55:48.733 [http-nio-8080-exec-2] GenericDao - Searching for ** with username = dave
+[ERROR] 2019-05-11 13:56:05.433 [http-nio-8080-exec-9] ShowFavoriteMatches - problem obtaining all matches javax.ws.rs.ProcessingException: java.net.ConnectException: ConnectException invoking https://api.opendota.com/api/players/75446543/matches: Connection refused (Connection refused)
+[DEBUG] 2019-05-11 13:56:39.774 [http-nio-8080-exec-3] GenericDao - Searching for ** with userName = dave
+[DEBUG] 2019-05-11 13:59:40.747 [http-nio-8080-exec-5] GenericDao - Searching for ** with userName = dave
+[ERROR] 2019-05-11 14:04:53.687 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 14:04:55.005 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 14:04:55.175 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 14:04:55.215 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 14:04:55.217 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-11 14:04:55.243 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 14:04:55.258 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 14:04:55.260 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-11 14:04:55.277 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 14:06:03.550 [http-nio-8080-exec-4] SignInUser - User:gbitzer
+[DEBUG] 2019-05-11 14:06:05.399 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-11 14:06:05.642 [http-nio-8080-exec-4] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-11 14:06:09.313 [http-nio-8080-exec-4] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-11 14:06:09.586 [http-nio-8080-exec-4] PlayerInfo - current user steamId : 4765894
+[ERROR] 2019-05-11 14:26:39.807 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 14:26:41.107 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 14:26:41.309 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 14:26:41.341 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 14:26:41.343 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-11 14:26:41.368 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 14:26:41.382 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 14:26:41.383 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-11 14:26:41.402 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 14:27:00.994 [http-nio-8080-exec-10] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-11 14:27:01.226 [http-nio-8080-exec-10] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-11 14:27:02.145 [http-nio-8080-exec-10] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-11 14:27:02.378 [http-nio-8080-exec-10] PlayerInfo - current user steamId : 4765894
+[DEBUG] 2019-05-11 14:27:29.540 [http-nio-8080-exec-4] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-11 14:27:29.548 [http-nio-8080-exec-4] GenericDao - Searching for ** with username = gbitzer
+[DEBUG] 2019-05-11 14:27:36.928 [http-nio-8080-exec-5] GenericDao - Searching for ** with userName = gbitzer
+[DEBUG] 2019-05-11 14:27:36.936 [http-nio-8080-exec-5] GenericDao - Searching for ** with username = gbitzer
+[DEBUG] 2019-05-11 14:27:46.566 [http-nio-8080-exec-7] GenericDao - Searching for ** with userName = gbitzer

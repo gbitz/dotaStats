@@ -27,38 +27,50 @@ import java.util.List;
 )
 
 public class SaveMatch extends HttpServlet {
+    FavoriteMatch matchToAdd;
+    GenericDao favoriteMatchDao = new GenericDao(FavoriteMatch.class);
+    final Logger logger = LogManager.getLogger(this.getClass());
+    GenericDao userDao = new GenericDao(User.class);
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        final Logger logger = LogManager.getLogger(this.getClass());
-        HttpSession session = req.getSession();
-        logger.debug("User:" + req.getRemoteUser());
-        FavoriteMatch matchToAdd = new FavoriteMatch();
-        GenericDao favoriteMatchDao = new GenericDao(FavoriteMatch.class);
-        GenericDao userDao = new GenericDao(User.class);
+
         List<User> currentUsers = userDao.getByPropertyEqual("userName", req.getRemoteUser());
         String successMessage;
-
+        String matchId = req.getParameter("saveMatch");
+        User currentUser = currentUsers.get(0);
+        String username = req.getRemoteUser();
 
         try {
-            matchToAdd.setMatchId(req.getParameter("saveMatch"));
-            matchToAdd.setUser(currentUsers.get(0));
-            matchToAdd.setUsername(req.getRemoteUser());
+            matchToAdd = createFavoriteMatch(matchId, currentUser, username);
             if (favoriteMatchDao.getByPropertyLike("matchId", req.getParameter("saveMatch")).isEmpty()) {
-                favoriteMatchDao.insert(matchToAdd);
                 successMessage = "Added Match " + matchToAdd.getMatchId() + " to Favorites";
+                req.setAttribute("successMessage", successMessage);
+                doPost(req,resp);
             } else {
                 successMessage = "Match " + matchToAdd.getMatchId() + " is Already Added";
             }
-
         } catch (Exception e) {
             successMessage = "Could Not Add Match " + matchToAdd.getMatchId() + "To Favorites";
             logger.error("Could not add match to Favorites: " + e);
         }
-
         req.setAttribute("successMessage", successMessage);
-
-
         RequestDispatcher dispatcher = req.getRequestDispatcher("/matchDetails.jsp");
         dispatcher.forward(req, resp);
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        favoriteMatchDao.insert(matchToAdd);
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/matchDetails.jsp");
+        dispatcher.forward(req, resp);
+    }
+
+    public FavoriteMatch createFavoriteMatch(String matchId, User currentUser, String username) {
+        FavoriteMatch favoriteMatch = new FavoriteMatch();
+        favoriteMatch.setMatchId(matchId);
+        favoriteMatch.setUser(currentUser);
+        favoriteMatch.setUsername(username);
+        return favoriteMatch;
     }
 }

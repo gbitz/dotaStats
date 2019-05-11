@@ -26,12 +26,10 @@ import java.util.List;
 )
 
 public class ShowMatchDetail extends HttpServlet {
+    final Logger logger = LogManager.getLogger(this.getClass());
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        final Logger logger = LogManager.getLogger(this.getClass());
-        HttpSession session = req.getSession();
-        logger.debug("User:" + req.getRemoteUser());
-        GenericDao userDao = new GenericDao(User.class);
         MatchDetail matchDetail = new MatchDetail();
         GenerateMatchDetail generateMatchDetail = new GenerateMatchDetail();
         List<PlayersItem> radiant = new ArrayList<>();
@@ -39,7 +37,6 @@ public class ShowMatchDetail extends HttpServlet {
 
         //Generate Hero Stats
         GenerateHeroStats generateHeroStats = new GenerateHeroStats();
-        HeroStats heroStats = new HeroStats();
 
         //Generate Match Detail
         try {
@@ -53,25 +50,21 @@ public class ShowMatchDetail extends HttpServlet {
             List<PlayersItem> players = matchDetail.getPlayers();
             for (PlayersItem player : players){
                 player.setHeroImg(generateHeroStats.getHeroStats(player.getHeroId()).getImg());
-
                 if(player.getPersonaname() == null) {
                     player.setPersonaname("*Private Account*");
                 }
-
                 if (player.isIsRadiant() == true) {
                     radiant.add(player);
                 } else {
                     dire.add(player);
                 }
             }
-            session.setAttribute("radiant", radiant);
-            session.setAttribute("dire", dire);
-            session.setAttribute("generalDetail", matchDetail);
-
+            req.setAttribute("radiant", radiant);
+            req.setAttribute("dire", dire);
+            req.setAttribute("generalDetail", matchDetail);
         } catch (Exception e) {
             logger.error("show match detail error" + e);
         }
-
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/matchDetails.jsp");
         dispatcher.forward(req, resp);

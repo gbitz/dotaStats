@@ -27,31 +27,44 @@ import java.util.List;
 )
 
 public class ShowFavoriteMatches extends HttpServlet {
+    final Logger logger = LogManager.getLogger(this.getClass());
+    GenericDao userDao = new GenericDao(User.class);
+    GenericDao favoriteMatchDao = new GenericDao(FavoriteMatch.class);
+    GenerateHeroStats heroStatGenerator = new GenerateHeroStats();
+    MatchHistory matchHistory = new MatchHistory();
+    List<Match> filteredMatches = new ArrayList<>();
+    List<Match> allMatches = new ArrayList<>();
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        final Logger logger = LogManager.getLogger(this.getClass());
-        HttpSession session = req.getSession();
-        logger.debug("User:" + req.getRemoteUser());
-        //Create Daos
-        GenericDao userDao = new GenericDao(User.class);
-        GenericDao favoriteMatchDao = new GenericDao(FavoriteMatch.class);
         //Set Current User
-        User currentUser;
-        List<User> matchingUser = userDao.getByPropertyLike("userName", req.getRemoteUser());
-        currentUser = matchingUser.get(0);
+        User currentUser = (User)userDao.getByPropertyLike("userName", req.getRemoteUser()).get(0);
         //Obtain Favorite Matches
-        GenerateHeroStats heroStatGenerator = new GenerateHeroStats();
-        MatchHistory matchHistory = new MatchHistory();
-        List<FavoriteMatch> favoriteMatches = favoriteMatchDao.getByPropertyLike("username", "gbitzer");
-        List<Match> allMatches = new ArrayList<>();
-
+        List<FavoriteMatch> favoriteMatches = favoriteMatchDao.getByPropertyLike("username", req.getRemoteUser());
+        //Reset Filtered Matches
+        filteredMatches.clear();
         try {
             allMatches = matchHistory.getMatches(currentUser.getSteamID());
         } catch (Exception e) {
             logger.error("problem obtaining all matches " + e);
         }
-        List<Match> filteredMatches = new ArrayList<>();
+        filterToFavorites(favoriteMatches, allMatches);
+        setHeroStats(filteredMatches);
+        req.setAttribute("favoriteMatches", filteredMatches);
+        doPost(req, resp);
+    }
 
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/favoriteMatches.jsp");
+        resp.setHeader("Cache-Control","no-cache");
+        resp.setHeader("Pragma","no-cache");
+        resp.setDateHeader ("Expires", -1);
+        dispatcher.forward(req, resp);
+    }
+
+
+
+        public void filterToFavorites(List<FavoriteMatch> favoriteMatches, List<Match> allMatches){
         for (FavoriteMatch favoriteMatch : favoriteMatches) {
             for (Match match : allMatches) {
                 if(match.getMatchId() == Long.parseLong(favoriteMatch.getMatchId())) {
@@ -59,7 +72,9 @@ public class ShowFavoriteMatches extends HttpServlet {
                 }
             }
         }
+    }
 
+    public void setHeroStats(List<Match> filteredMatches) {
         for (Match match : filteredMatches) {
             try {
                 match.setHeroImg(heroStatGenerator.getHeroStats(match.getHeroId()).getIcon());
@@ -68,10 +83,7 @@ public class ShowFavoriteMatches extends HttpServlet {
                 logger.error("Error obtaining hero stats");
             }
         }
-        session.setAttribute("favoriteMatches", filteredMatches);
-
-
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/favoriteMatches.jsp");
-        dispatcher.forward(req, resp);
     }
+
+
 }

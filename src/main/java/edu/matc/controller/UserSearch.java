@@ -38,12 +38,6 @@ public class UserSearch extends HttpServlet {
             req.setAttribute("users", userDao.getByPropertyEqual("userName", req.getParameter("userName")));
         }
 
-//        List<User> users = (List<User>) req.getAttribute("users");
-//        for (User user: users) {
-//            admins = roleDao.getByPropertyEqual("role", "admin");
-//            req.setAttribute("admins", admins);
-//        }
-
         RequestDispatcher dispatcher = req.getRequestDispatcher("/admin.jsp");
         dispatcher.forward(req, resp);
     }

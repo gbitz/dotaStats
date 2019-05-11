@@ -24,37 +24,23 @@ import java.util.List;
 )
 
 public class Show50Matches extends HttpServlet {
+    final Logger logger = LogManager.getLogger(this.getClass());
+    GenericDao userDao = new GenericDao(User.class);
+    User currentUser;
+    GenerateHeroStats heroStatGenerator = new GenerateHeroStats();
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        final Logger logger = LogManager.getLogger(this.getClass());
         HttpSession session = req.getSession();
-        logger.debug("User:" + req.getRemoteUser());
-        GenericDao userDao = new GenericDao(User.class);
-        List<User> matchingUser = userDao.getByPropertyLike("userName", req.getRemoteUser());
-        User currentUser = new User();
-        currentUser.setUserName(req.getRemoteUser());
-        session.setAttribute("activeUser", matchingUser.get(0));
-        currentUser.setSteamID(matchingUser.get(0).getSteamID());
-        GenerateHeroStats heroStatGenerator = new GenerateHeroStats();
-        int i = 0;
-        List<Match> fiftyMatches = new ArrayList<>();
+        List<User> matchingUsers = userDao.getByPropertyLike("userName", req.getRemoteUser());
+        String username = req.getRemoteUser();
+        String steamId = matchingUsers.get(0).getSteamID();
+        currentUser = getCurrentUser(username, steamId);
+        List<Match> fiftyMatches;
         MatchHistory matchHistory = new MatchHistory();
         try {
             List<Match> allMatches = matchHistory.getMatches(currentUser.getSteamID());
-            for (Match match: allMatches) {
-                i++;
-                if (i == 50) {
-                    break;
-                }
-                fiftyMatches.add(match);
-            }
-            for (Match match : fiftyMatches) {
-                i++;
-                if (i == 100) {
-                    break;
-                }
-                match.setHeroImg(heroStatGenerator.getHeroStats(match.getHeroId()).getIcon());
-            }
+            fiftyMatches = getLastFifty(allMatches);
+            setHeroStats(fiftyMatches);
             session.setAttribute("matches", fiftyMatches);
         } catch (Exception e) {
             logger.error("Problem Finding Match History:" + e);
@@ -62,5 +48,39 @@ public class Show50Matches extends HttpServlet {
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/50Matches.jsp");
         dispatcher.forward(req, resp);
+    }
+
+    public void setHeroStats(List<Match> fiftyMatches) {
+        int i =0;
+        for (Match match: fiftyMatches) {
+            i++;
+            if (i == 100) {
+                break;
+            }
+            try {
+                match.setHeroImg(heroStatGenerator.getHeroStats(match.getHeroId()).getIcon());
+            } catch (Exception e) {
+                logger.error("Could not set Hero Stats : " + e);
+            }
+        }
+    }
+
+    public List<Match> getLastFifty(List<Match> allMatches) {
+        List<Match> fiftyMatches = new ArrayList<>();
+        int i = 0;
+        for (Match match: allMatches) {
+            i++;
+            if (i == 50) {
+                break;
+            }
+            fiftyMatches.add(match);
+        }
+        return fiftyMatches;
+    }
+    public User getCurrentUser(String username, String steamId) {
+        User user = new User();
+        user.setUserName(username);
+        user.setSteamID(steamId);
+        return user;
     }
 }

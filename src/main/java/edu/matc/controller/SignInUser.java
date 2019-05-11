@@ -23,23 +23,22 @@ import java.util.List;
 )
 
 public class SignInUser extends HttpServlet {
+    final Logger logger = LogManager.getLogger(this.getClass());
+    GenericDao userDao = new GenericDao(User.class);
+    PlayerInfo playerInfo = new PlayerInfo();
+    MatchHistory matchHistory = new MatchHistory();
+    GenerateHeroStats lastMatchHero = new GenerateHeroStats();
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        final Logger logger = LogManager.getLogger(this.getClass());
-
+        List<User> matchingUsers= userDao.getByPropertyLike("userName", req.getRemoteUser());
+        String username = req.getRemoteUser();
+        String steamID = matchingUsers.get(0).getSteamID();
         HttpSession session = req.getSession();
-        logger.debug("User:" + req.getRemoteUser());
-        GenericDao userDao = new GenericDao(User.class);
-        List<User> matchingUser;
-        matchingUser = userDao.getByPropertyLike("userName", req.getRemoteUser());
-        User currentUser = new User();
-        currentUser.setUserName(req.getRemoteUser());
-        session.setAttribute("activeUser", matchingUser.get(0));
-        currentUser.setSteamID(matchingUser.get(0).getSteamID());
-        System.out.println(req);
-        PlayerInfo playerInfo = new PlayerInfo();
-        MatchHistory matchHistory = new MatchHistory();
-        GenerateHeroStats lastMatchHero = new GenerateHeroStats();
+        session.setAttribute("activeUser", matchingUsers.get(0));
+        // Get Current User
+        User currentUser = getCurrentUser(username, steamID);
+        // Sign In
         try {
             if (playerInfo.getPlayerInfo(currentUser.getSteamID()).getProfile() != null) {
                 session.setAttribute("userProfile", playerInfo.getPlayerInfo(currentUser.getSteamID()).getProfile());
@@ -53,5 +52,12 @@ public class SignInUser extends HttpServlet {
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/index.jsp");
         dispatcher.forward(req, resp);
+    }
+
+    public User getCurrentUser(String username, String steamId) {
+        User currentUser = new User();
+        currentUser.setSteamID(steamId);
+        currentUser.setUserName(username);
+        return currentUser;
     }
 }

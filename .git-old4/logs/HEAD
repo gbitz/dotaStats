@@ -1,0 +1,49 @@
+5c8c633ac73d8d9bbdf79fb391da1b17a68e59fa 469e16a998f4550d42ec420063bb5c83f48fe597 Grant Bitzer <gbitzer@madisoncollege.edu> 1549843631 -0600	commit: added r
+469e16a998f4550d42ec420063bb5c83f48fe597 7f86b56469d91186b8042d1a83ad69f6c79b1ffb Grant Bitzer <gbitzer@madisoncollege.edu> 1550423023 -0600	commit: updated problem statement
+7f86b56469d91186b8042d1a83ad69f6c79b1ffb e862b367cdb4ef2740d92f6ed4cf3ae2858e1372 Grant Bitzer <gbitzer@madisoncollege.edu> 1550423427 -0600	commit: added user stories
+e862b367cdb4ef2740d92f6ed4cf3ae2858e1372 6573ae8585cdfa264b5679dc0a1904a17c297671 Grant Bitzer <gbitzer@madisoncollege.edu> 1550423775 -0600	commit: added more to user stories
+6573ae8585cdfa264b5679dc0a1904a17c297671 731397e14a18ec86a9524aafed17676101f46702 Grant Bitzer <gbitzer@madisoncollege.edu> 1550436544 -0600	commit: finished Project plan
+731397e14a18ec86a9524aafed17676101f46702 235bd86b48c74212a50ca77900fdaa45a4252736 Grant Bitzer <gbitzer@madisoncollege.edu> 1550439753 -0600	commit: added timelog and wireframes
+235bd86b48c74212a50ca77900fdaa45a4252736 88b779908560165f064b58723da7219bc2c4aa5c Grant Bitzer <gbitzer@madisoncollege.edu> 1550439906 -0600	commit: added links to readme.md
+88b779908560165f064b58723da7219bc2c4aa5c c83c4392e8059f6c48a92cccd30e321bb3b2845b Grant Bitzer <gbitzer@madisoncollege.edu> 1550440521 -0600	commit: First Journal entry
+c83c4392e8059f6c48a92cccd30e321bb3b2845b e731acdb6d76a3c07222e3fac1056b0fdfbf169c Grant Bitzer <gbitzer@madisoncollege.edu> 1551045493 -0600	commit: added hibernate.cfg.xml
+e731acdb6d76a3c07222e3fac1056b0fdfbf169c b142b04fcae483ab4f886c7622da9ab2614cd623 Grant Bitzer <gbitzer@madisoncollege.edu> 1551055107 -0600	commit: added hibernate and some tests
+b142b04fcae483ab4f886c7622da9ab2614cd623 f449eb0b943e3e6212f7045a6456990c93046177 Grant Bitzer <gbitzer@madisoncollege.edu> 1551055640 -0600	commit: added screenshots of coverage
+f449eb0b943e3e6212f7045a6456990c93046177 af0902e03aee04e9372589cd02557f171510e4e0 Grant Bitzer <gbitzer@madisoncollege.edu> 1551059202 -0600	commit: added insert, update
+af0902e03aee04e9372589cd02557f171510e4e0 d87f24c6582f9e00593d1fc25772446a1237d6c4 Grant Bitzer <gbitzer@madisoncollege.edu> 1551665001 -0600	commit: added roleDao tests
+d87f24c6582f9e00593d1fc25772446a1237d6c4 feffe93ccd74b87393363c5eaafd4ed2697d9499 Grant Bitzer <gbitzer@madisoncollege.edu> 1551665100 -0600	commit: added javadoc to all files
+feffe93ccd74b87393363c5eaafd4ed2697d9499 52d0e62dc9fef63e3fbb4f6ab88acdbec3008fac Grant Bitzer <gbitzer@madisoncollege.edu> 1551665523 -0600	commit: added updates to journal and timelog
+52d0e62dc9fef63e3fbb4f6ab88acdbec3008fac 3da32d481784e62526a1e3dfdbd630fe0f65f6ac Grant Bitzer <gbitzer@madisoncollege.edu> 1551710042 -0600	commit: added roles to dotaStats database
+3da32d481784e62526a1e3dfdbd630fe0f65f6ac 03f6622735c2bea37efa966b167e5f06687b1180 Grant Bitzer <gbitzer@madisoncollege.edu> 1552317402 -0500	commit: made changes, to journal, project plan, and time log
+03f6622735c2bea37efa966b167e5f06687b1180 804658fb9756cad8ecf81b31e9548e79299b524d Grant Bitzer <gbitzer@madisoncollege.edu> 1552337171 -0500	commit: add class file image
+804658fb9756cad8ecf81b31e9548e79299b524d cf4bb7c2646667cc48df7bd78c0b94fedcaba056 Grant Bitzer <gbitzer@madisoncollege.edu> 1552337446 -0500	commit: added class flow diagram
+cf4bb7c2646667cc48df7bd78c0b94fedcaba056 6cba7e6191df4409b86241b4b2975b701ee666b1 Grant Bitzer <gbitzer@madisoncollege.edu> 1552341915 -0500	commit: removed system.out
+6cba7e6191df4409b86241b4b2975b701ee666b1 618ba26b7c3ba120f887c2fece8b7ccca2ce4db8 Grant Bitzer <gbitzer@madisoncollege.edu> 1553451901 -0500	commit: added generic dao
+618ba26b7c3ba120f887c2fece8b7ccca2ce4db8 0f208b321fd4635a45fe1e52ebf5aa6b5e3bd3bd Grant Bitzer <gbitzer@madisoncollege.edu> 1553454186 -0500	commit: added jsps to display all user information
+0f208b321fd4635a45fe1e52ebf5aa6b5e3bd3bd 86dc071e3301ace0f352821b3b3d851ca686314e Grant Bitzer <gbitzer@madisoncollege.edu> 1553459449 -0500	commit: added authentication to user search
+86dc071e3301ace0f352821b3b3d851ca686314e 864966c4e2d132833c8856f8ec4b45077f203a32 Grant Bitzer <gbitzer@madisoncollege.edu> 1553991690 -0500	commit: added aws deployment
+864966c4e2d132833c8856f8ec4b45077f203a32 20d5a6f22cbf461c775615af338831837a240fb6 Grant Bitzer <gbitzer@madisoncollege.edu> 1554143961 -0500	commit: added journal and timelog changes
+20d5a6f22cbf461c775615af338831837a240fb6 77bb6ca70111e6e726c1a27b326578ea2fce6c0b Grant Bitzer <gbitzer@madisoncollege.edu> 1554596272 -0500	commit: added a rest service
+77bb6ca70111e6e726c1a27b326578ea2fce6c0b da49ddc5a3342ea412db0fbe80a59fb9deabbd47 Grant Bitzer <gbitzer@madisoncollege.edu> 1556051606 -0500	commit: added createaccount feature
+da49ddc5a3342ea412db0fbe80a59fb9deabbd47 e0a148693159a25dc08553d48a36a554b46f802f Grant Bitzer <gbitzer@madisoncollege.edu> 1556232189 -0500	commit: first api data to view
+e0a148693159a25dc08553d48a36a554b46f802f e0a148693159a25dc08553d48a36a554b46f802f Grant Bitzer <gbitzer@madisoncollege.edu> 1557081507 -0500	reset: moving to HEAD
+e0a148693159a25dc08553d48a36a554b46f802f 9bf67c3a9bf86b7a29b4019c7f476176789e204c Grant Bitzer <gbitzer@madisoncollege.edu> 1557081578 -0500	commit: Some git issues
+9bf67c3a9bf86b7a29b4019c7f476176789e204c 5b8d4add1f0cc49a8d3bf80a5024f9922acf78bb Grant Bitzer <gbitzer@madisoncollege.edu> 1557081779 -0500	commit (merge): Some git issues
+9bf67c3a9bf86b7a29b4019c7f476176789e204c 9bf67c3a9bf86b7a29b4019c7f476176789e204c Grant Bitzer <gbitzer@madisoncollege.edu> 1557155490 -0500	reset: moving to HEAD
+9bf67c3a9bf86b7a29b4019c7f476176789e204c 8c4f86359691a35ab20279331ffe71c35f868fe0 Grant Bitzer <gbitzer@madisoncollege.edu> 1557155528 -0500	commit: some more git issues
+8c4f86359691a35ab20279331ffe71c35f868fe0 79d9076191e6585c0c9233a01815f02f0e6292cc Grant Bitzer <gbitzer@madisoncollege.edu> 1557155611 -0500	commit (merge): fixing git issues
+79d9076191e6585c0c9233a01815f02f0e6292cc db02b51b10d9bcf6a038dedf08f7ac3eb2294676 Grant Bitzer <gbitzer@madisoncollege.edu> 1557343195 -0500	commit: some clean up of code
+db02b51b10d9bcf6a038dedf08f7ac3eb2294676 b8e62a9d55d305200aae7e72d5973c82f746b71c Grant Bitzer <gbitzer@madisoncollege.edu> 1557352428 -0500	commit: added match details, could add more but working
+db02b51b10d9bcf6a038dedf08f7ac3eb2294676 db02b51b10d9bcf6a038dedf08f7ac3eb2294676 Grant Bitzer <gbitzer@madisoncollege.edu> 1557437472 -0500	reset: moving to HEAD
+db02b51b10d9bcf6a038dedf08f7ac3eb2294676 221573d6cb525b1ad03edcb7c053ca2a25a09b6b Grant Bitzer <gbitzer@madisoncollege.edu> 1557437510 -0500	commit: same ole git issues
+221573d6cb525b1ad03edcb7c053ca2a25a09b6b e3c6ab7166383f25c97481fe6624f706f8f8c816 Grant Bitzer <gbitzer@madisoncollege.edu> 1557437591 -0500	commit (merge): same ole git issues
+e3c6ab7166383f25c97481fe6624f706f8f8c816 af8696504643d167f33e11e21884873a9c6ce376 Grant Bitzer <gbitzer@madisoncollege.edu> 1557444521 -0500	commit: testing fav matches
+e3c6ab7166383f25c97481fe6624f706f8f8c816 e3c6ab7166383f25c97481fe6624f706f8f8c816 Grant Bitzer <gbitzer@madisoncollege.edu> 1557503867 -0500	reset: moving to HEAD
+e3c6ab7166383f25c97481fe6624f706f8f8c816 a06f823484198566f6d5f4f472832498bd8ebf5f Grant Bitzer <gbitzer@madisoncollege.edu> 1557503896 -0500	commit: same corrupt git issues
+a06f823484198566f6d5f4f472832498bd8ebf5f 5527ba71bb8166590638a8fddff0f8a630e9a350 Grant Bitzer <gbitzer@madisoncollege.edu> 1557503910 -0500	pull: Merge made by the 'recursive' strategy.
+5527ba71bb8166590638a8fddff0f8a630e9a350 d814f500756de0e8b00e3b0546c8ccc2132107bf Grant Bitzer <gbitzer@madisoncollege.edu> 1557511550 -0500	commit: added edit id
+d814f500756de0e8b00e3b0546c8ccc2132107bf 6f9d2cf6a9d3e3978d6b43bbd07fafe659d5b929 Grant Bitzer <gbitzer@madisoncollege.edu> 1557515500 -0500	commit: added some unit tests
+6f9d2cf6a9d3e3978d6b43bbd07fafe659d5b929 7349f73b88e426f8d2bdec588d05c26d6a6c8af5 Grant Bitzer <gbitzer@madisoncollege.edu> 1557525326 -0500	commit: more unit testing
+7349f73b88e426f8d2bdec588d05c26d6a6c8af5 a7078012d1e811b3cc1e5f4aa6a61d538ba2d3e0 Grant Bitzer <gbitzer@madisoncollege.edu> 1557586671 -0500	commit: cleaned up some code structure
+a7078012d1e811b3cc1e5f4aa6a61d538ba2d3e0 ff496261110e220a8381504c9ca8ca048eea9d7c Grant Bitzer <gbitzer@madisoncollege.edu> 1557589813 -0500	commit: cleaned up some code structure
+                                                                                                                                                                                     
