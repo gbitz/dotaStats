@@ -26,7 +26,6 @@ public class SignInUser extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         final Logger logger = LogManager.getLogger(this.getClass());
-
         HttpSession session = req.getSession();
         logger.debug("User:" + req.getRemoteUser());
         GenericDao userDao = new GenericDao(User.class);
@@ -36,7 +35,6 @@ public class SignInUser extends HttpServlet {
         currentUser.setUserName(req.getRemoteUser());
         session.setAttribute("activeUser", matchingUser.get(0));
         currentUser.setSteamID(matchingUser.get(0).getSteamID());
-        System.out.println(req);
         PlayerInfo playerInfo = new PlayerInfo();
         MatchHistory matchHistory = new MatchHistory();
         GenerateHeroStats lastMatchHero = new GenerateHeroStats();

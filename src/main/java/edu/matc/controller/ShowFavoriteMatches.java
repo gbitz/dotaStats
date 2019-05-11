@@ -31,7 +31,6 @@ public class ShowFavoriteMatches extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         final Logger logger = LogManager.getLogger(this.getClass());
         HttpSession session = req.getSession();
-        logger.debug("User:" + req.getRemoteUser());
         //Create Daos
         GenericDao userDao = new GenericDao(User.class);
         GenericDao favoriteMatchDao = new GenericDao(FavoriteMatch.class);
@@ -42,7 +41,7 @@ public class ShowFavoriteMatches extends HttpServlet {
         //Obtain Favorite Matches
         GenerateHeroStats heroStatGenerator = new GenerateHeroStats();
         MatchHistory matchHistory = new MatchHistory();
-        List<FavoriteMatch> favoriteMatches = favoriteMatchDao.getByPropertyLike("username", "gbitzer");
+        List<FavoriteMatch> favoriteMatches = favoriteMatchDao.getByPropertyLike("username", req.getRemoteUser());
         List<Match> allMatches = new ArrayList<>();
 
         try {

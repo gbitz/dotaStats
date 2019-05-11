@@ -19,22 +19,18 @@ import java.io.IOException;
 )
 
 public class EditUser extends HttpServlet {
+    final Logger logger = LogManager.getLogger(this.getClass());
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        final Logger logger = LogManager.getLogger(this.getClass());
-
         GenericDao userDao = new GenericDao(User.class);
         User userToEdit;
-
         if (req.getParameter("editAccount").equals("confirm")) {
             userToEdit = (User)userDao.getByPropertyLike("userName", req.getRemoteUser()).get(0);
             userToEdit.setSteamID(req.getParameter("steamID"));
             userDao.saveOrUpdate(userToEdit);
         }
-
         RequestDispatcher dispatcher = req.getRequestDispatcher("/login.jsp");
         dispatcher.forward(req, resp);
     }
-
-
 }
