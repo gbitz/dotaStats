@@ -36,12 +36,28 @@ public class ShowFavoriteMatches extends HttpServlet {
     List<Match> allMatches = new ArrayList<>();
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+<<<<<<< HEAD
+=======
+        final Logger logger = LogManager.getLogger(this.getClass());
+        HttpSession session = req.getSession();
+        //Create Daos
+        GenericDao userDao = new GenericDao(User.class);
+        GenericDao favoriteMatchDao = new GenericDao(FavoriteMatch.class);
+>>>>>>> 741a2bf9d38926aac61b31e1e4f99753a712adf7
         //Set Current User
         User currentUser = (User)userDao.getByPropertyLike("userName", req.getRemoteUser()).get(0);
         //Obtain Favorite Matches
+<<<<<<< HEAD
         List<FavoriteMatch> favoriteMatches = favoriteMatchDao.getByPropertyLike("username", req.getRemoteUser());
         //Reset Filtered Matches
         filteredMatches.clear();
+=======
+        GenerateHeroStats heroStatGenerator = new GenerateHeroStats();
+        MatchHistory matchHistory = new MatchHistory();
+        List<FavoriteMatch> favoriteMatches = favoriteMatchDao.getByPropertyLike("username", req.getRemoteUser());
+        List<Match> allMatches = new ArrayList<>();
+
+>>>>>>> 741a2bf9d38926aac61b31e1e4f99753a712adf7
         try {
             allMatches = matchHistory.getMatches(currentUser.getSteamID());
         } catch (Exception e) {
