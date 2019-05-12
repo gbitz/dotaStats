@@ -60,7 +60,7 @@ public class GenericDaoTest {
         User insertedUser = (User)userDao.getById(id);
         assertEquals("Jimbo", insertedUser.getFirstName());
 
-        Role newRole = new Role("adminTest", newUser);
+        Role newRole = new Role("adminTest",newUser.getUserName(), newUser);
         int roleId = roleDao.insert(newRole);
         Role insertedRole = (Role)roleDao.getById(roleId);
         assertEquals("adminTest", insertedRole.getRole());

@@ -18,16 +18,41 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The type Create user.
+ */
 @WebServlet(
         urlPatterns = {"/createUser"}
 )
-
 public class CreateUser extends HttpServlet {
+    /**
+     * The User dao.
+     */
     GenericDao userDao = new GenericDao(User.class);
+    /**
+     * The Role dao.
+     */
     GenericDao roleDao = new GenericDao(Role.class);
+    /**
+     * The New user.
+     */
     User newUser = new User();
+    /**
+     * The New role.
+     */
     Role newRole;
+    /**
+     * The Logger.
+     */
     final Logger logger = LogManager.getLogger(this.getClass());
+
+    /**
+     * The get method for creating a new user
+     * @param req
+     * @param resp
+     * @throws ServletException
+     * @throws IOException
+     */
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String username = req.getParameter("userName");
@@ -57,20 +82,49 @@ public class CreateUser extends HttpServlet {
         RequestDispatcher dispatcher = req.getRequestDispatcher("/login.jsp");
         dispatcher.forward(req, resp);
     }
+
+    /**
+     * The Post method for creating a new user
+     * @param req
+     * @param resp
+     * @throws ServletException
+     * @throws IOException
+     */
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        userDao.saveOrUpdate(newUser);
-        roleDao.saveOrUpdate(newRole);
+        try {
+            userDao.saveOrUpdate(newUser);
+            roleDao.saveOrUpdate(newRole);
+        } catch (Exception e) {
+            logger.error("Could not create User" + e);
+        }
         RequestDispatcher dispatcher = req.getRequestDispatcher("/login.jsp");
         dispatcher.forward(req, resp);
     }
 
+    /**
+     * Sets default role.
+     *
+     * @param newRole  the new role
+     * @param newUser  the new user
+     * @param username the username
+     * @return the default role
+     */
     public Role setDefaultRole(Role newRole, User newUser, String username) {
-        newRole = new Role ("user", newUser);
-        newRole.setUsername(username);
+        newRole = new Role ("user",username, newUser);
         return newRole;
     }
 
+    /**
+     * Create account user.
+     *
+     * @param username  the username
+     * @param firstname the firstname
+     * @param lastname  the lastname
+     * @param password  the password
+     * @param steamId   the steam id
+     * @return the user
+     */
     public User createAccount(String username, String firstname, String lastname, String password, String steamId) {
         User newUser = new User();
         newUser.setUserName(username);

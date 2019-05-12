@@ -2,7 +2,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
-  <display-name>Archetype Created Web Application</display-name>
+  <display-name>DotaStats Security</display-name>
   <!-- Tell the server to use form-based authentication. -->
   <login-config>
     <auth-method>FORM</auth-method>
@@ -17,6 +17,14 @@
     <web-resource-collection>
       <web-resource-name>landing</web-resource-name>
       <url-pattern>/signedIn.jsp</url-pattern>
+      <url-pattern>/50matches.jsp</url-pattern>
+      <url-pattern>/editSteamId.jsp</url-pattern>
+      <url-pattern>/favoriteMatches.jsp</url-pattern>
+      <url-pattern>/matchDetails.jsp</url-pattern>
+      <url-pattern>/editUser</url-pattern>
+      <url-pattern>/showFavoriteMatches</url-pattern>
+      <url-pattern>/show50Matches</url-pattern>
+      <url-pattern>/showMatchDetail</url-pattern>
     </web-resource-collection>
     <auth-constraint>
       <role-name>user</role-name>
@@ -27,6 +35,11 @@
     <web-resource-collection>
       <web-resource-name>adminPage</web-resource-name>
       <url-pattern>/admin.jsp</url-pattern>
+      <url-pattern>/createAdmin</url-pattern>
+      <url-pattern>/deleteUser</url-pattern>
+      <url-pattern>/userSearch</url-pattern>
+      <url-pattern>/search.jsp</url-pattern>
+      <url-pattern>/userResults.jsp</url-pattern>
     </web-resource-collection>
     <auth-constraint>
       <role-name>admin</role-name>

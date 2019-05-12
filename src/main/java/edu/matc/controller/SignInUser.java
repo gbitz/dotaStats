@@ -1,6 +1,7 @@
 package edu.matc.controller;
 
 import com.opendota.heroStats.HeroStats;
+import edu.matc.entity.Role;
 import edu.matc.entity.User;
 import edu.matc.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
@@ -25,20 +26,21 @@ import java.util.List;
 public class SignInUser extends HttpServlet {
     final Logger logger = LogManager.getLogger(this.getClass());
     GenericDao userDao = new GenericDao(User.class);
+    GenericDao roleDao = new GenericDao(Role.class);
     PlayerInfo playerInfo = new PlayerInfo();
     MatchHistory matchHistory = new MatchHistory();
     GenerateHeroStats lastMatchHero = new GenerateHeroStats();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<User> matchingUsers= userDao.getByPropertyLike("userName", req.getRemoteUser());
+        List<User> matchingUsers= userDao.getByPropertyEqual("userName", req.getRemoteUser());
+        List<Role> matchingRoles = roleDao.getByPropertyEqual("username", req.getRemoteUser());
         String username = req.getRemoteUser();
         String steamID = matchingUsers.get(0).getSteamID();
         HttpSession session = req.getSession();
         // Get Current User
         User currentUser = getCurrentUser(username, steamID);
         session.setAttribute("activeUser", currentUser);
-
         // Sign In
         try {
             if (playerInfo.getPlayerInfo(currentUser.getSteamID()).getProfile() != null) {
@@ -50,7 +52,7 @@ public class SignInUser extends HttpServlet {
         } catch (Exception e) {
             logger.error("error signing in: " + e);
         }
-
+        session.setAttribute("adminStatus", getAdminStatus(matchingRoles));
         RequestDispatcher dispatcher = req.getRequestDispatcher("/index.jsp");
         dispatcher.forward(req, resp);
     }
@@ -60,5 +62,15 @@ public class SignInUser extends HttpServlet {
         currentUser.setSteamID(steamId);
         currentUser.setUserName(username);
         return currentUser;
+    }
+
+    public Boolean getAdminStatus(List<Role> matchingRoles) {
+        Boolean adminStatus = false;
+        for (Role role : matchingRoles) {
+            if (role.getRole().equals("admin")) {
+                adminStatus = true;
+            }
+        }
+        return adminStatus;
     }
 }

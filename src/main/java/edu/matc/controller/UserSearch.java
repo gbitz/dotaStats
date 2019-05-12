@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.annotation.*;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -29,11 +30,12 @@ public class UserSearch extends HttpServlet {
 
         GenericDao userDao = new GenericDao(User.class);
         GenericDao roleDao = new GenericDao(Role.class);
-        List<Role> admins = roleDao.getByPropertyEqual("role_title", "admin");
-        List<Role> users = roleDao.getByPropertyEqual("role_title","user");
-
-        for (Role user : users) {
-        }
+//        List<Role> admins = roleDao.getByPropertyEqual("role_title", "admin");
+//        List<Role> users = new ArrayList<>();
+//                users = roleDao.getByPropertyEqual("role_title","user");
+//
+//        for (Role user : users) {
+//        }
 
         if (req.getParameter("submit").equals("displayUsers")) {
             req.setAttribute("users", userDao.getAll());

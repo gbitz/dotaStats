@@ -27,11 +27,8 @@ public class DoValidate {
             for (ConstraintViolation<User> cv : cvs) {
 
                 StringBuilder err = new StringBuilder();
-//                err.append(cv.getPropertyPath());
-//                err.append(" ");
                 err.append(cv.getMessage());
                 errors.add(err.toString());
-                System.out.println(errors);
             }
         }
 

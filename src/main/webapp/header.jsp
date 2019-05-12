@@ -18,10 +18,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="showFavoriteMatches">Favorite Matches</a>
                 </li>
+                <c:if test="${adminStatus == true}">
                 <li class="nav-item">
                     <a class="nav-link" href="admin.jsp">Admin</a>
                 </li>
-
+                </c:if>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <c:choose>

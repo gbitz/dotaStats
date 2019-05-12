@@ -33,22 +33,38 @@ public class CreateAdmin extends HttpServlet {
      * The New admin.
      */
     Role newAdmin = new Role();
-
+    final Logger logger = LogManager.getLogger(this.getClass());
+    /**
+     * The Get method for creating a new admin
+     */
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        final Logger logger = LogManager.getLogger(this.getClass());
         String username = req.getParameter("newAdminName");
-        newAdmin = makeAdmin(newAdmin, username);
-        if (req.getParameter("createAdmin").equals("createAdmin")) {
-            doPost(req, resp);
+
+        try {
+            newAdmin = makeAdmin(newAdmin, username);
+            if (req.getParameter("createAdmin").equals("createAdmin")) {
+                req.setAttribute("successMessage", "Made " + username + " an Admin" );
+                doPost(req, resp);
+            }
+        } catch (ServletException e) {
+            logger.error("Error adding admin");
+        } catch (IOException e) {
+            logger.error("Error adding admin");
         }
-
-
     }
 
+    /**
+    *The Get method for creating a new admin
+    */
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        roleDao.insert(newAdmin);
+        try {
+            roleDao.insert(newAdmin);
+        } catch (Exception e) {
+            logger.error("Error adding admin");
+            req.setAttribute("successMessage", "Failed to Insert Admin");
+        }
         RequestDispatcher dispatcher = req.getRequestDispatcher("/admin.jsp");
         dispatcher.forward(req, resp);
     }

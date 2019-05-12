@@ -1,16 +1,21 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: student
-  Date: 3/24/19
-  Time: 11:36 AM
-  To change this template use File | Settings | File Templates.
---%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Login Failed</title>
-</head>
-<body>
-Login failed, please try again
-</body>
-</html>
+<%@include file="head.jsp"%>
+<%@include file="header.jsp"%>
+
+<!-- Masthead -->
+<header class="masthead">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center justify-content-center text-center">
+            <div class="card">
+                <div class="card-header">
+                    Incorrect Login Information
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Try Again</h5>
+                    <p><a href="login.jsp">Log-in</a> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

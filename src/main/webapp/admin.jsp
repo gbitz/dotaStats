@@ -9,7 +9,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="head.jsp"%>
 <%@include file="header.jsp"%>
-
 <!-- Masthead -->
 <header class="masthead">
     <div class="container h-100">
@@ -30,9 +29,9 @@
                                 <div class="form-group">
                                     <label for="userName">Username</label>
                                     <input class="form-control" id="userName" placeholder="" name="userName">
-                                </div
-                                <button type="submit" name="submit" value="searchUsers" class="btn btn-primary">Search By Username</button>
-                                <button type="submit" name="submit" value="displayUsers" class="btn btn-primary">View all users</button>
+                                </div>
+                                <button class="btn btn-primary" type="submit" name="submit" value="searchUsers" class="btn btn-primary">Search By Username</button>
+                                <button class="btn btn-primary" type="submit" name="submit" value="displayUsers" class="btn btn-primary">View all users</button>
                             </form>
                         </c:when>
                         <c:otherwise>
@@ -55,15 +54,14 @@
                                                     <td>${user.firstName} ${user.lastName}</td>
                                                     <td>${user.userName}</td>
                                                     <td>${user.steamID}</td>
-                                                    <td>${user.steamID}</td>
                                                     <form action="createAdmin">
                                                         <input hidden name="newAdminName" value="${user.userName}">
                                                         <input hidden name="newAdminUser" value="${user}">
-                                                        <td><button name="createAdmin" value="createAdmin" action="CreateAdmin">Make Admin</button></td>
+                                                        <td><button name="createAdmin" class="btn btn-primary" value="createAdmin" action="CreateAdmin">Make Admin</button></td>
                                                     </form>
-                                                    <form action="deleteUser">
-                                                        <input hidden value="${user.userName}">
-                                                        <td><button name="deleteUser" value="deleteUser" action="DeleteUser">Delete User</button></td>
+                                                    <form method ="post" action="deleteUser">
+                                                        <input hidden name="userToDelete" value="${user.userName}">${user.userName}
+                                                        <td><button class="btn btn-primary" name="deleteUser" value="deleteUser" action="DeleteUser">Delete User</button></td>
                                                     </form>
                                                 </tr>
                                             </c:forEach>

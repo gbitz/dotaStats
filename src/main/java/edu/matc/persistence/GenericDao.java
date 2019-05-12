@@ -42,6 +42,7 @@ public class GenericDao<T> {
      * @param entity entity to be deleted
      */
     public void delete(T entity) {
+        logger.debug("attempting to delete : " +  entity);
         Session session = getSession();
         Transaction transaction = session.beginTransaction();
         session.delete(entity);
