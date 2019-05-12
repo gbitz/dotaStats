@@ -6,7 +6,7 @@
     <div class="container h-100">
         <div class="row h-100 align-items-center justify-content-center text-center">
             <div class="col-lg-10 align-self-end">
-                <h1 class="text-uppercase text-white font-weight-bold">Match Details</h1>
+                <h1 class="text-uppercase text-white font-weight-bold">Favorite Matches</h1>
                 <hr class="divider my-4">
             </div>
 
@@ -14,6 +14,7 @@
                 <div class="card">
                     <div class="card-header">
                         Favorite Matches
+                        <span style="color:rgba(254,0,0,0.62);">${successMessage}</span>
                     </div>
 
                     <div class="container">

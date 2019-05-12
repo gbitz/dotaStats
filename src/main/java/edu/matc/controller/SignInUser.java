@@ -31,30 +31,15 @@ public class SignInUser extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-<<<<<<< HEAD
         List<User> matchingUsers= userDao.getByPropertyLike("userName", req.getRemoteUser());
         String username = req.getRemoteUser();
         String steamID = matchingUsers.get(0).getSteamID();
         HttpSession session = req.getSession();
-        session.setAttribute("activeUser", matchingUsers.get(0));
         // Get Current User
         User currentUser = getCurrentUser(username, steamID);
+        session.setAttribute("activeUser", currentUser);
+
         // Sign In
-=======
-        final Logger logger = LogManager.getLogger(this.getClass());
-        HttpSession session = req.getSession();
-        logger.debug("User:" + req.getRemoteUser());
-        GenericDao userDao = new GenericDao(User.class);
-        List<User> matchingUser;
-        matchingUser = userDao.getByPropertyLike("userName", req.getRemoteUser());
-        User currentUser = new User();
-        currentUser.setUserName(req.getRemoteUser());
-        session.setAttribute("activeUser", matchingUser.get(0));
-        currentUser.setSteamID(matchingUser.get(0).getSteamID());
-        PlayerInfo playerInfo = new PlayerInfo();
-        MatchHistory matchHistory = new MatchHistory();
-        GenerateHeroStats lastMatchHero = new GenerateHeroStats();
->>>>>>> 741a2bf9d38926aac61b31e1e4f99753a712adf7
         try {
             if (playerInfo.getPlayerInfo(currentUser.getSteamID()).getProfile() != null) {
                 session.setAttribute("userProfile", playerInfo.getPlayerInfo(currentUser.getSteamID()).getProfile());

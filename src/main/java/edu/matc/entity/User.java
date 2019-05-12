@@ -1,10 +1,10 @@
 package edu.matc.entity;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.hibernate.annotations.GenericGenerator;
-
+import org.hibernate.validator.constraints.NotEmpty;
 import javax.persistence.*;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -15,7 +15,6 @@ import java.util.Set;
 @Entity(name = "User")
 @Table(name = "users")
 public class User {
-//    private final Logger logger = LogManager.getLogger(this.getClass());
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
@@ -23,18 +22,27 @@ public class User {
     private Integer id;
 
     @Column(name = "first_name")
+    @NotEmpty(message = "First name is empty")
+    @Pattern(regexp="^[a-zA-Z]+$", message = "First name must be only letters")
     private String firstName;
 
     @Column(name = "last_name")
+    @NotEmpty(message = "Last name is empty")
+    @Pattern(regexp="^[a-zA-Z]+$", message = "Last name must be only letters")
     private String lastName;
 
     @Column(name = "user_name")
+    @NotEmpty(message = "Username is empty")
+    @Size(min=1,max=20, message = "Username must be (1-20) character(s)")
     private String userName;
 
     @Column(name = "password")
+    @NotEmpty(message = "Password is Empty")
     private String password;
 
     @Column(name = "steamid")
+    @NotEmpty(message = "Friend Id is Empty")
+    @Pattern(regexp="^[0-9]*$", message = "Friend Id is Numeric")
     private String steamID;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)

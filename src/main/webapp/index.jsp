@@ -23,7 +23,7 @@
                 <hr class="divider my-4">
             </div>
             <c:choose>
-                <c:when test="${activeUser.id == null}">
+                <c:when test="${activeUser == null}">
                     <div class="col-lg-8 align-self-baseline">
                         <p class="text-white-75 font-weight-light mb-5">Your one spot stop for all your dota statistics</p>
                         <a class="btn btn-primary btn-xl js-scroll-trigger" href="signup.jsp">Sign-up</a>

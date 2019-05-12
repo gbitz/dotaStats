@@ -25,7 +25,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <c:choose>
-                    <c:when test="${activeUser.id == null}">
+                    <c:when test="${activeUser == null}">
 
                         <li><a href="signup.jsp"><span class="fa fa-user-plus"></span> Sign Up </a></li>
                         <li><a href="signedIn.jsp"><span class="fa fa-sign-in"></span> Login</a></li>

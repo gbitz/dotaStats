@@ -1,8 +1,10 @@
 package edu.matc.entity;
 
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
+import javax.validation.constraints.Pattern;
 
 @Entity(name="Match")
 @Table(name ="matches")
@@ -13,9 +15,12 @@ public class FavoriteMatch {
     private Integer id;
 
     @Column(name = "match_id")
+    @Pattern(regexp="^[0-9]*$", message = "Match Id must be numeric")
+    @NotEmpty(message = "match Id is empty")
     private String matchId;
 
     @Column(name = "user_name")
+    @NotEmpty(message = "username is empty")
     private String username;
 
     @ManyToOne

@@ -40,6 +40,9 @@
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.8" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.8.11.1" />
           <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.8.5" />
+          <element id="library" level="project" name="Maven: org.hibernate:hibernate-validator-cdi:5.2.4.Final" />
+          <element id="library" level="project" name="Maven: org.hibernate:hibernate-validator:5.2.4.Final" />
+          <element id="library" level="project" name="Maven: javax.validation:validation-api:1.1.0.Final" />
         </element>
       </element>
       <element id="directory" name="META-INF">

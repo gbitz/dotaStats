@@ -55,14 +55,14 @@ public class SaveMatch extends HttpServlet {
             logger.error("Could not add match to Favorites: " + e);
         }
         req.setAttribute("successMessage", successMessage);
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/matchDetails.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("showFavoriteMatches");
         dispatcher.forward(req, resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         favoriteMatchDao.insert(matchToAdd);
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/matchDetails.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("showFavoriteMatches");
         dispatcher.forward(req, resp);
     }
 

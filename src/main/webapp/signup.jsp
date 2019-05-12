@@ -16,11 +16,18 @@
                     <h5 class="card-title">Become a DotaStats Member</h5>
                     <p class="card-text">Please fill out the following Information</p>
                     <form action="createUser">
-                        <%--<div class="form-group">--%>
-                        <%--<label>First Name</label>--%>
-                        <%--<input type="text" class="form-control" id="firstName" aria-describedby="emailHelp" placeholder="Enter email">--%>
-                        <%--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>--%>
-                        <%--</div>--%>
+                        <c:if test="${errors != null}">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        Please Enter Form Correctly...
+                                    </div>
+                                    <c:forEach var="error" items="${errors}">
+                                        <p class="alert-danger">${error}</p>
+                                    </c:forEach>
+                                </div>
+                            </div>
+                        </c:if>
                         <div class="form-group">
                             <label for="userName">Username</label>
                             <input class="form-control" id="userName" placeholder="" name="userName">

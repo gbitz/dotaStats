@@ -29,9 +29,15 @@ public class UserSearch extends HttpServlet {
 
         GenericDao userDao = new GenericDao(User.class);
         GenericDao roleDao = new GenericDao(Role.class);
-        List<Role> admins;
+        List<Role> admins = roleDao.getByPropertyEqual("role_title", "admin");
+        List<Role> users = roleDao.getByPropertyEqual("role_title","user");
+
+        for (Role user : users) {
+        }
+
         if (req.getParameter("submit").equals("displayUsers")) {
             req.setAttribute("users", userDao.getAll());
+
         }
 
         if (req.getParameter("submit").equals("searchUsers")) {

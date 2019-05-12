@@ -1,6 +1,7 @@
 package edu.matc.entity;
 
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
 
@@ -17,17 +18,18 @@ public class Role {
     @GenericGenerator(name = "native", strategy = "native")
     private Integer id;
 
+
     @Column(name = "role_title")
+    @NotEmpty(message = "role is empty")
     private String role;
 
 
     @Column(name = "user_name")
+    @NotEmpty(message = "username is empty")
     private String username;
 
     @ManyToOne
-    @JoinColumn(name = "user_id",
-            foreignKey = @ForeignKey(name = "roles_users_id_fk")
-    )
+    @JoinColumn(name = "user_id", foreignKey = @ForeignKey(name = "roles_users_id_fk"))
     private User user;
 
     /**

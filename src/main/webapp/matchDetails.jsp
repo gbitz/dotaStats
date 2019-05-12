@@ -25,7 +25,6 @@
                         Match Details
                         <form action="saveMatch">
                             <button class="btn btn-primary" value="${generalDetail.matchId}" name="saveMatch">Add To Favorites</button>
-                            <span style="color:rgba(254,0,0,0.62);">${successMessage}</span>
                         </form>
                     </div>
 
