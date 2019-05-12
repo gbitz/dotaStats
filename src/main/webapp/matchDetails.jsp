@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="head.jsp"%>
 <%@include file="header.jsp"%>
@@ -34,14 +35,14 @@
                                 <thead>
                                     <tr>
                                         <th>Id</th>
-                                        <th>Duration</th>
+                                        <th>Duration (Min)</th>
                                         <th>Winner</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>${generalDetail.matchId}</td>
-                                        <td>${generalDetail.duration}</td>
+                                        <td><fmt:formatNumber var="duration" value="${generalDetail.duration / 60}" maxFractionDigits="0" />${duration}</td>
                                         <td><c:choose>
                                             <c:when test="${generalDetail.radiantWin == true}">
                                                 Radiant
@@ -54,7 +55,6 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            Id #${generalDetail.matchId}
                         </div>
 
                     </div>

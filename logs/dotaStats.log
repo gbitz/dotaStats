@@ -958,3 +958,259 @@
 [ERROR] 2019-05-12 13:25:01.835 [main] Database - java.sql.SQLException: Can not issue empty query.
 [DEBUG] 2019-05-12 13:25:01.836 [main] GenericDao - Searching for ** with id = 1
 [ERROR] 2019-05-12 13:25:01.878 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 15:59:16.076 [main] PlayerInfo - current user steamId : 4765894
+[INFO ] 2019-05-12 15:59:16.125 [main] PlayerInfo - https://api.opendota.com/api/players/4765894
+[INFO ] 2019-05-12 15:59:17.446 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 15:59:18.069 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 15:59:18.222 [main] MatchHistory - https://api.opendota.com/api/players/4765894/matches
+[INFO ] 2019-05-12 15:59:20.070 [main] GenerateMatchDetail - https://api.opendota.com/api/matches/4730832010
+[ERROR] 2019-05-12 15:59:20.834 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 15:59:22.276 [main] GenericDao - attempting to delete : Role{id=1, role='admin', user=User{id=1, firstName='Grant', lastName='Bitzer', userName='gbitzer', password='password', steamID=4765894}}
+[ERROR] 2019-05-12 15:59:22.312 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 15:59:22.475 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 15:59:22.532 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 15:59:22.534 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-12 15:59:22.556 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 15:59:22.568 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 15:59:22.568 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-12 15:59:22.585 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:06:01.173 [main] PlayerInfo - current user steamId : 4765894
+[INFO ] 2019-05-12 16:06:01.212 [main] PlayerInfo - https://api.opendota.com/api/players/4765894
+[INFO ] 2019-05-12 16:06:02.495 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 16:06:03.032 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 16:06:03.209 [main] MatchHistory - https://api.opendota.com/api/players/4765894/matches
+[INFO ] 2019-05-12 16:06:04.751 [main] GenerateMatchDetail - https://api.opendota.com/api/matches/4730832010
+[ERROR] 2019-05-12 16:06:05.556 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:06:07.155 [main] GenericDao - attempting to delete : Role{id=1, role='admin', user=User{id=1, firstName='Grant', lastName='Bitzer', userName='gbitzer', password='password', steamID=4765894}}
+[ERROR] 2019-05-12 16:06:07.192 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 16:06:07.342 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 16:06:07.396 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:06:07.398 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-12 16:06:07.432 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 16:06:07.443 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:06:07.443 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-12 16:06:07.464 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:13:52.250 [main] PlayerInfo - current user steamId : 4765894
+[INFO ] 2019-05-12 16:13:52.299 [main] PlayerInfo - https://api.opendota.com/api/players/4765894
+[INFO ] 2019-05-12 16:13:53.699 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 16:13:54.214 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 16:13:54.390 [main] MatchHistory - https://api.opendota.com/api/players/4765894/matches
+[INFO ] 2019-05-12 16:13:55.905 [main] GenerateMatchDetail - https://api.opendota.com/api/matches/4730832010
+[ERROR] 2019-05-12 16:13:56.528 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:13:57.972 [main] GenericDao - attempting to delete : Role{id=1, role='admin', user=User{id=1, firstName='Grant', lastName='Bitzer', userName='gbitzer', password='password', steamID=4765894}}
+[ERROR] 2019-05-12 16:13:58.004 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 16:13:58.136 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 16:13:58.179 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:13:58.181 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-12 16:13:58.207 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 16:13:58.219 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:13:58.219 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-12 16:13:58.238 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:21:29.000 [main] PlayerInfo - current user steamId : 4765894
+[INFO ] 2019-05-12 16:21:29.041 [main] PlayerInfo - https://api.opendota.com/api/players/4765894
+[INFO ] 2019-05-12 16:21:30.472 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 16:21:31.193 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 16:21:31.343 [main] MatchHistory - https://api.opendota.com/api/players/4765894/matches
+[INFO ] 2019-05-12 16:21:32.665 [main] GenerateMatchDetail - https://api.opendota.com/api/matches/4730832010
+[ERROR] 2019-05-12 16:21:33.278 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:21:34.660 [main] GenericDao - attempting to delete : Role{id=1, role='admin', user=User{id=1, firstName='Grant', lastName='Bitzer', userName='gbitzer', password='password', steamID=4765894}}
+[ERROR] 2019-05-12 16:21:34.694 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 16:21:34.959 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 16:21:35.011 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:21:35.014 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-12 16:21:35.040 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 16:21:35.051 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:21:35.051 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-12 16:21:35.072 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:26:46.365 [main] PlayerInfo - current user steamId : 4765894
+[INFO ] 2019-05-12 16:26:46.402 [main] PlayerInfo - https://api.opendota.com/api/players/4765894
+[INFO ] 2019-05-12 16:26:47.748 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 16:26:48.291 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 16:26:48.431 [main] MatchHistory - https://api.opendota.com/api/players/4765894/matches
+[INFO ] 2019-05-12 16:26:49.885 [main] GenerateMatchDetail - https://api.opendota.com/api/matches/4730832010
+[ERROR] 2019-05-12 16:26:50.519 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:26:52.079 [main] GenericDao - attempting to delete : Role{id=1, role='admin', user=User{id=1, firstName='Grant', lastName='Bitzer', userName='gbitzer', password='password', steamID=4765894}}
+[ERROR] 2019-05-12 16:26:52.134 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 16:26:52.314 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 16:26:52.365 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:26:52.367 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-12 16:26:52.388 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 16:26:52.398 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:26:52.399 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-12 16:26:52.420 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:30:54.780 [main] PlayerInfo - current user steamId : 4765894
+[INFO ] 2019-05-12 16:30:54.816 [main] PlayerInfo - https://api.opendota.com/api/players/4765894
+[INFO ] 2019-05-12 16:30:56.043 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 16:30:56.584 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 16:30:56.715 [main] MatchHistory - https://api.opendota.com/api/players/4765894/matches
+[INFO ] 2019-05-12 16:30:58.106 [main] GenerateMatchDetail - https://api.opendota.com/api/matches/4730832010
+[ERROR] 2019-05-12 16:30:58.803 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:31:00.259 [main] GenericDao - attempting to delete : Role{id=1, role='admin', user=User{id=1, firstName='Grant', lastName='Bitzer', userName='gbitzer', password='password', steamID=4765894}}
+[ERROR] 2019-05-12 16:31:00.287 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 16:31:00.418 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 16:31:00.462 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:31:00.464 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-12 16:31:00.492 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 16:31:00.506 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:31:00.506 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-12 16:31:00.539 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:46:07.311 [main] PlayerInfo - current user steamId : 4765894
+[INFO ] 2019-05-12 16:46:07.348 [main] PlayerInfo - https://api.opendota.com/api/players/4765894
+[INFO ] 2019-05-12 16:46:08.650 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 16:46:09.192 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 16:46:09.320 [main] MatchHistory - https://api.opendota.com/api/players/4765894/matches
+[INFO ] 2019-05-12 16:46:10.766 [main] GenerateMatchDetail - https://api.opendota.com/api/matches/4730832010
+[ERROR] 2019-05-12 16:46:11.391 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:46:12.809 [main] GenericDao - attempting to delete : Role{id=1, role='admin', user=User{id=1, firstName='Grant', lastName='Bitzer', userName='gbitzer', password='password', steamID=4765894}}
+[ERROR] 2019-05-12 16:46:12.838 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 16:46:12.967 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 16:46:13.012 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:46:13.015 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-12 16:46:13.038 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 16:46:13.048 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:46:13.048 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-12 16:46:13.086 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:48:58.103 [main] PlayerInfo - current user steamId : 4765894
+[INFO ] 2019-05-12 16:48:58.145 [main] PlayerInfo - https://api.opendota.com/api/players/4765894
+[INFO ] 2019-05-12 16:48:59.546 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 16:49:00.152 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 16:49:00.311 [main] MatchHistory - https://api.opendota.com/api/players/4765894/matches
+[INFO ] 2019-05-12 16:49:01.834 [main] GenerateMatchDetail - https://api.opendota.com/api/matches/4730832010
+[ERROR] 2019-05-12 16:49:02.468 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:49:03.916 [main] GenericDao - attempting to delete : Role{id=1, role='admin', user=User{id=1, firstName='Grant', lastName='Bitzer', userName='gbitzer', password='password', steamID=4765894}}
+[ERROR] 2019-05-12 16:49:03.945 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 16:49:04.072 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 16:49:04.116 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:49:04.118 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-12 16:49:04.142 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 16:49:04.154 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:49:04.155 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-12 16:49:04.176 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:57:16.564 [main] PlayerInfo - current user steamId : 4765894
+[INFO ] 2019-05-12 16:57:16.610 [main] PlayerInfo - https://api.opendota.com/api/players/4765894
+[INFO ] 2019-05-12 16:57:18.025 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 16:57:18.581 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 16:57:18.749 [main] MatchHistory - https://api.opendota.com/api/players/4765894/matches
+[INFO ] 2019-05-12 16:57:19.054 [main] GenerateMatchDetail - https://api.opendota.com/api/matches/4730832010
+[ERROR] 2019-05-12 16:57:19.748 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:57:21.194 [main] GenericDao - attempting to delete : Role{id=1, role='admin', user=User{id=1, firstName='Grant', lastName='Bitzer', userName='gbitzer', password='password', steamID=4765894}}
+[ERROR] 2019-05-12 16:57:21.224 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 16:57:21.347 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 16:57:21.397 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:57:21.399 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-12 16:57:21.420 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 16:57:21.434 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:57:21.434 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-12 16:57:21.452 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:57:34.325 [main] PlayerInfo - current user steamId : 4765894
+[INFO ] 2019-05-12 16:57:34.368 [main] PlayerInfo - https://api.opendota.com/api/players/4765894
+[INFO ] 2019-05-12 16:57:35.605 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 16:57:36.117 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 16:57:36.252 [main] MatchHistory - https://api.opendota.com/api/players/4765894/matches
+[INFO ] 2019-05-12 16:57:36.509 [main] GenerateMatchDetail - https://api.opendota.com/api/matches/4730832010
+[ERROR] 2019-05-12 16:57:37.174 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:57:38.768 [main] GenericDao - attempting to delete : Role{id=1, role='admin', user=User{id=1, firstName='Grant', lastName='Bitzer', userName='gbitzer', password='password', steamID=4765894}}
+[ERROR] 2019-05-12 16:57:38.797 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 16:57:38.920 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 16:57:38.965 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:57:38.968 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-12 16:57:38.997 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 16:57:39.008 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 16:57:39.008 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-12 16:57:39.027 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 17:00:02.257 [main] PlayerInfo - current user steamId : 4765894
+[INFO ] 2019-05-12 17:00:02.292 [main] PlayerInfo - https://api.opendota.com/api/players/4765894
+[INFO ] 2019-05-12 17:00:03.795 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 17:00:04.468 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 17:00:04.606 [main] MatchHistory - https://api.opendota.com/api/players/4765894/matches
+[INFO ] 2019-05-12 17:00:04.935 [main] GenerateMatchDetail - https://api.opendota.com/api/matches/4730832010
+[ERROR] 2019-05-12 17:00:05.628 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 17:00:07.190 [main] GenericDao - attempting to delete : Role{id=1, role='admin', user=User{id=1, firstName='Grant', lastName='Bitzer', userName='gbitzer', password='password', steamID=4765894}}
+[ERROR] 2019-05-12 17:00:07.230 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 17:00:07.408 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 17:00:07.459 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 17:00:07.462 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-12 17:00:07.485 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 17:00:07.497 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 17:00:07.497 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-12 17:00:07.516 [main] Database - java.sql.SQLException: Can not issue empty query.
+[INFO ] 2019-05-12 17:00:37.293 [main] MatchHistory - https://api.opendota.com/api/players/4765894/matches
+[INFO ] 2019-05-12 17:01:55.480 [main] MatchHistory - https://api.opendota.com/api/players/4765894/matches
+[DEBUG] 2019-05-12 17:02:46.780 [main] PlayerInfo - current user steamId : 4765894
+[INFO ] 2019-05-12 17:02:46.891 [main] PlayerInfo - https://api.opendota.com/api/players/4765894
+[INFO ] 2019-05-12 17:02:49.146 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 17:02:49.655 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 17:02:49.826 [main] GenerateMatchDetail - https://api.opendota.com/api/matches/4730832010
+[ERROR] 2019-05-12 17:02:50.821 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 17:02:53.464 [main] GenericDao - attempting to delete : Role{id=1, role='admin', user=User{id=1, firstName='Grant', lastName='Bitzer', userName='gbitzer', password='password', steamID=4765894}}
+[ERROR] 2019-05-12 17:02:53.496 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 17:02:53.621 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 17:02:53.671 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 17:02:53.673 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-12 17:02:53.709 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 17:02:53.730 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 17:02:53.731 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-12 17:02:53.749 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 17:11:24.700 [main] PlayerInfo - current user steamId : 4765894
+[INFO ] 2019-05-12 17:11:24.842 [main] PlayerInfo - https://api.opendota.com/api/players/4765894
+[INFO ] 2019-05-12 17:11:27.173 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 17:11:27.699 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 17:11:27.932 [main] GenerateMatchDetail - https://api.opendota.com/api/matches/4730832010
+[ERROR] 2019-05-12 17:11:28.993 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 17:11:31.525 [main] GenericDao - attempting to delete : Role{id=1, role='admin', user=User{id=1, firstName='Grant', lastName='Bitzer', userName='gbitzer', password='password', steamID=4765894}}
+[ERROR] 2019-05-12 17:11:31.559 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 17:11:31.703 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 17:11:31.748 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 17:11:31.751 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-12 17:11:31.780 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 17:11:31.801 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 17:11:31.802 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-12 17:11:31.819 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 17:18:53.421 [main] PlayerInfo - current user steamId : 4765894
+[INFO ] 2019-05-12 17:18:53.458 [main] PlayerInfo - https://api.opendota.com/api/players/4765894
+[INFO ] 2019-05-12 17:18:54.932 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 17:18:55.460 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 17:18:55.608 [main] GenerateMatchDetail - https://api.opendota.com/api/matches/4730832010
+[ERROR] 2019-05-12 17:18:56.256 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 17:18:58.209 [main] GenericDao - attempting to delete : Role{id=1, role='admin', user=User{id=1, firstName='Grant', lastName='Bitzer', userName='gbitzer', password='password', steamID=4765894}}
+[ERROR] 2019-05-12 17:18:58.265 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 17:18:58.398 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 17:18:58.451 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 17:18:58.453 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-12 17:18:58.497 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 17:18:58.517 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 17:18:58.518 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-12 17:18:58.560 [main] Database - java.sql.SQLException: Can not issue empty query.
+[INFO ] 2019-05-12 17:19:44.207 [main] MatchHistory - https://api.opendota.com/api/players/4765894/matches
+[DEBUG] 2019-05-12 17:22:49.821 [main] PlayerInfo - current user steamId : 4765894
+[INFO ] 2019-05-12 17:22:49.866 [main] PlayerInfo - https://api.opendota.com/api/players/4765894
+[INFO ] 2019-05-12 17:22:51.261 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 17:22:51.813 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 17:22:51.958 [main] MatchHistory - https://api.opendota.com/api/players/4765894/matches
+[INFO ] 2019-05-12 17:22:53.547 [main] GenerateMatchDetail - https://api.opendota.com/api/matches/4730832010
+[ERROR] 2019-05-12 17:22:54.181 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 17:22:55.761 [main] GenericDao - attempting to delete : Role{id=1, role='admin', user=User{id=1, firstName='Grant', lastName='Bitzer', userName='gbitzer', password='password', steamID=4765894}}
+[ERROR] 2019-05-12 17:22:55.790 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 17:22:55.919 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 17:22:55.965 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 17:22:55.967 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-12 17:22:55.991 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 17:22:56.006 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 17:22:56.006 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-12 17:22:56.027 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 17:27:17.447 [main] PlayerInfo - current user steamId : 4765894
+[INFO ] 2019-05-12 17:27:17.485 [main] PlayerInfo - https://api.opendota.com/api/players/4765894
+[INFO ] 2019-05-12 17:27:18.988 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 17:27:19.565 [main] GenerateHeroStats - https://api.opendota.com/api/heroStats/
+[INFO ] 2019-05-12 17:27:19.711 [main] MatchHistory - https://api.opendota.com/api/players/4765894/matches
+[INFO ] 2019-05-12 17:27:21.537 [main] GenerateMatchDetail - https://api.opendota.com/api/matches/4730832010
+[ERROR] 2019-05-12 17:27:22.200 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 17:27:24.596 [main] GenericDao - attempting to delete : Role{id=1, role='admin', user=User{id=1, firstName='Grant', lastName='Bitzer', userName='gbitzer', password='password', steamID=4765894}}
+[ERROR] 2019-05-12 17:27:24.639 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 17:27:24.829 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 17:27:24.901 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 17:27:24.905 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-12 17:27:24.940 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-12 17:27:24.955 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-12 17:27:24.955 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-12 17:27:24.983 [main] Database - java.sql.SQLException: Can not issue empty query.

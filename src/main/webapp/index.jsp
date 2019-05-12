@@ -1,6 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@include file="head.jsp"%>
-
 <%@include file="header.jsp"%>
 <style>
     #linkButton {
@@ -77,7 +77,7 @@
                                                                 <button name="matchIdDetail" value="${matchHistory.get(0).matchId}" class="btn btn-primary">${matchHistory.get(0).matchId}</button>
                                                             </form>
                                                         </td>
-                                                        <td>${matchHistory.get(0).duration / 60}</td>
+                                                        <td><fmt:formatNumber var="duration" value="${matchHistory.get(0).duration / 60}" maxFractionDigits="0" />${duration}</td>
                                                         <td>${matchHistory.get(0).kills}</td>
                                                         <td>${matchHistory.get(0).deaths}</td>
                                                         <td>${matchHistory.get(0).assists}</td>

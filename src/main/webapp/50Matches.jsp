@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@include file="head.jsp"%>
 <%@include file="header.jsp"%>
 <!-- Masthead -->
@@ -39,7 +40,7 @@
                                                 <button name="matchIdDetail" value="${match.matchId}" class="btn btn-primary">${match.matchId}</button>
                                             </form>
                                         </td>
-                                        <td>${match.duration / 60}</td>
+                                        <td><fmt:formatNumber var="duration" value="${match.duration / 60}" maxFractionDigits="0" />${duration}</td>
                                         <td>${match.kills}</td>
                                         <td>${match.deaths}</td>
                                         <td>${match.assists}</td>

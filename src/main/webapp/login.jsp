@@ -16,7 +16,7 @@
         <div class="row h-100 align-items-center justify-content-center text-center">
             <div class="card">
                 <div class="card-header">
-                    Sign-up
+                    Sign-in
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">Sign-In to Account</h5>
