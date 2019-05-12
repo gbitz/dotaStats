@@ -1,8 +1,6 @@
 package edu.matc.controller;
 
 
-import com.opendota.matchDetail.MatchDetail;
-import com.opendota.matchDetail.PlayersItem;
 import com.opendota.matches.Match;
 import edu.matc.entity.FavoriteMatch;
 import edu.matc.entity.User;
@@ -16,24 +14,54 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 
+/**
+ * Used for displaying favorite matches list
+ */
 @WebServlet(
         urlPatterns = {"/showFavoriteMatches"}
 )
-
 public class ShowFavoriteMatches extends HttpServlet {
+    /**
+     * The Logger.
+     */
     final Logger logger = LogManager.getLogger(this.getClass());
+    /**
+     * The User dao.
+     */
     GenericDao userDao = new GenericDao(User.class);
+    /**
+     * The Favorite match dao.
+     */
     GenericDao favoriteMatchDao = new GenericDao(FavoriteMatch.class);
+    /**
+     * The Hero stat generator.
+     */
     GenerateHeroStats heroStatGenerator = new GenerateHeroStats();
+    /**
+     * The Match history.
+     */
     MatchHistory matchHistory = new MatchHistory();
+    /**
+     * The Filtered matches.
+     */
     List<Match> filteredMatches = new ArrayList<>();
+    /**
+     * The All matches.
+     */
     List<Match> allMatches = new ArrayList<>();
+
+    /**
+     * Get method for displaying favorite matches
+     * @param req
+     * @param resp
+     * @throws ServletException
+     * @throws IOException
+     */
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
@@ -64,8 +92,13 @@ public class ShowFavoriteMatches extends HttpServlet {
     }
 
 
-
-        public void filterToFavorites(List<FavoriteMatch> favoriteMatches, List<Match> allMatches){
+    /**
+     * Filter to user's favorites.
+     *
+     * @param favoriteMatches the favorite matches
+     * @param allMatches      the all matches
+     */
+    public void filterToFavorites(List<FavoriteMatch> favoriteMatches, List<Match> allMatches){
         for (FavoriteMatch favoriteMatch : favoriteMatches) {
             for (Match match : allMatches) {
                 if(match.getMatchId() == Long.parseLong(favoriteMatch.getMatchId())) {
@@ -75,6 +108,11 @@ public class ShowFavoriteMatches extends HttpServlet {
         }
     }
 
+    /**
+     * Sets hero stats.
+     *
+     * @param filteredMatches the filtered matches
+     */
     public void setHeroStats(List<Match> filteredMatches) {
         for (Match match : filteredMatches) {
             try {

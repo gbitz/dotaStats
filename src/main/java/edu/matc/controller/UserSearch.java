@@ -14,28 +14,25 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-
 /**
- * servlet for administrators to search users
- * @author gbitzer
+ * Admin use for searching and displaying all users.
  */
-
 @WebServlet(
         urlPatterns = {"/userSearch"}
 )
-
 public class UserSearch extends HttpServlet {
+    /**
+     * get method for obtaining user list
+     * @param req
+     * @param resp
+     * @throws ServletException
+     * @throws IOException
+     */
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         GenericDao userDao = new GenericDao(User.class);
         GenericDao roleDao = new GenericDao(Role.class);
-//        List<Role> admins = roleDao.getByPropertyEqual("role_title", "admin");
-//        List<Role> users = new ArrayList<>();
-//                users = roleDao.getByPropertyEqual("role_title","user");
-//
-//        for (Role user : users) {
-//        }
 
         if (req.getParameter("submit").equals("displayUsers")) {
             req.setAttribute("users", userDao.getAll());

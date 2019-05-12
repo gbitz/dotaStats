@@ -21,14 +21,25 @@ import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
 
+/**
+ * Class for Match Info/Stats generator
+ */
 public class GenerateMatchDetail {
 
 
+    /**
+     * Gets match details and information.
+     *
+     * @param matchId the match id
+     * @return the match detail
+     * @throws Exception the exception
+     */
     public MatchDetail getMatchDetail(long matchId) throws Exception {
         final Logger logger = LogManager.getLogger(this.getClass());
         MatchDetail matchDetail;
 
         Client client = ClientBuilder.newClient();
+        logger.info("https://api.opendota.com/api/matches/" + matchId);
         WebTarget target =
                 client.target("https://api.opendota.com/api/matches/" + matchId);
         String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
@@ -41,6 +52,13 @@ public class GenerateMatchDetail {
     }
 
 
+    /**
+     * Splits json array into String list.
+     *
+     * @param jsonArray the json array
+     * @return the list
+     * @throws IOException the io exception
+     */
     public List<String> split(final String jsonArray) throws IOException {
         final JsonNode jsonNode = new ObjectMapper().readTree(jsonArray);
         return StreamSupport.stream(jsonNode.spliterator(), false) // Stream

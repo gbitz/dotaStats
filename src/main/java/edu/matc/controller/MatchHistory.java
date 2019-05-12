@@ -17,15 +17,24 @@ import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
 
+/**
+ * Generator class for creating match history
+ */
 public class MatchHistory {
-
-
+    /**
+     * Calls opendotaapi for match stats based on steam id
+     *
+     * @param steamId the steam id
+     * @return the matches
+     * @throws Exception the exception
+     */
     public List<Match> getMatches(String steamId) throws Exception {
         final Logger logger = LogManager.getLogger(this.getClass());
 
         List<String> matches;
         List<Match> userMatches = new ArrayList<>();
         Client client = ClientBuilder.newClient();
+        logger.info("https://api.opendota.com/api/players/"+ steamId +"/matches");
         WebTarget target =
                 client.target("https://api.opendota.com/api/players/"+ steamId +"/matches");
         String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
@@ -40,6 +49,13 @@ public class MatchHistory {
     }
 
 
+    /**
+     * Split json array into a list of strings
+     *
+     * @param jsonArray the json array
+     * @return the list
+     * @throws IOException the io exception
+     */
     public List<String> split(final String jsonArray) throws IOException {
         final JsonNode jsonNode = new ObjectMapper().readTree(jsonArray);
         return StreamSupport.stream(jsonNode.spliterator(), false) // Stream

@@ -19,15 +19,37 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+/**
+ * Used to filter all matches down and show last 50 matches played
+ */
 @WebServlet(
         urlPatterns = {"/show50Matches"}
 )
-
 public class Show50Matches extends HttpServlet {
+    /**
+     * The Logger.
+     */
     final Logger logger = LogManager.getLogger(this.getClass());
+    /**
+     * The User dao.
+     */
     GenericDao userDao = new GenericDao(User.class);
+    /**
+     * The Current user.
+     */
     User currentUser;
+    /**
+     * The Hero stat generator.
+     */
     GenerateHeroStats heroStatGenerator = new GenerateHeroStats();
+
+    /**
+     * get method for obtaining last fifty matches played
+     * @param req
+     * @param resp
+     * @throws ServletException
+     * @throws IOException
+     */
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();
@@ -50,11 +72,16 @@ public class Show50Matches extends HttpServlet {
         dispatcher.forward(req, resp);
     }
 
+    /**
+     * Sets hero stats for last fifty matches
+     *
+     * @param fiftyMatches the fifty matches
+     */
     public void setHeroStats(List<Match> fiftyMatches) {
         int i =0;
         for (Match match: fiftyMatches) {
             i++;
-            if (i == 100) {
+            if (i == 50) {
                 break;
             }
             try {
@@ -65,6 +92,12 @@ public class Show50Matches extends HttpServlet {
         }
     }
 
+    /**
+     * Gets last fifty matches played
+     *
+     * @param allMatches the all matches
+     * @return the last fifty matches
+     */
     public List<Match> getLastFifty(List<Match> allMatches) {
         List<Match> fiftyMatches = new ArrayList<>();
         int i = 0;
@@ -77,6 +110,14 @@ public class Show50Matches extends HttpServlet {
         }
         return fiftyMatches;
     }
+
+    /**
+     * Gets current user.
+     *
+     * @param username the username
+     * @param steamId  the steam id
+     * @return the current user
+     */
     public User getCurrentUser(String username, String steamId) {
         User user = new User();
         user.setUserName(username);

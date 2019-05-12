@@ -1,11 +1,7 @@
 package edu.matc.controller;
 
-import com.opendota.heroStats.HeroStats;
 import com.opendota.matchDetail.MatchDetail;
 import com.opendota.matchDetail.PlayersItem;
-import com.opendota.matches.Match;
-import edu.matc.entity.User;
-import edu.matc.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -15,19 +11,30 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 
+/**
+ * Used to show a matches information and stats
+ */
 @WebServlet(
         urlPatterns = {"/showMatchDetail"}
 )
-
 public class ShowMatchDetail extends HttpServlet {
+    /**
+     * The Logger.
+     */
     final Logger logger = LogManager.getLogger(this.getClass());
 
+    /**
+     * get method used for showing match stats and information
+     * @param req
+     * @param resp
+     * @throws ServletException
+     * @throws IOException
+     */
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         MatchDetail matchDetail = new MatchDetail();

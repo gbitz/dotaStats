@@ -15,16 +15,29 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 
+/**
+ * Used for logging out user
+ */
 @WebServlet(
         urlPatterns = {"/logoutUser"}
 )
-
 public class LogoutUser extends HttpServlet {
+    /**
+     * Get method for logging out user
+     * @param req
+     * @param resp
+     * @throws ServletException
+     * @throws IOException
+     */
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         final Logger logger = LogManager.getLogger(this.getClass());
         HttpSession session = req.getSession();
-        session.invalidate();
+        try {
+            session.invalidate();
+        } catch (Exception e) {
+            logger.error("error closing session : " + e);
+        }
         RequestDispatcher dispatcher = req.getRequestDispatcher("/index.jsp");
         dispatcher.forward(req, resp);
     }

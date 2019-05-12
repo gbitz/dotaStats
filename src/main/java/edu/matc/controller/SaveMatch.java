@@ -1,9 +1,5 @@
 package edu.matc.controller;
 
-import com.opendota.heroStats.HeroStats;
-import com.opendota.matchDetail.MatchDetail;
-import com.opendota.matchDetail.PlayersItem;
-import com.opendota.matches.Match;
 import edu.matc.entity.FavoriteMatch;
 import edu.matc.entity.User;
 import edu.matc.persistence.GenericDao;
@@ -16,22 +12,42 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.util.ArrayList;
+
 import java.util.List;
 
 
+/**
+ * Used for saving a match to the database
+ */
 @WebServlet(
         urlPatterns = {"/saveMatch"}
 )
-
 public class SaveMatch extends HttpServlet {
+    /**
+     * The Match to add.
+     */
     FavoriteMatch matchToAdd;
+    /**
+     * The Favorite match dao.
+     */
     GenericDao favoriteMatchDao = new GenericDao(FavoriteMatch.class);
+    /**
+     * The Logger.
+     */
     final Logger logger = LogManager.getLogger(this.getClass());
+    /**
+     * The User dao.
+     */
     GenericDao userDao = new GenericDao(User.class);
 
+    /**
+     * get method for saving a favorite match
+     * @param req
+     * @param resp
+     * @throws ServletException
+     * @throws IOException
+     */
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
@@ -66,6 +82,14 @@ public class SaveMatch extends HttpServlet {
         dispatcher.forward(req, resp);
     }
 
+    /**
+     * Create favorite match to be saved
+     *
+     * @param matchId     the match id
+     * @param currentUser the current user
+     * @param username    the username
+     * @return the favorite match
+     */
     public FavoriteMatch createFavoriteMatch(String matchId, User currentUser, String username) {
         FavoriteMatch favoriteMatch = new FavoriteMatch();
         favoriteMatch.setMatchId(matchId);

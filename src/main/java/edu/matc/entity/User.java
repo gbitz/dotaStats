@@ -10,6 +10,7 @@ import java.util.Set;
 
 /**
  * Contains all information related to User generation
+ *
  * @author gbitz
  */
 @Entity(name = "User")

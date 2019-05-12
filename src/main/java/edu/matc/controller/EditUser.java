@@ -14,13 +14,25 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+/**
+ * Class for editing a users SteamID
+ */
 @WebServlet(
         urlPatterns = {"/editUser"}
 )
-
 public class EditUser extends HttpServlet {
+    /**
+     * The Logger.
+     */
     final Logger logger = LogManager.getLogger(this.getClass());
 
+    /**
+     * Post method for editing a users steamId
+     * @param req
+     * @param resp
+     * @throws ServletException
+     * @throws IOException
+     */
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         GenericDao userDao = new GenericDao(User.class);
