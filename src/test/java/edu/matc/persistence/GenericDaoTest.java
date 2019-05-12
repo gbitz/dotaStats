@@ -13,13 +13,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 public class GenericDaoTest {
-
-
     GenericDao userDao;
     GenericDao roleDao;
     GenericDao favoriteMatchDao;
-
-
     @BeforeEach
     void setUp() {
         userDao = new GenericDao(User.class);
@@ -27,7 +23,6 @@ public class GenericDaoTest {
         favoriteMatchDao = new GenericDao(FavoriteMatch.class);
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
-
     }
 
     @Test

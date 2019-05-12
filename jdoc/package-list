@@ -1,0 +1,9 @@
+com.opendota.hero
+com.opendota.heroStats
+com.opendota.matchDetail
+com.opendota.matches
+com.opendota.player
+edu.matc.controller
+edu.matc.entity
+edu.matc.persistence
+edu.matc.test.util

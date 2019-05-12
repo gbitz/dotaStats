@@ -516,3 +516,22 @@
 [DEBUG] 2019-05-11 20:17:09.895 [http-nio-8080-exec-5] GenericDao - Searching for ** with matchId = 4740433691
 [DEBUG] 2019-05-11 20:17:09.928 [http-nio-8080-exec-5] GenericDao - Searching for ** with userName = dave
 [DEBUG] 2019-05-11 20:17:09.934 [http-nio-8080-exec-5] GenericDao - Searching for ** with username = dave
+[ERROR] 2019-05-11 21:09:24.745 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 21:09:24.765 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 21:09:24.773 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 21:09:49.761 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 21:09:49.793 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 21:09:49.804 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 21:12:25.354 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 21:43:20.154 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 21:43:20.173 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 21:43:20.182 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 21:54:06.739 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 21:54:08.469 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 21:54:08.616 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 21:54:08.689 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 21:54:08.691 [main] GenericDao - Searching for ** with role = admin
+[ERROR] 2019-05-11 21:54:08.735 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-05-11 21:54:08.755 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-05-11 21:54:08.756 [main] GenericDao - Searching for ** with id = 1
+[ERROR] 2019-05-11 21:54:08.786 [main] Database - java.sql.SQLException: Can not issue empty query.
