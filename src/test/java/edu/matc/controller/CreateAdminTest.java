@@ -15,19 +15,34 @@ import javax.servlet.http.HttpServletResponse;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
 
+/**
+ * The type Create admin test.
+ */
 class CreateAdminTest {
 
+    /**
+     * Sets up.
+     */
     void setUp() {
     }
 
+    /**
+     * Do get.
+     */
     @Test
     void doGet() {
     }
 
+    /**
+     * Do post.
+     */
     @Test
     void doPost() {
     }
 
+    /**
+     * Make admin.
+     */
     @Test
     void makeAdmin() {
 
