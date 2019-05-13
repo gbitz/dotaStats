@@ -34,7 +34,7 @@ public class EditUser extends HttpServlet {
      * @throws IOException
      */
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         GenericDao userDao = new GenericDao(User.class);
         User userToEdit;
         if (req.getParameter("editAccount").equals("confirm")) {
@@ -42,7 +42,7 @@ public class EditUser extends HttpServlet {
             userToEdit.setSteamID(req.getParameter("steamID"));
             userDao.saveOrUpdate(userToEdit);
         }
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/login.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/logoutUser");
         dispatcher.forward(req, resp);
     }
 }

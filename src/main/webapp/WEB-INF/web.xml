@@ -18,10 +18,8 @@
       <web-resource-name>landing</web-resource-name>
       <url-pattern>/signedIn.jsp</url-pattern>
       <url-pattern>/50matches.jsp</url-pattern>
-      <url-pattern>/editSteamId.jsp</url-pattern>
       <url-pattern>/favoriteMatches.jsp</url-pattern>
       <url-pattern>/matchDetails.jsp</url-pattern>
-      <url-pattern>/editUser</url-pattern>
       <url-pattern>/showFavoriteMatches</url-pattern>
       <url-pattern>/show50Matches</url-pattern>
       <url-pattern>/showMatchDetail</url-pattern>

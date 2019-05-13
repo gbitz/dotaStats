@@ -40,6 +40,7 @@
                                 <div class="card-header">
                                     Users
                                 </div>
+                                    <p class="alert-danger">${successMessage}</p>
                                 <div class="container">
                                     <div class="table-responsive">
                                         <table class="table">
@@ -60,7 +61,7 @@
                                                         <td><button name="createAdmin" class="btn btn-primary" value="createAdmin" action="CreateAdmin">Make Admin</button></td>
                                                     </form>
                                                     <form method ="post" action="deleteUser">
-                                                        <input hidden name="userToDelete" value="${user.userName}">${user.userName}
+                                                        <input hidden name="userToDelete" value="${user.userName}">
                                                         <td><button class="btn btn-primary" name="deleteUser" value="deleteUser" action="DeleteUser">Delete User</button></td>
                                                     </form>
                                                 </tr>

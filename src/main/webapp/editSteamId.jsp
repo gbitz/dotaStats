@@ -15,7 +15,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Edit Dota Friend Id</h5>
                     <p class="card-text">Your New ID</p>
-                    <form action="editUser" method="post">
+                    <form action="editUser" method="get">
                         <div class="form-group">
                             <label class="form-check-label" for="steamID">Current Id</label>
                             <input readonly class="form-control" placeholder="${activeUser.steamID}" name="currentId" id="currentId">

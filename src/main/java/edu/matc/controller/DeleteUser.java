@@ -38,8 +38,15 @@ public class DeleteUser extends HttpServlet {
         User userToDelete;
         if (req.getParameter("deleteUser").equals("deleteUser")) {
             userToDelete = (User)userDao.getByPropertyEqual("userName", req.getParameter("userToDelete")).get(0);
-            logger.debug("Attempting to delete user : " + userToDelete);
-            userDao.delete(userToDelete);
+            logger.info("Attempting to delete user : " + userToDelete);
+            try {
+                userDao.delete(userToDelete);
+                req.setAttribute("successMessage", "Deleted User : " + userToDelete.getUserName());
+            } catch (Exception e) {
+                logger.error("Failed to Delete User" + e);
+                req.setAttribute("successMessage", "Failed to Delete Deleted User : " + userToDelete.getUserName());
+
+            }
         }
         RequestDispatcher dispatcher = req.getRequestDispatcher("/admin.jsp");
         dispatcher.forward(req, resp);
