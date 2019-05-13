@@ -46,6 +46,9 @@ Working on final project added better authentication and dove into api
 
 ### Week 5-1-19 -> 5-6-19
 Added more styling, and  was able to gain more information from api
+### Week 5-7-19 -> 5-12-19
+Added more styling, displaying last fifty matches, have match details, ability to save matches, and added more admin functionality
+
 
 
 

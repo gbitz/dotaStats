@@ -40,7 +40,7 @@
                                                 <button name="matchIdDetail" value="${match.matchId}" class="btn btn-primary">${match.matchId}</button>
                                             </form>
                                         </td>
-                                            <td>${match.duration / 60}</td>
+                                            <td><fmt:formatNumber var="duration" value="${match.duration / 60}" maxFractionDigits="0" />${duration}</td>
                                             <td>${match.kills}</td>
                                             <td>${match.deaths}</td>
                                             <td>${match.assists}</td>

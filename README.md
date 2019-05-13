@@ -7,7 +7,12 @@ to read version of those those statistics to track their progress.
 
 dotaStats is will offer Dota players an easy way to access their personal statistics and compare them to the averages
 of the world. dotaStats will offer an edge over opponents by allowing users to access opposing players stats and play 
-history.    
+history.   
+
+**Change To Initial Product** 
+
+Ultimately the end product of dotaStats will contain a larger array of statistics. Currently our goal is to provide a concise
+display of match information and statistics. You will be able to view matches from your last 50 matches. 
 
 ### Design
 
@@ -36,7 +41,7 @@ history.
 * Additional Tools
     * OpenDotaApi
 * Unit Testing
-    * JUnit - 80% Code Coverage
+    * JUnit - 50% Code Coverage
     
 ### [Project Plan](ProjectPlan.md)
 

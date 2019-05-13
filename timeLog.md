@@ -26,5 +26,12 @@
 4/24 made progress on my project. added proper authentication, and was able to gain more
     information from api (8hours)
     
-5/5 Added more stying to project, added match details but still need to organise info (8 hours) 
-      
+5/5 Added more styling to project, added match details but still need to organise info (8 hours) 
+
+5/6-5-12-
+added admin functionality (4hours)
+added display last fifty matches(6 hours)
+added all crud to project(4hours)
+added match details (6hours)
+finished styling (2 hours)
+created project video (3 hours)

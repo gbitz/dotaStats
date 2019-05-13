@@ -65,6 +65,9 @@
 - Create final presentation
 -deploy to aws
 -journal
+- add all missing crud
+- display last fifty matches
+- better security
 
 **Week 15**
 -final presentation
